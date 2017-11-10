@@ -38,12 +38,20 @@ body {
 	margin: 0 auto;
 }
 
+.t16 {
+	font-size: 16px;
+	line-height: 1.6;
+}
+
 
 /* Header Layout */
 
 #header {
 	color: #fff;
 	background: #000;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
 }
 
 #header .header-block {
@@ -67,10 +75,10 @@ body {
 }
 
 
+
 /* Nav Layout */
 
 nav {
-	z-index: 9999;
 	position: absolute;
 	top: 80px;
 	width: 100%;
@@ -78,38 +86,62 @@ nav {
 
 .nav-block {
 	position: relative;
-	min-height: 80px;
+	min-height: 50px;
 	margin-bottom: 20px;
 }
 
-.nav-block>h1 {
-	position: absolute;
-	margin: 0 0 0 100px;
+.nav-block > h1 {
+    float: left;
+    height: 80px;
+	margin: 0;
+    padding: 0 15px;
 }
 
-.nav-block>img {
-	float: left;
-	margin-left: 100px;
-	display: inline-block;
+.nav-block > h1 img {
+    width: 70%;
 }
 
-.nav-block>h1 span {
-	display: none;
+.nav-block > h1 span {
+    display: none;
 }
 
-.nav-block>ul {
-	float: right;
-	margin-right: 100px;
+.nav-block > ul {
+    float: right;
+    margin-right: 100px;
 }
 
-.nav-block>ul>li {
-	float: left;
-	position: relative;
-	display: block;
-	margin-left: 33px;
-	line-height: 2;
-	text-align: center;
-	font-weight: 700;
+.nav-block > ul > li {
+    float: left;
+    position: relative;
+    display: block;
+    margin-left: 33px;
+	padding: 0 5px 2px;
+    line-height: 2;
+    text-align: center;
+    font-weight: 700;
+}
+
+.nav-block > ul > li:after{
+    position: absolute;
+    content:"";
+    display: inline-block;
+    width: 50px;
+    height: 3px;
+    background-color: #fff;
+    left: 50%;
+    margin-left: -25px;
+    bottom: -6px;
+    transition-property: bottom, background-color, opacity;
+	transition-duration: 0.3s;
+	transition-timing-function: ease-out;
+    opacity: 0;
+}
+
+.nav-block > ul > li.over:after{
+    display: block;
+    bottom: 0px;
+    background-color:#0097c3; 
+    opacity: 1;
 }
 
 .nav-block>ul>li>ul {
@@ -120,51 +152,66 @@ nav {
 	right: auto;
 	width: auto;
 	min-width: 100%;
+    margin-top: 2px;
 	padding: 20px 50px;
 	text-align: center;
 	font-weight: 400;
 	background: rgba(6, 6, 6, 0.9);
+	z-index: 10;
 }
 
-.nav-block>ul>li:nth-child(1)>ul {
-	left: -90px;
+.nav-block > ul > li:nth-child(1) > ul {
+    left: -90px;
+}
+.nav-block > ul > li:nth-child(2) > ul {
+    left: -58px;
+}
+.nav-block > ul > li:nth-child(3) > ul {
+    left: -55px;
+}
+.nav-block > ul > li:nth-child(4) > ul {
+    left: -50px;
+}
+.nav-block > ul > li:nth-child(5) {
+	color: #fff;
+	border: none !important;
+	margin-top: -3px;
+}
+.nav-block > ul > li:nth-child(5) > a {
+	font-size: 18px;
+	color: #fff !important;
+	background-color: #0097c3;
+	padding: 6px 14px 4px;
 }
 
-.nav-block>ul>li:nth-child(2)>ul {
-	left: -58px;
+.nav-block > ul > li > ul > li > a {
+    color: #b9b9b9;
+    background-color: transparent;
+    display: block;
+    white-space: nowrap;
+    clear: both;
 }
 
-.nav-block>ul>li:nth-child(3)>ul {
-	left: -55px;
+.nav-block > ul > li:hover > a{
+    color: #0097c3;
+}
+.nav-block > ul > li:hover {
+	padding-bottom: 0;
+}
+.nav-block > ul > li > ul > li.over > a {
+    color: #0097c3;
 }
 
-.nav-block>ul>li:nth-child(5)>ul {
-	left: -50px;
+.nav-block > ul > li.over > ul {
+    display: block;
 }
 
-.nav-block>ul>li>ul>li>a {
-	color: #b9b9b9;
-	background-color: transparent;
-	display: block;
-	white-space: nowrap;
-	clear: both;
+.nav-block > ul > li.over > ul > li {
+    display: block;
+    margin-bottom: 5px;
+    line-height: 2;
+    text-align: center;
 }
-
-.nav-block>ul>li>ul>li.over>a {
-	color: #0097c3;
-}
-
-.nav-block>ul>li.over>ul {
-	display: block;
-}
-
-.nav-block>ul>li.over>ul>li {
-	display: block;
-	margin-bottom: 5px;
-	line-height: 2;
-	text-align: center;
-}
-
 
 /* Container Layout */
 
@@ -176,6 +223,10 @@ nav {
 	width: 100%;
 	height: 481px;
     min-height: 481px;
+	background:url('../images/p1.png');
+	background-position: center;
+	background-size: cover;
+	
 }
 
 .main_img img {
@@ -185,15 +236,18 @@ nav {
 }
 
 .main_img .title{
-    z-index: 9999;
     position: absolute;
-    font-size: 60px;
-    color: #fff;
-    position: absolute;
+    
     display:inline-block;
     width: 100%;
     text-align: center;
     top: 165px;
+}
+
+.title h2{
+    font-size: 60px;
+    color: #fff;
+    font-weight:400;
 }
 
 .title div {
@@ -203,6 +257,13 @@ nav {
     margin-bottom: 20px;
     word-spacing: 10px;
     font-weight: 400;
+}
+
+.background {
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	background-size: cover;
 }
 
 
@@ -223,17 +284,19 @@ nav {
 
 
 /*============= footer 부분 =============*/
+
 footer {
 	position: relative;
 	width: 100%;
 	height: 144px;
 	padding: 28px;
+	/*background-color: #060606;*/
 	background-color: #060606;
 	color: #fff;
 }
 .footer-block {
 	width: 1170px;
-	min-height: 121px;
+	min-height: 144px;
 }
 .footer_nav {
 	font-size: 17px;
