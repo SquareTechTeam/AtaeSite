@@ -2,6 +2,8 @@ var express = require('express');
 var router = express.Router();
 var config = require('../config.json');
 
+var head_title = "아태평화교류협회 홈페이지에 오신 것을 환영합니다.";
+
 const knex = require('knex')({
 	client: 'mysql',
 	connection: {
@@ -14,7 +16,7 @@ const knex = require('knex')({
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.render('index', { title: head_title });
 });
 
 
@@ -62,13 +64,34 @@ router.get('/people-return/third', function(req, res, next){
 
 /* Atae Promote House */
 router.get('/promote-house/biz-activity', function(req, res, next){
-	knex('ATBizActivity')
-		.select('*')
-		.then(function(results, err){
-			console.log(err);
-			res.json(results);
-		});
+	res.redirect('/promote-house/biz-activity/1');
+
 	
+});
+
+router.get('/promote-house/biz-activity/:page', function(req, res, next){
+	knex('ATBizActivity')
+		.count('num as count')
+		.then(function(results, err){
+			if(req.params.page > 0){
+				var offset = (req.params.page -1) * 9;
+
+				var page_count = Math.ceil(results[0].count / 9);
+				console.log(page_count);
+				knex('ATBizActivity')
+					.select('thumb_img', 'title', 'content', 'createdAt')
+					.orderBy('num', 'desc')
+					.limit(9).offset(offset)
+					.then(function(results, err){
+						var subtitle = "사업활동";
+						res.render('board', { title : head_title, subtitle: subtitle, page_count: page_count, now_page: req.params.page, results : results });
+					});
+				}else{
+					//TODO: 404 error
+				}
+			
+		});
+
 });
 
 router.get('/promote-house/company-activity', function(req, res, next){
