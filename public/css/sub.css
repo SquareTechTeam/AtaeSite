@@ -35,26 +35,17 @@
 
 .main_img {
 	width: 100%;
-	height: 481px;
-    min-height: 481px;
-	background:url('../images/p1.png');
+	background:url('../images/background-sub.jpg');
 	background-position: center;
 	background-size: cover;
-	
-}
 
-.main_img img {
-	width: 100%;
-	height: 481px;
-    z-index: 1;
 }
 
 .main_img .title{
-    position: absolute;
     display:inline-block;
     width: 100%;
     text-align: center;
-    top: 165px;
+		margin: 250px 0 90px;
 }
 
 .title h2{
@@ -64,10 +55,10 @@
 }
 
 .title div {
+		position: relative;
     color: #fff;
-    font-size: 14px;
-    padding: 8px 15px;
-    margin-bottom: 20px;
+    font-size: 18px;
+    margin-top: 35px;
     word-spacing: 10px;
     font-weight: 400;
 }
@@ -287,9 +278,7 @@ footer {
 
 /* 하단 페이지 숫자 */
 .page {
-   width:1147px;
-    min-height: 20px;
-    margin-bottom: 10px;
+    margin: 0 auto 10px;
     text-align: center;
 }
 
@@ -444,32 +433,66 @@ footer {
 .section-block_gallery ul li img{
     vertical-align: top;
 }
-.page {
-   width:1147px;
-    min-height: 20px;
-    margin-top: 110px;
-    text-align: center;
+/*========================== gallery 파일 끝 ==========================*/
+
+
+/*========================== movie 파일 시작 ==========================*/
+.section-block .movie {
+	position: relative;
+}
+.section_list_movie {
+	width: 800px;
+	margin: 0 auto 60px;
+	padding-bottom: 60px;
+	border-bottom: solid 2px #f2f2f2;
+	list-style-type: none;
+	color: #060606;
 }
 
-.page .choose{
-    color:#0097c3;
+.section_list_movie img {
+	max-width: 800px;
 }
 
-.page a{
-    display:inline-block;
-    color: #060606;
-    margin: 0 15px;
-    font-size: 14px;
-    font-weight: 600;
+.section_list_movie .section_date_movie {
+	color: #0097c3;
+	letter-spacing: -0.2px;
+	font-size: 14px;
+	font-weight: 600px;
 }
 
-.page a:hover {
-	transition-property: color;
+.section_list_movie p {
+	color: #666666;
+	font-size: 14px;
+	line-height: 1.85;
+	padding-top: 22px;
+	margin: 2px 0 10px 0;
+}
+
+.section_list_movie .btn_section_movie a {
+	display: inline-block;
+	background-color: #0097c3;
+	color: #fff;
+	padding: 14px 29px;
+	margin-top: 29px;
+	text-align: center;
+	font-weight: 600;
+	font-size: 16px;
+}
+
+}
+.btn_section_movie a:link,
+.btn_section_movie a:visited {
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: 600;
+}
+.btn_section_movie a:hover {
+	transition-property: background-color;
 	transition-duration: 0.3s;
 	transition-timing-function: ease-out;
-	color: #0097c3;
+	background-color: #060606;
 }
-/*========================== gallery 파일 끝 ==========================*/
+/*========================== movie 파일 끝 ==========================*/
 
 
 /*========================== goal 협회목적 및 사업 시작 ==========================*/
@@ -492,4 +515,3 @@ footer {
 .section-block_goal > div h2 {
     padding-bottom: 10px;
 }
-
