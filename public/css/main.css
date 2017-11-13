@@ -714,6 +714,17 @@ nav {
 	transform: scale(1.05);
 }
 
+.detail_photo {
+    display: ;
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 48%;
+    left: 48%;
+    
+}
+
+
 /*============= footer 부분 =============*/
 footer {
 	position: relative;

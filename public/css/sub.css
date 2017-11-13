@@ -1,32 +1,33 @@
 /*========================== sub common 파일 시작 ==========================*/
+
 /* Header Layout */
 
 #header {
-	color: #fff;
-	background: #000;
+    color: #fff;
+    background: #000;
     position: fixed;
     width: 100%;
     z-index: 9999;
 }
 
 #header .header-block {
-	min-height: 16px;
-	padding: 8px 0;
+    min-height: 16px;
+    padding: 8px 0;
 }
 
 #header .header-block div {
-	float: left;
-	min-height: 1px;
-	line-height: 1.5em;
+    float: left;
+    min-height: 1px;
+    line-height: 1.5em;
 }
 
 #header .header-block .contact {
-	width: 66.6%;
+    width: 66.6%;
 }
 
 #header .header-block .login {
-	width: 33.3%;
-	text-align: right;
+    width: 33.3%;
+    text-align: right;
 }
 
 
@@ -45,13 +46,13 @@
     display:inline-block;
     width: 100%;
     text-align: center;
-		margin: 250px 0 90px;
+    margin: 250px 0 90px;
 }
 
-.title h2{
+.title h2 {
     font-size: 60px;
     color: #fff;
-    font-weight:400;
+    font-weight: 400;
 }
 
 .title div {
@@ -64,25 +65,25 @@
 }
 
 .background {
-	width: 100%;
-	height: 100%;
-	background-position: center;
-	background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
 }
 
 
 /*============= 본문 영역 =============*/
 
 #section {
-	background-color: #fff;
+    background-color: #fff;
 }
 
 .section-block {
-	width: 1645px;
-	min-height: 1716px;
-	padding: 135px 0 115px 0;
-	background-color: #fff;
-	overflow: hidden;
+    width: 1645px;
+    min-height: 1716px;
+    padding: 135px 0 115px 0;
+    background-color: #fff;
+    overflow: hidden;
 }
 
 
@@ -90,204 +91,224 @@
 /*============= footer 부분 =============*/
 
 footer {
-	position: relative;
-	width: 100%;
-	height: 144px;
-	padding: 28px;
-	/*background-color: #060606;*/
-	background-color: #060606;
-	color: #fff;
+    position: relative;
+    width: 100%;
+    height: 144px;
+    padding: 28px;
+    /*background-color: #060606;*/
+    background-color: #060606;
+    color: #fff;
 }
+
 .footer-block {
-	width: 1170px;
-	min-height: 144px;
+    width: 1170px;
+    min-height: 144px;
 }
+
 .footer_nav {
-	font-size: 17px;
-	letter-spacing: -1px;
-	text-align: center;
+    font-size: 17px;
+    letter-spacing: -1px;
+    text-align: center;
 }
+
 .footer_nav a {
-	display: inline-block;
-	padding: 0 20px;
+    display: inline-block;
+    padding: 0 20px;
 }
+
 .footer_nav li {
-	display: inline-block;
-	background: url('../images/footer_nav.png') no-repeat right center;
+    display: inline-block;
+    background: url('../images/footer_nav.png') no-repeat right center;
 }
+
 .footer_nav li:nth-last-child(1) {
-	background: none;
+    background: none;
 }
+
 .footer_in {
-	width: 760px;
-	min-height: 80px;
-	padding: 39px 20px 0 20px;
-	margin: 0 auto;
-	overflow: hidden;
+    width: 760px;
+    min-height: 80px;
+    padding: 39px 20px 0 20px;
+    margin: 0 auto;
+    overflow: hidden;
 }
+
 .logo_bottom {
-	background-image: url('http://placehold.it/80x80') no-repeat;
-	float: left;
+    background-image: url('http://placehold.it/80x80') no-repeat;
+    float: left;
 }
+
 .footer_text {
-	float: left;
-	margin-left: 20px;
-	font-size: 14px;
-	line-height: 2;
+    float: left;
+    margin-left: 20px;
+    font-size: 14px;
+    line-height: 2;
 }
+
 .footer_text img {
-	display: inline-block;
-	width: 10px;
-	padding: 0 10px;
+    display: inline-block;
+    width: 10px;
+    padding: 0 10px;
 }
+
 .footer_text .bank {
-	margin-left: 30px;
+    margin-left: 30px;
 }
+
 .icon {
-	display: inline-block;
-	float: right;
+    display: inline-block;
+    float: right;
 }
+
 .icon img {
-	display: inline-block;
-	width: 40px;
-	padding: 0 0 0 5px;
+    display: inline-block;
+    width: 40px;
+    padding: 0 0 0 5px;
 }
+
 .icon a:hover img {
-	transform: scale(1.2);
-	-webkit-transform: scale(1.15);
-	-moz-transform: scale(1.15);
-	-o-transform: scale(1.15);
-	-webkit-transition: .3s;
-	-moz-transition: .3s;
-	-ms-transition: .3s;
+    transform: scale(1.2);
+    -webkit-transform: scale(1.15);
+    -moz-transform: scale(1.15);
+    -o-transform: scale(1.15);
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
 }
+
 .icon a img {
-	transform: scale(1);
-	-webkit-transform: scale(1);
-	-moz-transform: scale(1);
-	-o-transform: scale(1);
-	-webkit-transition: .3s;
-	-moz-transition: .3s;
-	-ms-transition: .3s;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
 }
 
 .return-top {
-	position: fixed;
-	z-index: 9999;
-	right: 20px;
-	bottom: 20px;
+    position: fixed;
+    z-index: 9999;
+    right: 20px;
+    bottom: 20px;
 }
+
 .return-top img {
-	width: 55px;
+    width: 55px;
 }
+
 /*========================== sub common 파일 끝 ==========================*/
 
-
 /*========================== board 파일 시작 ==========================*/
+
 /*============= 협회 활동 =============*/
 
-
 #section_board {
-	background-color: #fff;
-	position: relative;
+    background-color: #fff;
+    position: relative;
 }
 
 .section-block_board {
-	padding: 124px 0 136px;
-	width: 1200px;
-	min-height: 852px;
-	position: relative;
+    padding: 124px 0 136px;
+    width: 1200px;
+    min-height: 852px;
+    position: relative;
     overflow: hidden;
-	margin: 0 auto;
+    margin: 0 auto;
 }
+
 .section-list_board:after {
-	clear: both;
+    clear: both;
     content: "";
 }
+
 .section_list_board {
-	width: 370px;
-	height: 590px;
-	padding: 0 15px;
-	list-style-type: none;
-	color: #060606;
-	float: left;
+    width: 370px;
+    height: 590px;
+    padding: 0 15px;
+    list-style-type: none;
+    color: #060606;
+    float: left;
 }
 
 .section_list_board img {
-	width: 365px;
-	height: 230px;
+    width: 365px;
+    height: 230px;
 }
 
-.section_color_board a{
-    color:#333;
+.section_color_board a {
+    color: #333;
 }
 
-.section_color_board a:hover{
+.section_color_board a:hover {
     transition-property: color;
-	transition-duration: 0.3s;
-	transition-timing-function: ease-out;
-	color: #0097c3;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+    color: #0097c3;
 }
 
 .section_list_board h3 {
-	font-size: 21px;
-	font-weight: 600;
-	margin: 38px 0 13px 0;
+    font-size: 21px;
+    font-weight: 600;
+    margin: 38px 0 13px 0;
 }
 
 .section_list_board .section_date_board {
-	color: #0097c3;
-	letter-spacing: -0.2px;
-	font-size: 14px;
-	font-weight: 600px;
+    color: #0097c3;
+    letter-spacing: -0.2px;
+    font-size: 14px;
+    font-weight: 600px;
 }
 
 .section_list_board p {
-	color: #666666;
-	width: 370px;
-	font-size: 14px;
-	line-height: 1.85;
-	padding-top: 22px;
-	margin: 2px 0 10px 0;
+    color: #666666;
+    width: 370px;
+    font-size: 14px;
+    line-height: 1.85;
+    padding-top: 22px;
+    margin: 2px 0 10px 0;
 }
 
 .section_list_board .btn_section_board a {
-	display: inline-block;
-	background-color: #0097c3;
-	color: #fff;
-	padding: 14px 29px;
-	margin-top: 29px;
-	text-align: center;
-	font-weight: 600;
-	font-size: 16px;
+    display: inline-block;
+    background-color: #0097c3;
+    color: #fff;
+    padding: 14px 29px;
+    margin-top: 29px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
 }
 
 }
+
 .btn_section_board a:link,
 .btn_section_board a:visited {
-	text-decoration: none;
-	font-size: 16px;
-	font-weight: 600;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
 }
+
 .btn_section_board a:hover {
-	transition-property: background-color;
-	transition-duration: 0.3s;
-	transition-timing-function: ease-out;
-	background-color: #060606;
+    transition-property: background-color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+    background-color: #060606;
 }
 
 /* 하단 페이지 숫자 */
+
 .page {
     margin: 0 auto 10px;
     text-align: center;
 }
 
-.page .choose{
-    color:#0097c3;
+.page .choose {
+    color: #0097c3;
 }
 
-.page a{
-    display:inline-block;
+.page a {
+    display: inline-block;
     color: #060606;
     margin: 0 15px;
     font-size: 14px;
@@ -295,27 +316,28 @@ footer {
 }
 
 .page a:hover {
-	transition-property: color;
-	transition-duration: 0.3s;
-	transition-timing-function: ease-out;
-	color: #0097c3;
+    transition-property: color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+    color: #0097c3;
 }
+
 /*========================== board 파일 끝 ==========================*/
 
-
 /*========================== detail_page 파일 시작 ==========================*/
-.block_detail{
+
+.block_detail {
     width: 1200px;
     margin: 0 auto;
     padding: 0;
 }
 
-.section-block_detail{
+.section-block_detail {
     width: 760px;
     min-height: ;
 }
 
-.detail_title_detail{
+.detail_title_detail {
     margin-top: 124px;
     font-size: 40px;
     font-weight: 400;
@@ -323,7 +345,7 @@ footer {
     line-height: 1.5;
 }
 
-.detail_img{
+.detail_img {
     width: 760px;
     margin-right: 440px;
     min-height: 500px;
@@ -331,106 +353,110 @@ footer {
     text-align: left;
 }
 
-.detail_img img{
+.detail_img img {
     padding-bottom: 24px;
-	vertical-align: top;
+    vertical-align: top;
 }
 
-.detail_img > li:nth-child(3) img{
-	padding-bottom: 0;
+.detail_img > li:nth-child(3) img {
+    padding-bottom: 0;
 }
 
-.detail_img > ul{
+.detail_img > ul {
     list-style-type: none;
     color: #666666;
 }
 
 .detail_img > ul > li {
-    padding-bottom:20px;
+    padding-bottom: 20px;
     font-size: 14px;
     line-height: 1.5;
 }
 
-.detail_img > ul > li img{
+.detail_img > ul > li img {
     float: left;
     margin-right: 28px;
     padding-bottom: 10px;
 }
 
-.detail_img > ul > li span{
+.detail_img > ul > li span {
     clear: both;
 }
 
 .date_detail {
     padding: 8px 15px;
-    margin: 7px; 17px
-	letter-spacing: -0.2px;
-	font-weight: 600px;
+    margin: 7px;
+    17px letter-spacing: -0.2px;
+    font-weight: 600px;
     text-align: center;
     color: #0097c3;
 }
+
 /*========================== detail_page 파일 끝 ==========================*/
 
-
 /*========================== gallery 파일 시작 ==========================*/
-.block_gallery{
-    width:1200px;
+
+.block_gallery {
+    width: 1200px;
     margin: 0 auto;
 }
-.section-block_gallery{
+
+.section-block_gallery {
     min-height: 1302px;
     padding: 147px 0 125px 0;
 }
 
-.section-block_gallery ul{
+.section-block_gallery ul {
     margin-bottom: 30px;
     list-style-type: none;
     font-size: 0;
 }
-.section-block_gallery ul li{
+
+.section-block_gallery ul li {
     position: relative;
-    width:370px;
+    width: 370px;
     margin: 0 15px;
     display: inline-block;
-    font-size:14px;
+    font-size: 14px;
 }
 
 .section-block_gallery ul li i {
-	display: none;
+    display: none;
     z-index: 99;
-	position: absolute;
-	top: 43%;
-	left: 43%;
-	border-radius: 50%;
-	background-clip: padding-box;
-	background-color: #0097c3;
-	padding: 7%;
+    position: absolute;
+    top: 43%;
+    left: 43%;
+    border-radius: 50%;
+    background-clip: padding-box;
+    background-color: #0097c3;
+    padding: 7%;
 }
 
 .section-block_gallery ul li:hover i {
-	display: inline-block;
+    display: inline-block;
 }
 
-.section-block_gallery ul li a:hover img{
+.section-block_gallery ul li a:hover img {
     -webkit-transition: all 0.3s ease-in-out;
-	-moz-transition: all 0.3s ease-in-out;
-	-o-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
-	-webkit-transform: scale(1.05);
-	-ms-transform: scale(1.05);
-	transform: scale(1.05);
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
 }
 
-.section-block_gallery ul li a img{
+.section-block_gallery ul li a img {
     -webkit-transition: all 0.3s ease-in-out;
-	-moz-transition: all 0.3s ease-in-out;
-	-o-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
-	-webkit-transform: scale(1);
-	-ms-transform: scale(1);
-	transform: scale(1);
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
 }
-.section-block_gallery ul li img{
+
+.section-block_gallery ul li img {
     vertical-align: top;
 }
 /*========================== gallery 파일 끝 ==========================*/
@@ -496,6 +522,7 @@ footer {
 
 
 /*========================== goal 협회목적 및 사업 시작 ==========================*/
+
 .section-block_goal {
     width: 700px;
     min-height: 800px;
@@ -515,3 +542,81 @@ footer {
 .section-block_goal > div h2 {
     padding-bottom: 10px;
 }
+/*========================== goal 협회목적 및 사업 끝 ==========================*/
+
+
+/*========================== error_page 시작 ==========================*/
+.section-block_error {
+    width: 800px;
+    min-height: 100px;
+    font-size: 14px;
+    text-align: center;
+    padding-top: 147px;
+    line-height: 1.8;
+
+}
+
+.error_img {
+    width: 100%;
+    min-height: 300px;
+    background-image: url('../images/error_bg.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+
+.section-block_error i {
+    margin-right: 10px;
+}
+
+.section-block_error i,
+.section-block_error p {
+    display: inline-block;
+    font-size: 35px;
+    padding: 10px;
+}
+
+.section-block_error p span {
+    color: #0097c3;
+}
+
+.line span {
+    padding: 0 100px;
+}
+
+.line {
+    border-top: 1px solid #999999;
+    border-bottom: 1px solid #999999;
+}
+
+.section-block_error > div {
+    padding: 30px;
+    text-align: left;
+    width: 450px;
+    margin: 0 auto;
+}
+
+.error_img {
+    display: block;
+    text-align: center;
+}
+
+.error_img > a {
+    position: relative;
+    top: 80px;
+    background-color: #333;
+    color: #fff;
+    padding: 14px 29px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.error_img > a:hover {
+    transition-property: background-color color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+    background-color: #fff;
+    color: #0097c3;
+}
+/*========================== error_page 끝 ==========================*/
