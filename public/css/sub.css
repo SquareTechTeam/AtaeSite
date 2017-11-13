@@ -217,11 +217,6 @@ footer {
     margin: 0 auto;
 }
 
-.section-list_board:after {
-    clear: both;
-    content: "";
-}
-
 .section_list_board {
     width: 370px;
     height: 590px;
@@ -301,6 +296,7 @@ footer {
 .page {
     margin: 0 auto 10px;
     text-align: center;
+    clear: both;
 }
 
 .page .choose {
