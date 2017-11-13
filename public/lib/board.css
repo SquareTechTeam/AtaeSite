@@ -1,18 +1,7 @@
 /*============= 협회 활동 =============*/
 
-#section {
-	background-color: #fff;
-}
 
-.section-block {
-	width: 1645px;
-	min-height: 1716px;
-	padding: 135px 0 115px 0;
-	background-color: #fff;
-    margin: 0 auto;
-}
-
-#section {
+#section_board {
 	background-color: #fff;
 	position: relative;
 }

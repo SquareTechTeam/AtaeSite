@@ -1,0 +1,481 @@
+/*========================== sub common 파일 시작 ==========================*/
+/* Header Layout */
+
+#header {
+	color: #fff;
+	background: #000;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+}
+
+#header .header-block {
+	min-height: 16px;
+	padding: 8px 0;
+}
+
+#header .header-block div {
+	float: left;
+	min-height: 1px;
+	line-height: 1.5em;
+}
+
+#header .header-block .contact {
+	width: 66.6%;
+}
+
+#header .header-block .login {
+	width: 33.3%;
+	text-align: right;
+}
+
+
+
+/* Nav Layout */
+
+.main_img {
+	width: 100%;
+	height: 481px;
+    min-height: 481px;
+	background:url('../images/p1.png');
+	background-position: center;
+	background-size: cover;
+	
+}
+
+.main_img img {
+	width: 100%;
+	height: 481px;
+    z-index: 1;
+}
+
+.main_img .title{
+    position: absolute;
+    display:inline-block;
+    width: 100%;
+    text-align: center;
+    top: 165px;
+}
+
+.title h2{
+    font-size: 60px;
+    color: #fff;
+    font-weight:400;
+}
+
+.title div {
+    color: #fff;
+    font-size: 14px;
+    padding: 8px 15px;
+    margin-bottom: 20px;
+    word-spacing: 10px;
+    font-weight: 400;
+}
+
+.background {
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	background-size: cover;
+}
+
+
+/*============= 본문 영역 =============*/
+
+#section {
+	background-color: #fff;
+}
+
+.section-block {
+	width: 1645px;
+	min-height: 1716px;
+	padding: 135px 0 115px 0;
+	background-color: #fff;
+	overflow: hidden;
+}
+
+
+
+/*============= footer 부분 =============*/
+
+footer {
+	position: relative;
+	width: 100%;
+	height: 144px;
+	padding: 28px;
+	/*background-color: #060606;*/
+	background-color: #060606;
+	color: #fff;
+}
+.footer-block {
+	width: 1170px;
+	min-height: 144px;
+}
+.footer_nav {
+	font-size: 17px;
+	letter-spacing: -1px;
+	text-align: center;
+}
+.footer_nav a {
+	display: inline-block;
+	padding: 0 20px;
+}
+.footer_nav li {
+	display: inline-block;
+	background: url('../images/footer_nav.png') no-repeat right center;
+}
+.footer_nav li:nth-last-child(1) {
+	background: none;
+}
+.footer_in {
+	width: 760px;
+	min-height: 80px;
+	padding: 39px 20px 0 20px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.logo_bottom {
+	background-image: url('http://placehold.it/80x80') no-repeat;
+	float: left;
+}
+.footer_text {
+	float: left;
+	margin-left: 20px;
+	font-size: 14px;
+	line-height: 2;
+}
+.footer_text img {
+	display: inline-block;
+	width: 10px;
+	padding: 0 10px;
+}
+.footer_text .bank {
+	margin-left: 30px;
+}
+.icon {
+	display: inline-block;
+	float: right;
+}
+.icon img {
+	display: inline-block;
+	width: 40px;
+	padding: 0 0 0 5px;
+}
+.icon a:hover img {
+	transform: scale(1.2);
+	-webkit-transform: scale(1.15);
+	-moz-transform: scale(1.15);
+	-o-transform: scale(1.15);
+	-webkit-transition: .3s;
+	-moz-transition: .3s;
+	-ms-transition: .3s;
+}
+.icon a img {
+	transform: scale(1);
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-o-transform: scale(1);
+	-webkit-transition: .3s;
+	-moz-transition: .3s;
+	-ms-transition: .3s;
+}
+
+.return-top {
+	position: fixed;
+	z-index: 9999;
+	right: 20px;
+	bottom: 20px;
+}
+.return-top img {
+	width: 55px;
+}
+/*========================== sub common 파일 끝 ==========================*/
+
+
+/*========================== board 파일 시작 ==========================*/
+/*============= 협회 활동 =============*/
+
+
+#section_board {
+	background-color: #fff;
+	position: relative;
+}
+
+.section-block_board {
+	padding: 124px 0 136px;
+	width: 1200px;
+	min-height: 852px;
+	position: relative;
+    overflow: hidden;
+	margin: 0 auto;
+}
+.section-list_board:after {
+	clear: both;
+    content: "";
+}
+.section_list_board {
+	width: 370px;
+	height: 590px;
+	padding: 0 15px;
+	list-style-type: none;
+	color: #060606;
+	float: left;
+}
+
+.section_list_board img {
+	width: 365px;
+	height: 230px;
+}
+
+.section_color_board a{
+    color:#333;
+}
+
+.section_color_board a:hover{
+    transition-property: color;
+	transition-duration: 0.3s;
+	transition-timing-function: ease-out;
+	color: #0097c3;
+}
+
+.section_list_board h3 {
+	font-size: 21px;
+	font-weight: 600;
+	margin: 38px 0 13px 0;
+}
+
+.section_list_board .section_date_board {
+	color: #0097c3;
+	letter-spacing: -0.2px;
+	font-size: 14px;
+	font-weight: 600px;
+}
+
+.section_list_board p {
+	color: #666666;
+	width: 370px;
+	font-size: 14px;
+	line-height: 1.85;
+	padding-top: 22px;
+	margin: 2px 0 10px 0;
+}
+
+.section_list_board .btn_section_board a {
+	display: inline-block;
+	background-color: #0097c3;
+	color: #fff;
+	padding: 14px 29px;
+	margin-top: 29px;
+	text-align: center;
+	font-weight: 600;
+	font-size: 16px;
+}
+
+}
+.btn_section_board a:link,
+.btn_section_board a:visited {
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: 600;
+}
+.btn_section_board a:hover {
+	transition-property: background-color;
+	transition-duration: 0.3s;
+	transition-timing-function: ease-out;
+	background-color: #060606;
+}
+
+/* 하단 페이지 숫자 */
+.page {
+   width:1147px;
+    min-height: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.page .choose{
+    color:#0097c3;
+}
+
+.page a{
+    display:inline-block;
+    color: #060606;
+    margin: 0 15px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.page a:hover {
+	transition-property: color;
+	transition-duration: 0.3s;
+	transition-timing-function: ease-out;
+	color: #0097c3;
+}
+/*========================== board 파일 끝 ==========================*/
+
+
+/*========================== detail_page 파일 시작 ==========================*/
+.block_detail{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.section-block_detail{
+    width: 760px;
+    min-height: ;
+}
+
+.detail_title_detail{
+    margin-top: 124px;
+    font-size: 40px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.detail_img{
+    width: 760px;
+    margin-right: 440px;
+    min-height: 500px;
+    padding: 40px 0 140px 0px;
+    text-align: left;
+}
+
+.detail_img img{
+    padding-bottom: 24px;
+	vertical-align: top;
+}
+
+.detail_img > li:nth-child(3) img{
+	padding-bottom: 0;
+}
+
+.detail_img > ul{
+    list-style-type: none;
+    color: #666666;
+}
+
+.detail_img > ul > li {
+    padding-bottom:20px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.detail_img > ul > li img{
+    float: left;
+    margin-right: 28px;
+    padding-bottom: 10px;
+}
+
+.detail_img > ul > li span{
+    clear: both;
+}
+
+.date_detail {
+    padding: 8px 15px;
+    margin: 7px; 17px
+	letter-spacing: -0.2px;
+	font-weight: 600px;
+    text-align: center;
+    color: #0097c3;
+}
+/*========================== detail_page 파일 끝 ==========================*/
+
+
+/*========================== gallery 파일 시작 ==========================*/
+.block_gallery{
+    width:1200px;
+    margin: 0 auto;
+}
+.section-block_gallery{
+    min-height: 1302px;
+    padding: 147px 0 125px 0;
+}
+
+.section-block_gallery ul{
+    margin-bottom: 30px;
+    list-style-type: none;
+    font-size: 0;
+}
+.section-block_gallery ul li{
+    position: relative;
+    width:370px;
+    margin: 0 15px;
+    display: inline-block;
+    font-size:14px;
+}
+
+.section-block_gallery ul li i {
+	display: none;
+    z-index: 99;
+	position: absolute;
+	top: 43%;
+	left: 43%;
+	border-radius: 50%;
+	background-clip: padding-box;
+	background-color: #0097c3;
+	padding: 7%;
+}
+
+.section-block_gallery ul li:hover i {
+	display: inline-block;
+}
+
+.section-block_gallery ul li a:hover img{
+    -webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	-webkit-transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	transform: scale(1.05);
+}
+
+.section-block_gallery ul li a img{
+    -webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+}
+.section-block_gallery ul li img{
+    vertical-align: top;
+}
+.page {
+   width:1147px;
+    min-height: 20px;
+    margin-top: 110px;
+    text-align: center;
+}
+
+.page .choose{
+    color:#0097c3;
+}
+
+.page a{
+    display:inline-block;
+    color: #060606;
+    margin: 0 15px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.page a:hover {
+	transition-property: color;
+	transition-duration: 0.3s;
+	transition-timing-function: ease-out;
+	color: #0097c3;
+}
+/*========================== gallery 파일 끝 ==========================*/
+
+
+/*========================== goal 협회목적 및 사업 시작 ==========================*/
+.section-block_goal {
+    min-height: 800px;
+    padding: 147px 0 125px 0;
+    font-size: 14px;
+    line-height: 1.85;
+}

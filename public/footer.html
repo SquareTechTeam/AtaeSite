@@ -1,69 +1,68 @@
 <footer>
-  <div class="footer-block block">
-    <!--ul class="footer_nav">
-      <li><a href="#">협회소개</a></li>
-      <li><a href="#">유골봉환</a></li>
-      <li><a href="#">홍보관</a></li>
-      <li><a href="#">후원하기</a></li>
-      <li><a href="#">관련자료</a></li>
-      <li><a href="#">개인정보처리방침</a></li>
-      <li><a href="#">사이트맵</a></li>
-    </ul-->
-    <div class="footer_in">
-      <div class="logo_bottom">
-        <img src="images/logo_2.png" alt="" />
-      </div>
-      <div class="footer_text">
-        <address><img src="images/address_1.png" alt="" />138-809 서울특별시 강남구 선릉로 82길 46.103호</address>
-        <div><img src="images/address_2.png" alt="" />Tel. 1899-2509 &nbsp; <img src="images/address_3.png" alt="" />Fax. 02-552-5894</div>
-        <div class="bank">후원계좌: 수협은행 1230-0047-8770</div>
-      </div>
-      <div class="icon">
-        <a href="#"><img src="images/btn_sns_twitter.png" alt="페이스북 바로가기" title="새창" /></a>
-        <a href="#"><img src="images/btn_sns_facebook.png" alt="페이스북 바로가기" title="새창" /></a>
-        <a href="#"><img src="images/btn_sns_blog.png" alt="페이스북 바로가기" title="새창" /></a>
-      </div>
+            <div class="footer-block block">
+                <!--ul class="footer_nav">
+					<li><a href="#">협회소개</a></li>
+					<li><a href="#">유골봉환</a></li>
+					<li><a href="#">홍보관</a></li>
+					<li><a href="#">후원하기</a></li>
+					<li><a href="#">관련자료</a></li>
+					<li><a href="#">개인정보처리방침</a></li>
+					<li><a href="#">사이트맵</a></li>
+				</ul-->
+                <div class="footer_in">
+                    <div class="logo_bottom">
+                        <img src="images/logo_2.png" alt="" />
+                    </div>
+                    <div class="footer_text">
+                        <address><i class="fa fa-map-marker" aria-hidden="true"></i>138-809 서울특별시 강남구 선릉로 82길 46.103호</address>
+                        <div><i class="fa fa-phone" aria-hidden="true"></i>Tel. 1899-2509 &nbsp; <i class="fa fa-envelope" aria-hidden="true"></i>Fax. 02-552-5894</div>
+                        <div class="bank">후원계좌: 수협은행 1230-0047-8770</div>
+                    </div>
+                    <div class="icon">
+                        <a href="#"><img src="images/btn_sns_twitter.png" alt="페이스북 바로가기" title="새창" /></a>
+                        <a href="#"><img src="images/btn_sns_facebook.png" alt="페이스북 바로가기" title="새창" /></a>
+                        <a href="#"><img src="images/btn_sns_blog.png" alt="페이스북 바로가기" title="새창" /></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
-  </div>
-</footer>
-</div>
 
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script src="./lib/common.js"></script>
-<script src="lib/jquery.bxslider.min.js"></script>
-<script>
-$(document).ready(function() {
-  $('.slider').bxSlider({
-    mode: 'fade',
-    captions: true,
-    captions: true,
-    auto: true,
-    speed: 300,
-    pause: 4000
-  });
-});
-$(".return-top").hide();
-$(function() {
-  $(window).scroll(function() {
-    if ($(this).scrollTop() > 100) {
-      $('.return-top').fadeIn();
-    } else {
-      $('.return-top').fadeOut();
-    }
-  });
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="./javascripts/common.js"></script>
+    <script src="./javascripts/jquery.bxslider.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.slider').bxSlider({
+                mode: 'fade',
+                captions: true,
+                captions: true,
+                auto: true,
+                speed: 300,
+                pause: 4000
+            });
+        });
+        $(".return-top").hide();
+        $(function() {
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 100) {
+                    $('.return-top').fadeIn();
+                } else {
+                    $('.return-top').fadeOut();
+                }
+            });
 
-  $('.return-top').click(function() {
-    $('body,html').animate({
-      scrollTop: 0
-    }, 50);
-    return false;
-  });
-});
-
-</script>
+            $('.return-top').click(function() {
+                $('body,html').animate({
+                    scrollTop: 0
+                }, 50);
+                return false;
+            });
+        });
+    </script>
 
 
-<a class="return-top" href="#top"><img src="images/top_btn.png" alt="탑 버튼" /></a>
+    <a class="return-top" href="#top"><img src="images/top_btn.png" alt="탑 버튼" /></a>
 </body>
 
 </html>
