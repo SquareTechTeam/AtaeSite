@@ -331,38 +331,9 @@
         </footer>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="./javascripts/common.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="./javascripts/jquery.bxslider.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $('.slider').bxSlider({
-                mode: 'fade',
-                captions: true,
-                captions: true,
-                auto: true,
-                speed: 300,
-                pause: 4000
-            });
-        });
-        $(".return-top").hide();
-        $(function() {
-            $(window).scroll(function() {
-                if ($(this).scrollTop() > 100) {
-                    $('.return-top').fadeIn();
-                } else {
-                    $('.return-top').fadeOut();
-                }
-            });
-
-            $('.return-top').click(function() {
-                $('body,html').animate({
-                    scrollTop: 0
-                }, 50);
-                return false;
-            });
-        });
-    </script>
+    <script src="./javascripts/common.js"></script>
 
 
     <a class="return-top" href="#top"><img src="images/top_btn.png" alt="탑 버튼" /></a>
