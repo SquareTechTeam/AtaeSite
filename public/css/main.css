@@ -715,13 +715,25 @@ nav {
 }
 
 .detail_photo {
-    display: ;
-    width: 500px;
-    height: 500px;
+    display: none;
+    background-color: forestgreen;
+    z-index: 9999;
+    min-width: 700px;
+    min-height: 700px;
+    position: fixed;
+    top: 50%;
+    margin-top: -350px;
+    left: 50%;
+    margin-left: -350px;
+    overflow-y: scroll;
+}
+
+.detail_photo i{
+    font-size: 70px;
     position: absolute;
-    top: 48%;
-    left: 48%;
-    
+    right: 0;
+    padding: 10px;
+    color: #333;
 }
 
 

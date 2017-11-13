@@ -51,4 +51,13 @@ $(document).ready(function () {
         }, 50);
         return false;
     });
+    $('.main-gallery a').click(function(){
+       $('.detail_photo').show(); 
+        return false;
+    });
+    $('.detail_photo i').click(function(){
+        $('.detail_photo').hide();
+        return false;
+    });
+    
 });
