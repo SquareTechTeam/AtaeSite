@@ -51,15 +51,11 @@ $(document).ready(function () {
         }, 50);
         return false;
     });
-    $('.main-gallery a, .section-block_gallery a').click(function(){
+    $('.main-gallery a, .section-block_gallery ul li a').click(function(){
        $('.detail_photo').show(); 
         return false;
     });
-    $('.detail_photo i').click(function(){
-        $('.detail_photo').hide();
-        return false;
-    });
-	$(document).click(function(){
+    $('.detail_photo i, .detail_photo').click(function(){
         $('.detail_photo').hide();
         return false;
     });

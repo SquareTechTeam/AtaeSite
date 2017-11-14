@@ -674,7 +674,16 @@ nav {
 	width: 12.5%;
     height: 200px;
     overflow: hidden;
+    background-image: url('http://placehold.it/200x200');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
+
+.main-gallery ul li:nth-child(2) {
+    background-image: url('../images/detail_txt.jpg');
+}
+
 .main-gallery ul li a {
 	position: relative;
 	display: block;
@@ -682,17 +691,18 @@ nav {
 .main-gallery ul li i {
 	display: none;
 	position: absolute;
-	top: 43%;
-	left: 43%;
+	margin-top: 33%;
+	left: 40%;
 	border-radius: 50%;
 	background-clip: padding-box;
 	background-color: #0097c3;
 	padding: 7%;
 }
-.main-gallery ul li img {
+.main-gallery ul li a div {
 	min-width: 100%;
     min-height: 100%;
 	vertical-align: top;
+    
 }
 .main-gallery ul li:hover {
 	z-index: 1;
