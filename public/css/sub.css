@@ -467,8 +467,9 @@ footer {
 
 
 /*========================== movie 파일 시작 ==========================*/
-.section-block .movie {
+.section-block_movie {
 	position: relative;
+    padding: 147px 0 125px 0;
 }
 .section_list_movie {
 	width: 800px;
@@ -490,37 +491,16 @@ footer {
 	font-weight: 600px;
 }
 
+.section_date_movie {
+    padding-top: 6px;
+}
+
 .section_list_movie p {
 	color: #666666;
 	font-size: 14px;
 	line-height: 1.85;
 	padding-top: 22px;
 	margin: 2px 0 10px 0;
-}
-
-.section_list_movie .btn_section_movie a {
-	display: inline-block;
-	background-color: #0097c3;
-	color: #fff;
-	padding: 14px 29px;
-	margin-top: 29px;
-	text-align: center;
-	font-weight: 600;
-	font-size: 16px;
-}
-
-}
-.btn_section_movie a:link,
-.btn_section_movie a:visited {
-	text-decoration: none;
-	font-size: 16px;
-	font-weight: 600;
-}
-.btn_section_movie a:hover {
-	transition-property: background-color;
-	transition-duration: 0.3s;
-	transition-timing-function: ease-out;
-	background-color: #060606;
 }
 /*========================== movie 파일 끝 ==========================*/
 

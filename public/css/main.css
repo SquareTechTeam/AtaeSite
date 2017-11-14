@@ -698,7 +698,7 @@ nav {
 	background-color: #0097c3;
 	padding: 7%;
 }
-.main-gallery ul li a div {
+.main-gallery ul li a {
 	min-width: 100%;
     min-height: 100%;
 	vertical-align: top;
@@ -740,20 +740,6 @@ nav {
     overflow-y: scroll;
 }
 
-.ex_photo {
-    display: none;
-    background-image: url(../images/detail_txt.jpg);
-    z-index: 9999;
-    min-width: 100%;
-    min-height: 100%;
-    position: fixed;
-    top: 0%;
-    margin-top: 0px;
-    left: 0%;
-    margin-left: 0px;
-    overflow-y: scroll;
-}
-
 
 .detail_photo > div {
 	position: absolute;
@@ -771,7 +757,7 @@ nav {
 	margin-left: -350px;
 }
 
-.detail_photo i, .ex_photo i{
+.detail_photo i{
     font-size: 70px;
     position: absolute;
     right: 0;
