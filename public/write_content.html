@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>어드민</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- include libraries(jQuery, bootstrap) -->
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.js"></script>
+
+    <!-- include summernote css/js-->
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.8/summernote.css" rel="stylesheet">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.8/summernote.js"></script>
+    <link rel="stylesheet" href="./css/sub.css" />
+
+</head>
+
+<body>
+    <div class="section_write">
+        <label for="category">카테고리 선택: </label>
+        <select name="category" classtyles="category" id="category">
+            <option value="ATActivity">협회활동</option>
+            <option value="ATBizActivity">사업활동</option>
+            <option value="ATBroadCastRefer">보도자료</option>
+            <option value="ATRefer">관련자료</option>
+        </select>
+        <label for="thumbnail">썸네일 설정: </label>
+        <input type="text" class="title" name="title" id="thumbnail" placeholder="제목을 입력해 주세요.">
+        <div class="radio"><span>전체공개: </span>
+            <input type="radio" name="radi" id="all" checked /><label for="all">전체공개</label>
+            <input type="radio" name="radi" id="member"><label for="member">회원공개</label>
+            <input type="radio" name="radi" id="none"><label for="none">비공개</label>
+        </div>
+        <div class="file_upload"><input type="file" class="thumb_img" name="thumb_img">
+            <a href="javascript:;" class="btn_upload">Upload</a></div>
+
+
+    </div>
+
+    <div id="summernote">Hello Summernote</div>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#summernote').summernote();
+            /*
+            $('.submit').onclick(function(){
+                var category = $('.category').value();
+                var title = $('.title').value();
+                var markupStr = $('#summernote').summernote('code');
+                $.ajax({
+
+                });
+                return false;
+            });*/
+
+            $('.thumb_upload').click(function() {
+                var formData = new FormData();
+                formData.append("thumb_img", $(".thumb_img")[0].files[0]);
+
+                $.ajax({
+                    url: '/upload_thumb',
+                    processData: false,
+                    contentType: false,
+                    data: formData,
+                    type: 'POST',
+                    success: function(result) {
+                        console.log(result);
+                        alert("업로드 성공!!");
+                    }
+                });
+                return false;
+            });
+        });
+    </script>
+
+    <a href="javascript:;" class="btn-concrete">submit</a>
+</body>
+
+</html>
