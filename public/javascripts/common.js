@@ -51,7 +51,7 @@ $(document).ready(function () {
         }, 50);
         return false;
     });
-    $('.main-gallery a').click(function(){
+    $('.main-gallery a, .section-block_gallery a').click(function(){
        $('.detail_photo').show(); 
         return false;
     });
@@ -59,5 +59,8 @@ $(document).ready(function () {
         $('.detail_photo').hide();
         return false;
     });
-    
+	$(document).click(function(){
+        $('.detail_photo').hide();
+        return false;
+    });
 });

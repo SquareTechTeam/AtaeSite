@@ -662,7 +662,6 @@ nav {
 
 
 /*============= 하단 갤러리 =============*/
-.main-gallery {}
 .main-gallery:after {
 	clear: both;
 	display: table;
@@ -673,6 +672,8 @@ nav {
 	float: left;
 	display: inline-block;
 	width: 12.5%;
+    height: 200px;
+    overflow: hidden;
 }
 .main-gallery ul li a {
 	position: relative;
@@ -689,7 +690,8 @@ nav {
 	padding: 7%;
 }
 .main-gallery ul li img {
-	width: 100%;
+	min-width: 100%;
+    min-height: 100%;
 	vertical-align: top;
 }
 .main-gallery ul li:hover {
@@ -716,19 +718,50 @@ nav {
 
 .detail_photo {
     display: none;
-    background-color: forestgreen;
+    background-color: rgba(0,0,0,0.6);
     z-index: 9999;
-    min-width: 700px;
-    min-height: 700px;
+    min-width: 100%;
+    min-height: 100%;
     position: fixed;
-    top: 50%;
-    margin-top: -350px;
-    left: 50%;
-    margin-left: -350px;
+    top: 0%;
+    margin-top: 0px;
+    left: 0%;
+    margin-left: 0px;
     overflow-y: scroll;
 }
 
-.detail_photo i{
+.ex_photo {
+    display: none;
+    background-image: url(../images/detail_txt.jpg);
+    z-index: 9999;
+    min-width: 100%;
+    min-height: 100%;
+    position: fixed;
+    top: 0%;
+    margin-top: 0px;
+    left: 0%;
+    margin-left: 0px;
+    overflow-y: scroll;
+}
+
+
+.detail_photo > div {
+	position: absolute;
+	display: inline-block;
+    min-width: 49.61020552799433%;
+	min-width: 700px;
+    min-height: 71.86858316221766%;
+	min-height: 700px;
+	background-color: #fff;
+	top: 50%;
+    margin-top: 35.93429158110883%;
+	margin-top: -350px;
+	left: 50%;
+    margin-left: 24.80510276399717%;
+	margin-left: -350px;
+}
+
+.detail_photo i, .ex_photo i{
     font-size: 70px;
     position: absolute;
     right: 0;

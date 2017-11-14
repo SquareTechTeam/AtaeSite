@@ -410,10 +410,17 @@ footer {
 
 .section-block_gallery ul li {
     position: relative;
-    width: 370px;
+    min-width: 370px;
+    min-height: 370px;
     margin: 0 15px;
     display: inline-block;
     font-size: 14px;
+}
+
+.section-block_gallery ul li a {
+    display: inline-block;
+    width: 370px;
+    height: 370px;
 }
 
 .section-block_gallery ul li i {
@@ -454,6 +461,7 @@ footer {
 
 .section-block_gallery ul li img {
     vertical-align: top;
+    width: 100%;
 }
 /*========================== gallery 파일 끝 ==========================*/
 
