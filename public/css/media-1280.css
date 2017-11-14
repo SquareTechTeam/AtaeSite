@@ -31,28 +31,28 @@ body {
 }
 
 .block {
-	width: 1170px;
+	width: 780px;
 	margin: 0 auto;
 }
 
 .t40 {
-	font-size: 40px;
-	line-height: 1.75;
+	font-size: 30px;
+	line-height: 1.55;
 }
 .t21 {
-	font-size: 21px;
+	font-size: 16px;
 }
 .t18 {
-	font-size: 18px;
-	line-height: 1.8;
+	font-size: 14px;
+	line-height: 1.4;
 }
 .t16 {
-	font-size: 16px;
-	line-height: 1.6;
+	font-size: 12px;
+	line-height: 1.2;
 }
 .t14 {
-	font-size: 14px;
-	line-height: 1.8;
+	font-size: 11px;
+	line-height: 1.5;
 }
 
 /* Header Layout */
@@ -103,13 +103,12 @@ nav {
 
 .nav-block > h1 {
     float: left;
-    height: 80px;
 	margin: 0;
     padding: 0 15px;
 }
 
 .nav-block > h1 img {
-    width: 300px;
+    width: 200px;
 }
 
 .nav-block > h1 span {
@@ -118,14 +117,14 @@ nav {
 
 .nav-block > ul {
     float: right;
-    margin-right: 100px;
+    margin-right: 60px;
 }
 
 .nav-block > ul > li {
     float: left;
     position: relative;
     display: block;
-    margin-left: 33px;
+    margin-left: 21px;
 	padding: 0 5px 2px;
     line-height: 2;
     text-align: center;
@@ -188,16 +187,16 @@ nav {
 	margin-top: -3px;
 }
 .nav-block > ul > li:nth-child(5) > a {
-	font-size: 18px;
+	font-size: 16px;
 	color: #fff !important;
 	background-color: #0097c3;
-	padding: 6px 14px 4px;
+	padding: 5px 12px 4px;
 }
 
 .nav-block > ul > li:nth-child(5):hover a {
 	color: #0097c3 !important;
 	background-color: #fff;
-	padding: 6px 14px 4px;
+	padding: 5px 12px 4px;
 }
 
 .nav-block > ul > li:nth-child(5):after {
@@ -280,7 +279,7 @@ nav {
 	height: 260px;
 	margin: -130px 0 0 -400px;
 	color: #fff;
-	font-size: 26px;
+	font-size: 17px;
 	text-align: center;
 }
 
@@ -294,7 +293,7 @@ nav {
 
 .slider .text-block strong{
 	display: block;
-	font-size: 40px;
+	font-size: 26px;
 	margin-bottom: 40px;
 }
 
@@ -306,9 +305,9 @@ nav {
 .slider .text-block .btn a {
 	display: inline-block;
 	border: solid 3px #fff;
-	margin-top: 80px;
+	margin-top: 52px;
 	padding: 20px 50px 18px;
-	font-size: 26px;
+	font-size: 17px;
 }
 .slider .text-block .btn a:hover {
 	background-color: #0097c3;
@@ -322,20 +321,20 @@ nav {
 }
 
 .intro-block {
-	width: 1200px;
 	min-height: 540px;
 	min-height: 400px;
-	padding: 136px 0 121px 0;
+	padding: 89px 0 79px 0;
 	background-color: #fff;
 	overflow: hidden;
 }
 
 .intro_img {
-    width: 570px;
+    width: 380px;
 }
 
 .intro-block img {
 	padding: 0 15px;
+	width: 100%;
 }
 
 .intro-block img,
@@ -344,8 +343,8 @@ nav {
 }
 
 .wave_img {
-	height: 17px;
-	margin: 17px auto 29px;
+	height: 14px;
+	margin: 10px auto 20px;
 }
 
 .intro_txt h2 {
@@ -353,12 +352,12 @@ nav {
 }
 
 .intro_txt {
-	width: 480px;
+	width: 340px;
 	height: 424px;
-	padding: 0 15px;
+	padding: 0 10px;
 	font-size: 14px;
-	line-height: 22.6px;
-	padding: 0 15px;
+	line-height: 20.6px;
+	padding: 0 10px;
 }
 
 .intro_txt a:hover {
@@ -369,7 +368,7 @@ nav {
 }
 
 .intro_padding {
-	padding: 20px 0 0 20px;
+	padding: 10px 0 0 15px;
 }
 
 .intro_padding>div {
@@ -382,7 +381,7 @@ nav {
 }
 
 .intro_padding .btn_intro {
-	padding: 25px 49px;
+	padding: 20px 42px;
 	margin-top: 32px;
 	background-color: #0097c3;
 	display: inline-block;
@@ -397,22 +396,21 @@ nav {
 #ico {
 	width: 100%;
 	height: 210px;
-	padding: 133px 0 127px 0;
+	padding: 74px 0 83px 0;
 	background-color: #f2f2f2;
 	overflow: hidden;
 	text-align: center;
 }
 
 .ico-block {
-	width: 1110px;
 	min-height: 210px;
 	overflow: hidden;
 }
 
 .ico_txt {
 	margin: 0 auto;
-	width: 370px;
-	height: 150px;
+	width: 240px;
+	height: 100px;
 	margin-bottom: 10px;
 	text-align: center;
 	float: left;
@@ -425,8 +423,8 @@ nav {
 
 .ico_txt div a:link,
 .ico_txt div a:visited {
-	font-size: 30px;
-	line-height: 33px;
+	font-size: 20px;
+	line-height: 23px;
 	color: #060606;
 	font-weight: 700;
 }
@@ -450,7 +448,7 @@ nav {
 }
 
 .act-block {
-	padding: 124px 0 136px;
+	padding: 81px 0 89px;
 	min-height: 852px;
 	position: relative;
 }
@@ -479,18 +477,10 @@ nav {
 .act_list {
 	width: 370px;
 	height: 590px;
+	padding: 0 15px;
 	list-style-type: none;
 	color: #060606;
 	float: left;
-}
-.act_list > a {
-	width: 370px;
-	height: 370px;
-	display: block;
-	overflow: hidden;
-}
-.act_list:nth-child(3) {
-	margin: 0 15px;
 }
 
 .act_list img {

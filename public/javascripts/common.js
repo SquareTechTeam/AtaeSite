@@ -63,6 +63,16 @@ $(document).ready(function () {
         $(".section-block_gallery ul li img:eq("+i+")").attr("style", style);
     });
 
+    $(".act-block .act_list img").each(function(i){
+        var img = $(".act-block .act_list img:eq("+i+")"),
+            imgW = img.prop('naturalWidth'),
+            imgH = img.prop('naturalHeight');
+
+        var style = (imgW > imgH) ? 'height: 100%; width: auto;' : 'width: 100%; height: auto;';
+
+        $(".act-block .act_list img:eq("+i+")").attr("style", style);
+    });
+
     /* Background Wrap Show & Hide */
     $('.main-gallery a, .section-block_gallery ul li a').click(function(){
        $('.detail_photo').show();
