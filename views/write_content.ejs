@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>어드민</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- include libraries(jQuery, bootstrap) -->
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script> 
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.js"></script> 
+
+    <!-- include summernote css/js-->
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.8/summernote.css" rel="stylesheet">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.8/summernote.js"></script>
+
+    
+</head>
+<body>
+    <div>
+        <select name="category" class="category">
+            <option value="ATActivity">협회활동</option>
+            <option value="ATBizActivity">사업활동</option>
+            <option value="ATBroadCastRefer">보도자료</option>
+            <option value="ATRefer">관련자료</option>
+        </select>
+    </div>
+    <div><input type="text" class="title" name="title"></input></div>
+    <div><p>썸네일 설정</p></div>
+    <div><input type="file" class="thumb_img" name="thumb_img"></input><a href="javascript:;" class="thumb_upload">Upload</a></div>
+    <div id="summernote">Hello Summernote</div>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#summernote').summernote();
+            /*
+            $('.submit').onclick(function(){
+                var category = $('.category').value();
+                var title = $('.title').value();
+                var markupStr = $('#summernote').summernote('code');
+                $.ajax({
+
+                });
+                return false;
+            });*/
+
+            $('.thumb_upload').click(function(){
+                var formData = new FormData();
+                formData.append("thumb_img", $(".thumb_img")[0].files[0]);
+
+                $.ajax({
+                    url : '/upload_thumb',
+                    processData: false,
+                    contentType: false,
+                    data: formData,
+                    type: 'POST',
+                    success: function(result){
+                        console.log(result);
+                        alert("업로드 성공!!");
+                    }
+                });
+                return false;
+            });
+        });
+    </script>
+
+    <a href="javascript:;" class="submit">submit</a>
+</body>
+
+</html>
