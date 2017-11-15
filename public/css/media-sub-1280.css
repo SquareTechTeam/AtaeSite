@@ -1,21 +1,14 @@
 /*========================== sub common 파일 시작 ==========================*/
 /* Nav Layout */
-.main_img {
-    width: 100%;
-    background: url('../images/background-sub2.png');
-    background-position: center;
-    background-size: cover;
-}
-
 .main_img .title {
     display: inline-block;
     width: 100%;
     text-align: center;
-    margin: 250px 0 90px;
+    margin: 165px 0 59px;
 }
 
 .title h2 {
-    font-size: 60px;
+    font-size: 39px;
     color: #fff;
     font-weight: 400;
 }
@@ -23,23 +16,10 @@
 .title div {
     position: relative;
     color: #fff;
-    font-size: 18px;
-    margin-top: 35px;
+    font-size: 12px;
+    margin-top: 23px;
     word-spacing: 10px;
     font-weight: 400;
-}
-
-.background {
-    width: 100%;
-    height: 100%;
-    background-position: center;
-    background-size: cover;
-}
-
-
-/*============= 본문 영역 =============*/
-#section {
-    background-color: #fff;
 }
 /*========================== sub common 파일 끝 ==========================*/
 
@@ -49,65 +29,51 @@
 /*========================== board 파일 시작 ==========================*/
 
 /*============= 협회 활동 =============*/
-
-#section_board {
-    background-color: #fff;
-    position: relative;
-}
-
 .section-block_board {
-    padding: 124px 0 136px;
-    width: 1200px;
-    min-height: 852px;
+    padding: 81px 0 89px;
+    width: 792px;
+    min-height: 562px;
     position: relative;
     overflow: hidden;
     margin: 0 auto;
+    text-align: center;
 }
 
 .section_list_board {
-    width: 370px;
-    height: 590px;
-    padding: 0 15px;
+    width: 244px;
+    height: 409px;
+    padding: 0 10px;
     list-style-type: none;
     color: #060606;
     float: left;
+    text-align: left;
 }
 
 .section_list_board img {
-    width: 365px;
-    height: 230px;
-}
-
-.section_color_board a {
-    color: #333;
-}
-
-.section_color_board a:hover {
-    transition-property: color;
-    transition-duration: 0.3s;
-    transition-timing-function: ease-out;
-    color: #0097c3;
+    width: 240px;
+    height: 151px;
 }
 
 .section_list_board h3 {
-    font-size: 21px;
+    font-size: 16px;
     font-weight: 600;
-    margin: 38px 0 13px 0;
+    margin: 25px 0 8px 0;
 }
 
 .section_list_board .section_date_board {
     color: #0097c3;
     letter-spacing: -0.2px;
-    font-size: 14px;
+    font-size: 11px;
     font-weight: 600px;
 }
 
 .section_list_board p {
     color: #666666;
-    width: 370px;
-    font-size: 14px;
+    width: 244px;
+    min-height: 80px;
+    font-size: 11px;
     line-height: 1.85;
-    padding-top: 22px;
+    padding-top: 14px;
     margin: 2px 0 10px 0;
 }
 
@@ -115,54 +81,28 @@
     display: inline-block;
     background-color: #0097c3;
     color: #fff;
-    padding: 14px 29px;
-    margin-top: 29px;
+    padding: 9px 19px;
+    margin-top: 19px;
     text-align: center;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 12px;
 }
 
 .btn_section_board a:link,
 .btn_section_board a:visited {
     text-decoration: none;
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 600;
 }
 
-.btn_section_board a:hover {
-    transition-property: background-color;
-    transition-duration: 0.3s;
-    transition-timing-function: ease-out;
-    background-color: #060606;
-}
-
 /* 하단 페이지 숫자 */
-
-.page {
-    margin: 0 auto 10px;
-    text-align: center;
-    clear: both;
-}
-
-.page .choose {
-    color: #0097c3;
-}
-
 .page a {
     display: inline-block;
     color: #060606;
     margin: 0 15px;
-    font-size: 14px;
+    font-size: 11px;
     font-weight: 600;
 }
-
-.page a:hover {
-    transition-property: color;
-    transition-duration: 0.3s;
-    transition-timing-function: ease-out;
-    color: #0097c3;
-}
-
 /*========================== board 파일 끝 ==========================*/
 
 
@@ -170,71 +110,30 @@
 
 /*========================== detail_page 파일 시작 ==========================*/
 .block_detail {
-    width: 1200px;
+    width: 792px;
     margin: 0 auto;
     padding: 0;
 }
 
 .section-block_detail {
-    width: 760px;
+    width: 501px;
 }
 
 .detail_title_detail {
-    margin-top: 124px;
-    font-size: 40px;
+    margin-top: 81px;
+    font-size: 30px;
     font-weight: 400;
     text-align: center;
     line-height: 1.5;
 }
 
 .detail_img {
-    width: 760px;
-    margin-right: 440px;
-    min-height: 500px;
+    width: 501px;
+    margin-right: 290px;
+    min-height: 330px;
     padding: 40px 0 140px 0px;
     text-align: left;
 }
-
-.detail_img img {
-    padding-bottom: 24px;
-    width: 100%;
-    vertical-align: top;
-}
-
-.detail_img > li:nth-child(3) img {
-    padding-bottom: 0;
-}
-
-.detail_img > ul {
-    list-style-type: none;
-    color: #666666;
-}
-
-.detail_img > ul > li {
-    padding-bottom: 20px;
-    font-size: 14px;
-    line-height: 1.5;
-}
-
-.detail_img > ul > li img {
-    float: left;
-    margin-right: 28px;
-    padding-bottom: 10px;
-}
-
-.detail_img > ul > li span {
-    clear: both;
-}
-
-.date_detail {
-    padding: 8px 15px;
-    margin: 7px;
-    17px letter-spacing: -0.2px;
-    font-weight: 600px;
-    text-align: center;
-    color: #0097c3;
-}
-
 /*========================== detail_page 파일 끝 ==========================*/
 
 
@@ -242,34 +141,34 @@
 
 /*========================== gallery 파일 시작 ==========================*/
 .block_gallery {
-    width: 1200px;
+    width: 792px;
     margin: 0 auto;
 }
 
 .section-block_gallery {
-    min-height: 1302px;
-    padding: 147px 0 125px 0;
+    min-height: 859px;
+    padding: 97px 0 82px 0;
 }
 
 .section-block_gallery ul {
-    margin-bottom: 30px;
+    margin-bottom: 19px;
     list-style-type: none;
     font-size: 0;
 }
 
 .section-block_gallery ul li {
     position: relative;
-    min-width: 370px;
-    min-height: 370px;
-    margin: 0 15px;
+    min-width: 244px;
+    min-height: 244px;
+    margin: 0 10px;
     display: inline-block;
-    font-size: 14px;
+    font-size: 11px;
 }
 
 .section-block_gallery ul li a {
     display: inline-block;
-    width: 370px;
-    height: 370px;
+    width: 244px;
+    height: 244px;
     overflow: hidden;
 }
 
@@ -285,35 +184,10 @@
     padding: 7%;
 }
 
-.section-block_gallery ul li:hover i {
-    display: inline-block;
-}
-
-.section-block_gallery ul li a:hover img {
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    -webkit-transform: scale(1.05);
-    -ms-transform: scale(1.05);
-    transform: scale(1.05);
-}
-
-.section-block_gallery ul li a img {
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1);
-}
-
 .section-block_gallery ul li img {
     display: block;
-    min-width: 370px;
+    min-width: 244px;
 }
-
 /*========================== gallery 파일 끝 ==========================*/
 
 
@@ -323,13 +197,13 @@
 
 .section-block_movie {
     position: relative;
-    padding: 147px 0 125px 0;
+    padding: 97px 0 82px 0;
 }
 
 .section_list_movie {
-    width: 800px;
-    margin: 0 auto 60px;
-    padding-bottom: 60px;
+    width: 528px;
+    margin: 0 auto 39px;
+    padding-bottom: 39px;
     border-bottom: solid 2px #f2f2f2;
     list-style-type: none;
     color: #060606;
@@ -338,19 +212,15 @@
 .section_list_movie .section_date_movie {
     color: #0097c3;
     letter-spacing: -0.2px;
-    font-size: 14px;
+    font-size: 11px;
     font-weight: 600px;
-}
-
-.section_date_movie {
-    padding-top: 6px;
 }
 
 .section_list_movie p {
     color: #666666;
-    font-size: 14px;
+    font-size: 11px;
     line-height: 1.85;
-    padding-top: 22px;
+    padding-top: 14px;
     margin: 2px 0 10px 0;
 }
 /*========================== movie 파일 끝 ==========================*/
@@ -360,25 +230,20 @@
 
 /*========================== goal 협회목적 및 사업 시작 ==========================*/
 .section-block_goal {
-    width: 700px;
-    min-height: 800px;
-    padding: 147px 0 125px 0;
-    font-size: 14px;
+    width: 462px;
+    min-height: 528px;
+    padding: 97px 0 82px 0;
+    font-size: 11px;
     line-height: 1.85;
 }
 
 .section-block_goal > div {
-    padding: 30px;
-    margin-bottom: 50px;
+    padding: 19px;
+    margin-bottom: 33px;
     position: relative;
     border: 3px solid #0097c3;
-    border-radius: 30px;
+    border-radius: 19px;
 }
-
-.section-block_goal > div h2 {
-    padding-bottom: 10px;
-}
-
 /*========================== goal 협회목적 및 사업 끝 ==========================*/
 
 
@@ -386,77 +251,51 @@
 
 /*========================== error_page 시작 ==========================*/
 .section-block_error {
-    width: 800px;
-    min-height: 100px;
-    font-size: 14px;
+    width: 528px;
+    min-height: 66px;
+    font-size: 11px;
     text-align: center;
-    padding-top: 147px;
+    padding-top: 97px;
     line-height: 1.8;
     margin: 0 auto;
 }
 
 .error_img {
     width: 100%;
-    min-height: 300px;
+    min-height: 198px;
     background-image: url('../images/error_bg.png');
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: cover;
 }
 
-.section-block_error i {
-    margin-right: 10px;
-}
-
 .section-block_error i,
 .section-block_error p {
     display: inline-block;
-    font-size: 35px;
+    font-size: 24px;
     padding: 10px;
 }
 
-.section-block_error p span {
-    color: #0097c3;
-}
-
 .line span {
-    padding: 0 100px;
-}
-
-.line {
-    border-top: 1px solid #999999;
-    border-bottom: 1px solid #999999;
+    padding: 0 66px;
 }
 
 .section-block_error > div {
-    padding: 30px;
+    padding: 20px;
     text-align: left;
-    width: 450px;
+    width: 297px;
     margin: 0 auto;
-}
-
-.error_img {
-    display: block;
-    text-align: center;
 }
 
 .error_img > a {
     position: relative;
-    top: 80px;
+    top: 52px;
     background-color: #333;
     color: #fff;
-    padding: 14px 29px;
+    padding: 9px 19px;
     text-align: center;
     font-weight: 600;
-    font-size: 16px;
-}
-
-.error_img > a:hover {
-    transition-property: background-color color;
-    transition-duration: 0.3s;
-    transition-timing-function: ease-out;
-    background-color: #fff;
-    color: #0097c3;
+    font-size: 12px;
 }
 /*========================== error_page 끝 ==========================*/
 
