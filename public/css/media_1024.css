@@ -1,0 +1,704 @@
+/* Default Layout */
+
+.block {
+	width: 624px;
+}
+
+.t40 {
+	font-size: 25px;
+	line-height: 1.5;
+}
+.t21, .t18 {
+	font-size: 13px;
+    line-height: 1.3;
+}
+.t16 {
+	font-size: 12px;
+	line-height: 1.4;
+}
+.t14 {
+	font-size: 11px;
+	line-height: 1.4;
+}
+
+/* Header Layout */
+
+#header .header-block {
+	min-height: 15px;
+	padding: 3px 0;
+    font-size: 10px;
+}
+
+/* Nav Layout */
+
+nav {
+    top: 43px;
+}
+
+.nav-block > h1 {
+    height: 43px;
+    padding: 0 8px;
+}
+
+.nav-block > h1 img {
+    width: 160px;
+}
+
+.nav-block > ul {
+    float: right;
+    margin-right: 40px;
+}
+
+.nav-block > ul > li {
+    margin-left: 15px;
+	padding: 0 5px 2px;
+}
+.nav-block > ul > li:nth-child(1) > ul {
+    left: -90px;
+}
+.nav-block > ul > li:nth-child(5) {
+	margin-top: 0px;
+}
+.nav-block > ul > li:nth-child(5) > a {
+	font-size: 12px;
+	padding: 3px 7px 2px;
+}
+.nav-block > ul > li:nth-child(5):hover a {
+	padding: 3px 7px 2px;
+}
+
+/* Container Layout */
+
+.slider {
+	height: 427px;
+    min-height: 427px;
+}
+
+.slider > div {
+	position: relative;
+	height: 427px;
+    min-height: 427px;
+}
+.slider .text-block{
+	width: 427px;
+	height: 139px;
+	margin: -70px 0 0 -213px;
+	font-size: 14px;
+}
+
+.slider .text-block strong{
+	font-size: 26px;
+	margin-bottom: 21px;
+}
+
+.slider > img {
+	height: 427px;
+}
+
+.slider .text-block .btn a {
+	margin-top: 30px;
+	padding: 11px 26px 10px;
+	font-size: 20px;
+}
+
+/*============= 협회 소개 =============*/
+
+.intro-block {
+	width: 640px;
+	min-height: 288px;
+	min-height: 213px;
+	padding: 73px 0 65px 0;
+}
+
+.intro_img {
+    width: 304px;
+}
+
+.intro-block img {
+	padding: 0 8px;
+}
+.wave_img {
+	height: 8px;
+	margin: 8px auto 13px;
+}
+.intro_txt {
+	width: 256px;
+	height: 226px;
+	padding: 0 8px;
+	font-size: 9px;
+	line-height: 14px;
+	padding: 0 8px;
+}
+.intro_padding {
+	padding: 0 0 0 10px;
+}
+.intro_padding .btn_intro {
+	padding: 12px 24px;
+	margin-top: 13px;
+}
+
+
+/*============= 3개의 아이콘그림 부분 =============*/
+
+#ico {
+	height: 112px;
+	padding: 71px 0 68px 0;
+}
+
+.ico-block {
+	width: 592px;
+	min-height: 112px;
+}
+
+.ico_txt {
+	width: 197px;
+	height: 80px;
+	margin-bottom: 5px;
+	padding-top: 5px;
+}
+
+.ico_txt img {
+    width: 80px;
+}
+
+.ico_txt div a {
+	padding: 5px;
+}
+
+.ico_txt div a:link,
+.ico_txt div a:visited {
+	font-size: 16px;
+	line-height: 16px;
+}
+.ico_txt p {
+	margin-bottom: 5px;
+}
+
+/*============= 협회 활동 =============*/
+
+.act-block {
+	padding: 66px 0 72px;
+	min-height: 513px;
+}
+.act_title {
+    width: 624px;
+	height: 100px;
+    margin-bottom: 20px;
+}
+.act_title p {
+	min-height: 28px;
+	letter-spacing: 0.1px;
+}
+
+.act_list {
+	width: 197px;
+	height: 345px;
+    padding: 3px;
+    
+}
+.act_list > a {
+	width: 197px;
+	height: 197px;
+    display: block;
+    overflow: hidden;
+}
+.act_list:nth-child(3) {
+	margin: 0 7px;
+}
+
+.act_list img {
+	width: auto;
+	height: 100%;
+}
+.act_list h3 {
+	font-weight: 600;
+	margin: 12px 0 5px 0;
+}
+
+.act_list .act_date {
+	font-size: 11px;
+}
+
+.act_list p {
+	width: 197px;
+    min-height: 85px;; 
+	font-size: 11px;
+	line-height: 1.6;
+	padding-top: 10px;
+	margin: 1px 0 5px 0;
+}
+
+.act_list .btn_act a {
+	padding: 7px 11px;
+	margin-top: 13px;
+	font-size: 12px;
+}
+
+/*============= 후원하기 영역 =============*/
+
+.patronize .text-block section {
+	width: 310px;
+	padding: 79px 0 84px;
+	font-size: 10px;
+}
+.patronize .text-block section h2 {
+	max-width: 436px;
+	font-size: 25px;
+}
+.patronize .text-block section p {
+	font-size: 12px;
+    padding-right: 20px;
+}
+.patronize .text-block section .button a {
+	margin-top: 12px;
+	padding: 15px 25px;
+	font-size: 12px;
+}
+.patronize .img-block {
+	padding-left: 10px;
+}
+/*============= 보도 자료 =============*/
+
+
+
+
+/*============= 하단 갤러리 =============*/
+
+.main-gallery ul li {
+    height: 107px;
+}
+
+/*============= footer 부분 =============*/
+
+footer {
+	height: 97px;
+	padding: 15px;
+}
+.footer-block {
+	width: 612px;
+	min-height: 77px;
+}
+.footer_nav {
+	font-size: 13px;
+}
+.footer_nav a {
+	padding: 0 10px;
+}
+.footer_in {
+	width: 436px;
+	min-height: 23px;
+	padding: 20px 10px 0 10px;
+}
+.logo_bottom img {
+    width: 48px;
+}
+.footer_text {
+	margin-left: 10px;
+	font-size: 11px;
+}
+.footer_text i {
+	width: 5px;
+	padding: 0 8px;
+}
+.footer_text .bank {
+	margin-left: 20px;
+}
+.icon img {
+	width: 24px;
+	padding: 0 0 0 3px;
+}
+.return-top {
+	right: 10px;
+	bottom: 10px;
+}
+.return-top img {
+	width: 35px;
+}
+
+
+
+
+/*============================ sub common 파일 시작 ============================*/
+/* Nav Layout */
+
+
+.main_img .title {
+    margin: 133px 0 48px;
+}
+
+.title h2 {
+    font-size: 32px;
+}
+
+.title div {
+    font-size: 11px;
+    margin-top: 18px;
+    word-spacing: 8px;
+}
+
+/*============= 본문 영역 =============*/
+
+.section-block {
+    min-height: 915px;
+    padding: 72px 0 61px 0;
+}
+
+/*========================== sub common 파일 끝 ==========================*/
+
+/*========================== board 파일 시작 ==========================*/
+
+/*============= 협회 활동 =============*/
+
+.section-block_board {
+    padding: 70px 0 72px;
+    width: 640px;
+    min-height: 454px;
+}
+
+.section_list_board {
+    width: 197px;
+    height: 360px;
+    padding: 3px;
+    margin: 0 5px;
+}
+
+.section_list_board img {
+    width: 195px;
+    height: 124px;
+}
+
+.section_list_board h3 {
+    font-size: 13px;
+    margin: 12px 0 5px 0;
+}
+
+.section_list_board .section_date_board {
+    font-size: 11px;
+}
+
+.section_list_board p {
+    width: 197px;
+    min-height: 85px;
+    font-size: 11px;
+    line-height: 1.6;
+    padding-top: 10px;
+    margin: 1px 0 5px 0;
+}
+
+.section_list_board .btn_section_board a {
+    padding: 6px 10px;
+    margin-top: 13px;
+    font-size: 12px;
+}
+
+/* 하단 페이지 숫자 */
+
+.page a {
+    font-size: 12px;
+}
+
+/*========================== board 파일 끝 ==========================*/
+
+/*========================== detail_page 파일 시작 ==========================*/
+
+.section-block_detail {
+    width: 640px;
+}
+
+.detail_title_detail {
+    margin-top: 70px;
+    font-size: 25px;
+}
+
+.detail_img {
+    width: 640px;
+    min-height: 267px;
+    padding: 20px 0 72px 0px;
+}
+
+.detail_img img {
+    padding-bottom: 12px;
+    width: 100%;
+}
+
+.detail_img > ul > li {
+    padding-bottom: 15px;
+    font-size: 11px;
+}
+
+.detail_img > ul > li:nth-child(3) img {
+    width: 50%;
+    margin-right: 15px;
+}
+.date_detail {
+    padding: 4px 8px;
+    margin: 5px;
+}
+
+/*========================== detail_page 파일 끝 ==========================*/
+
+/*========================== gallery 파일 시작 ==========================*/
+
+.block_gallery {
+    width: 640px;
+}
+
+.section-block_gallery {
+    min-height: 660px;
+    padding: 70px 0 72px 0;
+}
+
+.section-block_gallery ul {
+    margin-bottom: 15px;
+}
+
+.section-block_gallery ul:nth-child(3) {
+    padding-bottom: 30px;
+}
+
+.section-block_gallery ul li {
+    min-width: 197px;
+    min-height: 197px;
+    margin: 0 6px;
+    font-size: 11px;
+}
+
+.section-block_gallery ul li a {
+    width: 197px;
+    height: 197px;
+    display: block;
+    overflow: hidden;
+}
+
+.section-block_gallery ul li img {
+    min-width: 197px;
+    min-height: auto;
+}
+
+/*========================== gallery 파일 끝 ==========================*/
+
+/*========================== movie 파일 시작 ==========================*/
+
+.section-block_movie {
+    padding: 70px 0 72px 0;
+    max-width: 624px;
+}
+
+.section_list_movie {
+    margin: 0 auto 30px;
+    padding-bottom: 30px;
+}
+
+.section_list_movie img {
+    max-width: 624px;
+}
+
+.section_list_movie .section_date_movie {
+    font-size: 11px;
+}
+
+.section_date_movie {
+    padding-top: 3px;
+}
+
+.section_list_movie p {
+    font-size: 12px;
+    line-height: 1.5;
+    margin: 1px 0 5px 0;
+}
+
+/*========================== movie 파일 끝 ==========================*/
+
+/*========================== goal 협회목적 및 사업 시작 ==========================*/
+
+.section-block_goal {
+    width: 624px;
+    min-height: 452px;
+    padding: 70px 0 42px 0;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.section-block_goal > div {
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.section-block_goal > div h2 {
+    font-size: 19px;
+}
+
+/*========================== goal 협회목적 및 사업 끝 ==========================*/
+
+/*========================== error_page 시작 ==========================*/
+
+.section-block_error {
+    width: 624px;
+    font-size: 12px;
+    padding-top: 130px;
+}
+
+.error_img {
+    min-height: 250px;
+}
+
+.section-block_error i {
+    margin-right: 5px;
+}
+
+.section-block_error i,
+.section-block_error p {
+    padding: 5px;
+    font-size: 25px;
+    padding: 15px 5px;
+}
+.line span {
+    padding: 0 120px;
+}
+
+.section-block_error > div {
+    padding: 20px 0px;
+    width: 330px;
+}
+
+.error_img > a {
+    top: 40px;
+    padding: 10px 18px;
+    font-size: 13px;
+}
+
+/*========================== error_page 끝 ==========================*/
+
+/*========================== write_content 시작 ==========================*/
+
+.section_write {
+    width: 780px;
+    margin: 0 auto;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.section_write label {
+    display: inline-block;
+    padding-right: 15px;
+    padding-bottom: 20px;
+}
+
+.section_write > select {
+    padding: 1px 15px;
+    margin-right: 100px;
+}
+
+.section_write .title {
+    width: 350px;
+    text-align: center;
+}
+
+.section_write .thumb_img {
+    margin: 0 auto;
+    display: inline-block;
+    float: left;
+}
+
+.section_write .thumb_upload {
+    float: left;
+    margin-left: ;
+    padding-top: 1px;
+}
+
+.section_write .file_upload {
+    margin-top: 30px;
+    padding-bottom: 20px;
+}
+
+.section_write .radio {
+    width: 100%;
+    max-height: 10px;
+    text-align: left;
+    padding-bottom: 20px;
+}
+
+.section_write .radio input label {
+    padding-right: 50px;
+}
+
+.section_write .radio input[type="radio"],
+.radio-inline input[type="radio"] {
+    margin-left: 0px;
+}
+
+.section_write .radio span {
+    font-weight: 700;
+    padding-right: 15px;
+}
+
+.file_upload a {
+    margin-left: -400px;
+}
+
+.btn_upload {
+    background: #3498db;
+    background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+    background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+    background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+    background-image: -o-linear-gradient(top, #3498db, #2980b9);
+    background-image: linear-gradient(to bottom, #3498db, #2980b9);
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+.btn_upload:hover {
+    color: #ffffff;
+    background: #1fb4ff;
+    background-image: -webkit-linear-gradient(top, #1fb4ff, #006eb8);
+    background-image: -moz-linear-gradient(top, #1fb4ff, #006eb8);
+    background-image: -ms-linear-gradient(top, #1fb4ff, #006eb8);
+    background-image: -o-linear-gradient(top, #1fb4ff, #006eb8);
+    background-image: linear-gradient(to bottom, #1fb4ff, #006eb8);
+    text-decoration: none;
+    text-decoration: none;
+}
+
+.btn-concrete {
+    background-color: #7e8c8d;
+    -webkit-box-shadow: 0 3px 0 #4e5b5c;
+    box-shadow: 0 3px 0 #4e5b5c;
+}
+
+.btn-concrete:hover {
+    background-color: #6a7879;
+    text-decoration: none;
+    color: #000;
+}
+
+.btn-concrete:active {
+    top: 3px;
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.btn-concrete {
+    font-size: 18px;
+    white-space: nowrap;
+    width: 250px;
+    padding: .8em 1.5em;
+    font-family: Open Sans, Helvetica, Arial, sans-serif;
+    line-height: 18px;
+    display: block;
+    zoom: 1;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+    -webkit-transition: color .25s linear, background-color .25s linear;
+    transition: color .25s linear, background-color .25s linear;
+}
+
+/*========================== write_content 끝 ==========================*/

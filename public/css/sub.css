@@ -330,7 +330,6 @@ footer {
 
 .section-block_detail {
     width: 760px;
-    min-height: ;
 }
 
 .detail_title_detail {
@@ -440,7 +439,7 @@ footer {
     display: inline-block;
 }
 
-.section-block_gallery ul li a:hover img {
+.section-block_gallery ul li a:hover {
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
@@ -450,7 +449,7 @@ footer {
     transform: scale(1.05);
 }
 
-.section-block_gallery ul li a img {
+.section-block_gallery ul li a {
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
