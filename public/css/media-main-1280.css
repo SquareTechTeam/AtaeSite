@@ -1,0 +1,331 @@
+/* Reset CSS */
+
+/* Default Layout */
+.block {
+	width: 780px;
+	margin: 0 auto;
+}
+
+.t40 {
+	font-size: 30px;
+	line-height: 1.55;
+}
+.t21 {
+	font-size: 16px;
+}
+.t18 {
+	font-size: 14px;
+	line-height: 1.4;
+}
+.t16 {
+	font-size: 12px;
+	line-height: 1.2;
+}
+.t15 {
+	font-size: 11px;
+	line-height: 1.5;
+}
+.t14 {
+	font-size: 11px;
+	line-height: 1.5;
+}
+
+/* Header Layout */
+
+/* Nav Layout */
+nav {
+    z-index: 99;
+    position: absolute;
+    top: 58px;
+    width: 100%;
+}
+
+.nav-block > h1 img {
+    width: 200px;
+}
+
+.nav-block > ul {
+    float: right;
+    margin-right: 60px;
+}
+
+.nav-block > ul > li {
+    float: left;
+    position: relative;
+    display: block;
+    margin-left: 21px;
+	padding: 0 5px 2px;
+    line-height: 2;
+    text-align: center;
+    font-weight: 700;
+}
+.nav-block > ul > li:nth-child(1) > ul {
+    left: -93px;
+}
+
+.nav-block > ul > li:nth-child(5) > a {
+	font-size: 15px;
+	color: #fff !important;
+	background-color: #0097c3;
+	padding: 5px 12px 4px;
+}
+
+.nav-block > ul > li:nth-child(5):hover a {
+	color: #0097c3 !important;
+	background-color: #fff;
+	padding: 5px 12px 4px;
+}
+
+/* Container Layout */
+.slider > div {
+	position: relative;
+	width: 100%;
+	height: 528px;
+    min-height: 528px;
+}
+
+.slider .text-block{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 528px;
+	height: 171px;
+	margin: -85px 0 0 -264px;
+	color: #fff;
+	font-size: 17px;
+	text-align: center;
+}
+
+.slider .text-block strong{
+	display: block;
+	font-size: 26px;
+	margin-bottom: 40px;
+}
+
+.slider .text-block .btn a {
+	display: inline-block;
+	border: solid 3px #fff;
+	margin-top: 52px;
+	padding: 20px 50px 18px;
+	font-size: 17px;
+}
+
+/*============= 협회 소개 =============*/
+.intro-block {
+	min-height: 540px;
+	min-height: 400px;
+	padding: 89px 0 79px 0;
+	background-color: #fff;
+	overflow: hidden;
+}
+
+.intro_img {
+    width: 380px;
+}
+
+.intro-block img {
+	padding: 0 15px;
+	width: 100%;
+}
+
+.wave_img {
+	height: 14px;
+	margin: 10px auto 20px;
+}
+
+.intro_txt {
+	width: 340px;
+	height: 424px;
+	padding: 0 10px;
+	font-size: 14px;
+	line-height: 20.6px;
+	padding: 0 10px;
+}
+
+.intro_padding {
+	padding: 10px 0 0 15px;
+}
+
+.intro_padding .btn_intro {
+	padding: 20px 42px;
+	margin-top: 32px;
+	background-color: #0097c3;
+	display: inline-block;
+	color: #fff;
+	text-decoration: none;
+	font-weight: 600;
+}
+
+/*============= 3개의 아이콘그림 부분 =============*/
+#ico {
+	width: 100%;
+	height: 210px;
+	padding: 74px 0 83px 0;
+	background-color: #f2f2f2;
+	overflow: hidden;
+	text-align: center;
+}
+
+.ico_txt {
+	display: inline-block;
+	margin: 0 auto;
+	width: 240px;
+	height: 100px;
+	margin-bottom: 10px;
+	padding-top: 10px;
+}
+
+.ico_txt div a:link,
+.ico_txt div a:visited {
+	font-size: 20px;
+	line-height: 23px;
+	color: #060606;
+	font-weight: 700;
+}
+
+.ico_txt div a:hover {
+	transition-property: color;
+	transition-duration: 0.3s;
+	transition-timing-function: ease-out;
+	color: #0097c3;
+}
+
+
+/*============= 협회 활동 =============*/
+.act-block {
+	padding: 81px 0 200px;
+	min-height: 562px;
+	position: relative;
+}
+
+.act_title {
+	height: 132px;
+	margin: 0 auto;
+	text-align: center;
+	color: #060606;
+	margin-bottom: 40px;
+}
+
+.act_title p {
+	display: inline-block;
+	min-height: 35px;
+	letter-spacing: 0.1px;
+}
+
+.act_list {
+	width: 244px;
+	height: 389px;
+	list-style-type: none;
+	color: #060606;
+	float: left;
+}
+
+.act_list > a {
+	width: 244px;
+	height: 244px;
+	display: block;
+	overflow: hidden;
+}
+
+.act_list img {
+	width: 244px;
+	height: 198px;
+}
+
+.act_list h3 {
+	font-weight: 600;
+	margin: 25px 0 9px 0;
+}
+
+.act_list .btn_act a {
+	display: inline-block;
+	background-color: #0097c3;
+	color: #fff;
+	padding: 14px 29px;
+	margin-top: 19px;
+	text-align: center;
+	font-weight: 600;
+	font-size: 16px;
+}
+
+.btn_act a:link,
+.btn_act a:visited {
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: 600;
+}
+.btn_act a:hover {
+	transition-property: background-color;
+	transition-duration: 0.3s;
+	transition-timing-function: ease-out;
+	background-color: #060606;
+}
+
+/*============= 후원하기 영역 =============*/
+.patronize .text-block section {
+	float: right !important;
+	max-width: 100%;
+	width: 369px;
+	padding: 97px 0 103px;
+	font-size: 14px;
+}
+.patronize .text-block section h2 {
+	max-width: 300px;
+	line-height: 1.35;
+}
+.patronize .text-block section p {
+	line-height: 1.9;
+	max-width: 306px;
+}
+.patronize .text-block section .button a {
+	display: inline-block;
+	margin-top: 22px;
+	padding: 20px 32px;
+	background: #0097c3;
+	text-align: center;
+	font-weight: 600;
+	font-size: 16px;
+}
+
+/*============= 하단 갤러리 =============*/
+.main-gallery ul li {
+	float: left;
+	display: inline-block;
+	width: 12.5%;
+    height: 132px;
+    overflow: hidden;
+    background-image: url('http://placehold.it/200x200');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/*============= footer 부분 =============*/
+footer {
+	position: relative;
+	width: 100%;
+	height: 95px;
+	padding: 18px;
+	background-color: #060606;
+	color: #fff;
+}
+.footer_in {
+	width: 501px;
+	min-height: 80px;
+	padding: 25px 13px 0;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.logo_bottom {
+	width: 52px;
+	height: 52px;
+	float: left;
+}
+.icon img {
+	display: inline-block;
+	width: 26px;
+	padding: 0 0 0 5px;
+}
+.return-top img {
+	width: 36px;
+}

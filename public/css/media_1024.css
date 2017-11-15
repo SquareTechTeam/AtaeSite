@@ -151,7 +151,7 @@ nav {
 }
 
 .ico_txt {
-	width: 197px;
+	width: 194px;
 	height: 80px;
 	margin-bottom: 5px;
 	padding-top: 5px;
@@ -359,7 +359,6 @@ footer {
     width: 197px;
     height: 360px;
     padding: 3px;
-    margin: 0 5px;
 }
 
 .section_list_board img {
@@ -450,10 +449,6 @@ footer {
 
 .section-block_gallery ul {
     margin-bottom: 15px;
-}
-
-.section-block_gallery ul:nth-child(3) {
-    padding-bottom: 30px;
 }
 
 .section-block_gallery ul li {
