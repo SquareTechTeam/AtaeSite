@@ -38,6 +38,9 @@ body {
 	width: 1170px;
 	margin: 0 auto;
 }
+.f1-upper {
+    font-size: 60px;
+}
 
 .f1 {
 	font-size: 40px;
@@ -64,6 +67,10 @@ body {
 .f6 {
 	font-size: 14px;
 	line-height: 1.8;
+}
+
+.date{
+	color: #0097c3;
 }
 
 .wave_img {
@@ -250,6 +257,7 @@ nav {
 /*============= board 부분 =============*/
 .board_wrap {
 	display: table;
+    margin-bottom: 60px;
 }
 
 .board_wrap .board_data {
@@ -303,10 +311,6 @@ nav {
 .board_wrap .board_data .title h3 {
 	font-weight: 600;
 	margin-bottom: 13px;
-}
-
-.board_wrap .board_data .title .date{
-	color: #0097c3;
 }
 
 .board_wrap .board_data .btn a {
