@@ -265,6 +265,7 @@ nav {
 .board_wrap .board_data {
 	display: table-cell;
 	width: 32%;
+	max-width: 260px;
 	padding: 0 1%;
 	color: #060606;
 }
@@ -784,4 +785,3 @@ footer {
 .main-gallery .detail_photo .photo img {
 	width: 100%;
 }
-
