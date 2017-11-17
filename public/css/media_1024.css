@@ -264,7 +264,7 @@ nav {
 .board_wrap .board_data {
 	display: table-cell;
 	width: 32%;
-	max-width: 208px;
+	max-width: 200px;
 	padding: 0 1%;
 	color: #060606;
 }

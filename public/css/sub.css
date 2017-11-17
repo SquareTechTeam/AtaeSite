@@ -459,3 +459,56 @@
 }
 
 /*========================== write_content 끝 ==========================*/
+
+
+
+/*========================== history(연혁 및 본부) 시작 ==========================*/
+.section-history, .section-or {
+    padding: 147px 0 125px 0;
+    text-align: center;
+}
+
+.section-or img {
+    width: 100%;
+}
+
+/*========================== history(연혁 및 본부) 시작 ==========================*/
+    
+    
+ 
+/*========================== greeting(인사말) 시작 ==========================*/    
+.section-greeting {
+    margin: 0 auto;
+    padding: 147px 0 125px 0;
+    text-align: center
+}
+.section-greeting div {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}
+
+.greeting_side {
+    width: 25%;
+    height: 665px;
+    padding-top: 50px;
+    background-color: antiquewhite;
+}
+
+.greeting_side img {
+    margin: 20px 0 10px;
+}
+
+.greeting_side > div {
+    display: block;
+}
+
+.section-greeting p {
+    margin: 20px;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.greeting_txt {
+    width: 60%;
+}
