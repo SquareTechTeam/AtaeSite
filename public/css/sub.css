@@ -462,14 +462,21 @@
 
 
 
-/*========================== history(연혁 및 본부) 시작 ==========================*/
+/*========================== history(연혁 및 본부) / license(법인허가) 시작 ==========================*/
 .section-history, .section-or {
     padding: 147px 0 125px 0;
     text-align: center;
 }
 
+.section-or {
+    width: 600px;
+}
+
 .section-or img {
     width: 100%;
+    margin-bottom: 100px;
+    border: 2px solid #b1b1b1;
+    box-shadow: 2px 2px 4px #cecece; 
 }
 
 /*========================== history(연혁 및 본부) 끝 ==========================*/
