@@ -265,8 +265,6 @@ nav {
 .board_wrap .board_data {
 	display: table-cell;
 	width: 32%;
-	max-width: 240px;
-	max-height: 240px;
 	padding: 0 1%;
 	color: #060606;
 }
@@ -277,6 +275,8 @@ nav {
 
 .board_wrap .board_data > a {
 	display: block;
+	width: 240px;
+	height: 240px;
 	overflow: hidden;
 }
 
