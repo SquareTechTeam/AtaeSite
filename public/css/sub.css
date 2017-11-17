@@ -144,10 +144,21 @@
 }
 
 .section-gallery ul li a {
+    position: relative;
     display: inline-block;
     width: 370px;
     height: 370px;
     overflow: hidden;
+}
+
+.section-gallery ul li p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 90%;
+    padding: 0 5%;
+    text-align: center;
+    background-color: rgba(0,0,0,0.5);
 }
 
 .section-gallery ul li i {
@@ -476,7 +487,7 @@
     width: 100%;
     margin-bottom: 100px;
     border: 2px solid #b1b1b1;
-    box-shadow: 2px 2px 4px #cecece; 
+    box-shadow: 2px 2px 4px #cecece;
 }
 
 /*========================== history(연혁 및 본부) 끝 ==========================*/
@@ -524,7 +535,7 @@
 
 
 
-/*========================== give(후원하기) 시작 ==========================*/    
+/*========================== give(후원하기) 시작 ==========================*/
 .section-give {
     margin-bottom: 80px;
 }
