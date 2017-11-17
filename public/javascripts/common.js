@@ -85,6 +85,9 @@ $(document).ready(function () {
 
     /* Background Wrap Show & Hide */
     $('.main-gallery a, .section-block_gallery ul li a').click(function(){
+        var imgData = $(this).parent().css("background-image").split("\"")[1];
+        $(".detail_photo img").attr("src", imgData);
+
        $('.detail_photo').show();
        var imgH = $(".main-gallery img")[0].height;
        if(imgH > 700){
@@ -110,7 +113,6 @@ $(document).ready(function () {
         }else{
             return false;
         }
-        console.log(thisStep, nextStep)
 
         $("." + nextStep).show();
         var moveTop = $("." + nextStep).offset().top;
