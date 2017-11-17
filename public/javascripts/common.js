@@ -84,12 +84,27 @@ $(document).ready(function () {
     });
 
     /* Background Wrap Show & Hide */
-    $('.main-gallery a, .section-block_gallery ul li a').click(function(){
+    $('.main-gallery a').click(function(){
         var imgData = $(this).parent().css("background-image").split("\"")[1];
         $(".detail_photo img").attr("src", imgData);
 
        $('.detail_photo').show();
        var imgH = $(".main-gallery img")[0].height;
+       if(imgH > 700){
+           $(".photo_item").addClass("limit");
+       }else{
+           $(".photo_item").removeClass("limit");
+       }
+        return false;
+    });
+    $('.section-gallery ul li a').click(function(){
+        var imgSrc = $(this).find("img").attr("src");
+        var imgAlt = $(this).find("img").attr("alt");
+        $(".detail_photo img").attr("src", imgSrc);
+        $(".detail_photo img").attr("alt", imgAlt);
+
+       $('.detail_photo').show();
+       var imgH = $(".section-gallery ul li img")[0].height;
        if(imgH > 700){
            $(".photo_item").addClass("limit");
        }else{
