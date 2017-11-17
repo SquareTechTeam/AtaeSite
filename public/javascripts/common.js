@@ -34,7 +34,7 @@ $(document).ready(function () {
         auto: true,
         speed: 300,
         pause: 4000
-    });
+    }); 
 
     /* Scroll Button */
     $(window).scroll(function () {
@@ -53,64 +53,64 @@ $(document).ready(function () {
     });
 
     /* Gallery Img Crop */
-    $(".section-block_gallery ul li img").each(function(i){
-        var img = $(".section-block_gallery ul li img:eq("+i+")"),
+    $(".section-block_gallery ul li img").each(function (i) {
+        var img = $(".section-block_gallery ul li img:eq(" + i + ")"),
             imgW = img.prop('naturalWidth'),
             imgH = img.prop('naturalHeight');
 
         var style = (imgW > imgH) ? 'height: 100%; width: auto;' : 'width: 100%; height: auto;';
 
-        $(".section-block_gallery ul li img:eq("+i+")").attr("style", style);
+        $(".section-block_gallery ul li img:eq(" + i + ")").attr("style", style);
     });
 
-    $(".board_wrap .board_data img").each(function(i){
-        var img = $(".board_wrap .board_data img:eq("+i+")"),
+    $(".board_wrap .board_data img").each(function (i) {
+        var img = $(".board_wrap .board_data img:eq(" + i + ")"),
             imgW = img.prop('naturalWidth'),
             imgH = img.prop('naturalHeight');
 
         var style = (imgW > imgH) ? 'height: 100%; width: auto;' : 'width: 100%; height: auto;';
 
-        $(".board_wrap .board_data img:eq("+i+")").attr("style", style);
+        $(".board_wrap .board_data img:eq(" + i + ")").attr("style", style);
     });
 
-    $(".section-block_gallery ul li img").each(function(i){
-        var img = $("section-block_gallery ul li img:eq("+i+")"),
+    $(".section-block_gallery ul li img").each(function (i) {
+        var img = $("section-block_gallery ul li img:eq(" + i + ")"),
             imgW = img.prop('naturalWidth'),
             imgH = img.prop('naturalHeight');
 
         var style = (imgW > imgH) ? 'height: 100%; width: auto;' : 'width: 100%; height: auto;';
 
-        $("section-block_gallery ul li img:eq("+i+")").attr("style", style);
+        $("section-block_gallery ul li img:eq(" + i + ")").attr("style", style);
     });
 
     /* Background Wrap Show & Hide */
-    $('.main-gallery a, .section-block_gallery ul li a').click(function(){
+    $('.main-gallery a, .section-block_gallery ul li a').click(function () {
         var imgData = $(this).parent().css("background-image").split("\"")[1];
         $(".detail_photo img").attr("src", imgData);
 
-       $('.detail_photo').show();
-       var imgH = $(".main-gallery img")[0].height;
-       if(imgH > 700){
-           $(".photo_item").addClass("limit");
-       }else{
-           $(".photo_item").removeClass("limit");
-       }
+        $('.detail_photo').show();
+        var imgH = $(".main-gallery img")[0].height;
+        if (imgH > 700) {
+            $(".photo_item").addClass("limit");
+        } else {
+            $(".photo_item").removeClass("limit");
+        }
         return false;
     });
-    $('.detail_photo i, .detail_photo').click(function(){
+    $('.detail_photo i, .detail_photo').click(function () {
         $('.detail_photo').hide();
         return false;
     });
 
     /* Give Step Animation */
-    $(".give-wrap .btn").click(function(){
+    $(".give-wrap .btn").click(function () {
         var thisStep = $(this).parent().parent().attr("class").split(" ")[1];
         var nextStep = "";
-        if(thisStep=="step1"){
+        if (thisStep == "step1") {
             nextStep = "step2";
-        }else if(thisStep=="step2"){
+        } else if (thisStep == "step2") {
             nextStep = "step3";
-        }else{
+        } else {
             return false;
         }
 
@@ -118,13 +118,20 @@ $(document).ready(function () {
         var moveTop = $("." + nextStep).offset().top;
         var minusTop = $(".give-step-bar ol").height();
         $("html, body").animate({
-            "scrollTop" : moveTop
+            "scrollTop": moveTop
         }, 500);
         $("." + thisStep + " .filter").show();
         $("." + thisStep + " .filter").animate({
-            "opacity" : 0.6
+            "opacity": 0.6
         }, 500);
 
         return false;
+    });
+
+
+    $('.email_select').change(function () {
+        var email = $(this).val();
+        $(this).parent().find('.email_back').val(email);
+        
     });
 });
