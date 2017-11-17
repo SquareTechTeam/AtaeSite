@@ -263,6 +263,7 @@ nav {
 .board_wrap .board_data {
 	display: table-cell;
 	width: 32%;
+	max-width: 390px;
 	padding: 0 1%;
 	color: #060606;
 }
@@ -395,6 +396,7 @@ footer {
 }
 .return-top {
 	position: fixed;
+    display: none;
 	z-index: 9990;
 	right: 20px;
 	bottom: 20px;

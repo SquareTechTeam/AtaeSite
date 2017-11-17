@@ -35,37 +35,37 @@ body {
 }
 
 .block {
-	width: 780px;
+	width: 624px;
 	margin: 0 auto;
 }
 .f1-upper {
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .f1 {
-	font-size: 26px;
-	line-height: 1.5;
+	font-size: 21px;
+	line-height: 1.75;
 }
 .f1-under {
-	font-size: 26px;
+	font-size: 16px;
 }
 .f2 {
-	font-size: 18px;
+	font-size: 14px;
 }
 .f3 {
-	font-size: 17px;
+	font-size: 13px;
 	line-height: 1.5;
 }
 .f4 {
-	font-size: 15px;
+	font-size: 11px;
 	line-height: 1.5;
 }
 .f5 {
-	font-size: 14px;
-	line-height: 1.5;
+	font-size: 10px;
+	line-height: 1.6;
 }
 .f6 {
-	font-size: 13px;
+	font-size: 10px;
 	line-height: 1.6;
 }
 
@@ -75,7 +75,7 @@ body {
 
 .wave_img {
 	height: 8px;
-	margin: 10px auto 16px;
+	margin: 7px auto 11px;
 }
 
 /* Header Layout */
@@ -90,6 +90,7 @@ body {
 #header .header-block {
 	min-height: 16px;
 	padding: 4px 0;
+    font-size: 11px;
 }
 
 #header .header-block div {
@@ -111,24 +112,24 @@ body {
 nav {
     z-index: 99;
     position: absolute;
-    top: 53px;
+    top: 42px;
     width: 100%;
 }
 
 .nav-block {
     position: relative;
-    min-height: 33px;
-    margin-bottom: 13px;
+    min-height: 26px;
+    margin-bottom: 10px;
 }
 
 .nav-block > h1 {
     float: left;
 	margin: 0;
-    padding: 0 8px;
+    padding: 0 15px;
 }
 
 .nav-block > h1 img {
-    width: 200px;
+    width: 160px;
 }
 
 .nav-block > h1 span {
@@ -137,16 +138,14 @@ nav {
 
 .nav-block > ul {
     float: right;
-    margin-right: 66px;
-    position: relative;
-    top: 10px;
+    margin-right: 50px;
 }
 
 .nav-block > ul > li {
     float: left;
     position: relative;
     display: block;
-    margin-left: 22px;
+    margin-left: 17px;
 	padding: 0 3px 1px;
     line-height: 2;
     text-align: center;
@@ -185,40 +184,40 @@ nav {
     width: auto;
     min-width: 100%;
 	margin-top: 2px;
-    padding: 20px 50px;
+    padding: 11px 27px;
     text-align: center;
     font-weight: 400;
     background: rgba(6, 6, 6, 0.9);
 }
 
 .nav-block > ul > li:nth-child(1) > ul {
-    left: -107px;
+    left: -73px;
 }
 .nav-block > ul > li:nth-child(2) > ul {
-    left: -58px;
+    left: -37px;
 }
 .nav-block > ul > li:nth-child(3) > ul {
-    left: -55px;
+    left: -30px;
 }
 .nav-block > ul > li:nth-child(4) > ul {
-    left: -50px;
+    left: -26px;
 }
 .nav-block > ul > li:nth-child(5) {
 	color: #fff;
 	border: none !important;
-	margin-top: -3px;
+	margin-top: -1px;
 }
 .nav-block > ul > li:nth-child(5) > a {
-	font-size: 15px;
+	font-size: 11px;
 	color: #fff !important;
 	background-color: #0097c3;
-	padding: 6px 14px 4px;
+	padding: 3px 7px 4px;
 }
 
 .nav-block > ul > li:nth-child(5):hover a {
 	color: #0097c3 !important;
 	background-color: #fff;
-	padding: 6px 14px 4px;
+	padding: 3px 7px 4px;
 }
 
 .nav-block > ul > li:nth-child(5):after {
@@ -259,13 +258,13 @@ nav {
 /*============= board 부분 =============*/
 .board_wrap {
 	display: table;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 .board_wrap .board_data {
 	display: table-cell;
 	width: 32%;
-	max-width: 260px;
+	max-width: 208px;
 	padding: 0 1%;
 	color: #060606;
 }
@@ -297,7 +296,7 @@ nav {
 }
 
 .board_wrap .board_data .title{
-    margin: 20px 0 14px;
+    margin: 16px 0 12px;
 }
 
 .board_wrap .board_data .title a{
@@ -313,15 +312,15 @@ nav {
 
 .board_wrap .board_data .title h3 {
 	font-weight: 600;
-	margin-bottom: 8px;
+	margin-bottom: 7px;
 }
 
 .board_wrap .board_data .btn a {
 	display: inline-block;
 	background-color: #0097c3;
 	color: #fff;
-	padding: 10px 18px;
-	margin-top: 14px;
+	padding: 7px 15px;
+	margin-top: 15px;
 	text-align: center;
 	font-weight: 600;
 }
@@ -354,7 +353,7 @@ footer {
 }
 
 .footer_in .addr .logo_bottom img {
-    width: 90%;
+    width: 80%;
 }
 
 .footer_in .addr .footer_text {
@@ -365,11 +364,11 @@ footer {
 }
 .footer_in .addr .footer_text i {
 	display: inline-block;
-	width: 7px;
+	width: 5px;
 	padding: 0 10px;
 }
 .footer_in .addr .footer_text .bank {
-	margin-left: 25px;
+	margin-left: 23px;
 }
 .footer_in .icon {
 	display: inline-block;
@@ -380,7 +379,7 @@ footer {
 }
 .icon img {
 	display: inline-block;
-	width: 30px;
+	width: 25px;
 	padding: 0 0 0 5px;
 }
 .icon a:hover img {
@@ -388,6 +387,9 @@ footer {
 	-webkit-transform: scale(1.15);
 	-moz-transform: scale(1.15);
 	-o-transform: scale(1.15);
+	-webkit-transition: .3s;
+	-moz-transition: .3s;
+	-ms-transition: .3s;
 }
 .icon a img {
 	transform: scale(1);
@@ -405,10 +407,12 @@ footer {
 	bottom: 15px;
 }
 .return-top img {
-	width: 45px;
+	width: 35px;
 }
 
-/* ================================== main css 1280 ================================== */
+
+/* ================================== main css 1024 ================================== */
+
 /* Container Layout */
 .slider {
 	width: 100%;
@@ -417,7 +421,7 @@ footer {
 .slider > div {
 	position: relative;
 	width: 100%;
-	height: 533px;
+	height: 426px;
 }
 
 .slider > div .background {
@@ -442,8 +446,8 @@ footer {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	width: 533px;
-	margin: -86px 0 0 -266px;
+	width: 426px;
+	margin: -69px 0 0 -213px;
 	color: #fff;
 	text-align: center;
 }
@@ -463,15 +467,16 @@ footer {
 
 .slider .text-block .btn a {
 	display: inline-block;
-	border: solid 3px #fff;
-	margin-top: 40px;
-	padding: 10px 25px 10px;
+	border: solid 2px #fff;
+	margin-top: 28px;
+	padding: 10px 25px 9px;
 }
 
 .slider .text-block .btn a:hover {
 	background-color: #0097c3;
 	border-color: #0097c3;;
 }
+
 
 /*============= 협회 소개 =============*/
 #intro {
@@ -480,7 +485,7 @@ footer {
 
 .intro-block {
 	display: table;
-	margin: 90px auto 80px;
+	margin: 72px auto 64px;
 	text-align: center;
 	background-color: #fff;
 	overflow: hidden;
@@ -516,7 +521,7 @@ footer {
 }
 
 .intro_txt p {
-	margin-top: 15px;
+	margin-top: 18px;
 }
 
 .intro_txt a:hover {
@@ -527,8 +532,8 @@ footer {
 }
 
 .intro_txt .btn_intro {
-	padding: 12px 25px;
-	margin-top: 20px;
+	padding: 13px 25px;
+	margin-top: 17px;
 	background-color: #0097c3;
 	display: inline-block;
 	color: #fff;
@@ -539,7 +544,7 @@ footer {
 /*============= 3개의 아이콘그림 부분 =============*/
 #ico {
 	width: 100%;
-	padding: 88px 0 84px 0;
+	padding: 71px 0 67px 0;
 	background-color: #f2f2f2;
 	text-align: center;
 }
@@ -552,13 +557,13 @@ footer {
 
 .ico_txt a {
 	display: inline-block;
-	padding: 6px;
+	padding: 5px;
 }
 
 .ico_txt a:link,
 .ico_txt a:visited {
-	font-size: 20px;
-	line-height: 33px;
+	font-size: 16px;
+	line-height: 8px;
 	color: #060606;
 	font-weight: 700;
 }
@@ -572,7 +577,7 @@ footer {
 
 .ico_txt img {
 	width: 100%;
-	margin-bottom: 5px;
+	margin-bottom: 10px;
 }
 
 /*============= 협회 활동 =============*/
@@ -583,7 +588,7 @@ footer {
 
 .act-block {
 	position: relative;
-	padding: 62px 0 38px;
+	padding: 66px 0 40px;
 }
 .act-list:after {
 	clear: both;
@@ -593,7 +598,7 @@ footer {
 	margin: 0 auto;
 	text-align: center;
 	color: #060606;
-	margin-bottom: 31px;
+	margin-bottom: 32px;
 }
 
 .act_title h2 {
@@ -603,13 +608,11 @@ footer {
 .act_title p {
 	display: inline-block;
 	min-height: 28px;
-	letter-spacing: 0.1px;
 }
 
 .board_data p {
-    height: 90px;
+    height: 75px;
 }
-
 /*============= 후원하기 영역 =============*/
 .patronize {
 	position: relative;
@@ -643,9 +646,9 @@ footer {
 .patronize .text-block section {
 	float: right !important;
 	max-width: 100%;
-	width: 373px;
-	padding: 98px 0 104px;
-	font-size: 13px;
+	width: 298.6px;
+	padding: 79px 0 83px;
+	font-size: 14px;
 }
 .patronize .text-block section:after {
 	clear: both;
@@ -654,17 +657,17 @@ footer {
 	content: "";
 }
 .patronize .text-block section h2 {
-	max-width: 290px;
+	max-width: 436px;
 	line-height: 1.35;
 }
 .patronize .text-block section p {
 	line-height: 1.9;
-	max-width: 310px;
+	max-width: 248px;
 }
 .patronize .text-block section .button a {
 	display: inline-block;
-	margin-top: 15px;
-	padding: 20px 32px;
+	margin-top: 12px;
+	padding: 15px 25px;
 	background: #0097c3;
 	text-align: center;
 	font-weight: 600;
@@ -704,7 +707,7 @@ footer {
 	display: inline-block;
 	position: relative;
 	width: 12.5%;
-    height: 133.3px;
+    height: 106.6px;
     overflow: hidden;
     background-image: url('http://placehold.it/200x200');
     background-repeat: no-repeat;
@@ -768,23 +771,23 @@ footer {
 .main-gallery .detail_photo .photo_item {
 	position: relative;
 	display: inline-block;
-	max-width: 70%;
-	max-height: 700px;
+	max-width: 50%;
+	max-height: 500px;
 }
 .main-gallery .detail_photo .photo_item.limit {
-	height: 700px;
+	height: 500px;
 }
 .main-gallery .detail_photo .photo_item i{
     font-size: 70px;
     position: absolute;
-	bottom: -56.6px;
-    right: -56.6px;
+	bottom: -85px;
+    right: -85px;
     color: #fff;
 }
 .main-gallery .detail_photo .photo {
 	width: 100%;
 	height: 100%;
-	padding: 10px;
+	padding: 15px;
 	overflow-y: scroll;
 	background: #fff;
 }
@@ -793,9 +796,7 @@ footer {
 }
 
 
-
-/* ================================== sub css 1280 ================================== */
-
+/* ================================== sub css 1024 ================================== */
 /*========================== sub common 파일 시작 ==========================*/
 /* Nav Layout */
 .main_img {
@@ -809,7 +810,7 @@ footer {
     display: inline-block;
     width: 100%;
     text-align: center;
-    margin: 250px 0 90px;
+    margin: 133px 0 45px;
 }
 
 .title h2 {
@@ -817,10 +818,10 @@ footer {
     font-weight: 400;
 }
 
-.main_img > .title > .f3 {
+#container1 > .title {
     position: relative;
     color: #fff;
-    word-spacing: 10px;
+    word-spacing: 6px;
 }
 
 .background {
@@ -845,17 +846,13 @@ footer {
 /*============= 협회 활동 =============*/
 
 .section_board {
-    margin: 82px auto 53px;
-}
-
-.section_board > .date {
-    color: #0097c3;
+    margin: 67px auto 42px;
 }
 
 /* 하단 페이지 숫자 */
 
 .page {
-    margin: 50px auto 66px;
+    margin: 10px auto 50px;
     text-align: center;
 }
 
@@ -866,7 +863,7 @@ footer {
 .page a {
     display: inline-block;
     color: #060606;
-    margin: 0 15px;
+    margin: 0 10px;
     font-weight: 600;
 }
 
@@ -885,7 +882,7 @@ footer {
 /*========================== detail_page 파일 시작 ==========================*/
 
 .section-detail {
-    margin: 94px auto 0;
+    margin: 76px auto 0;
 }
 
 .section-detail .detail_title {
@@ -894,14 +891,14 @@ footer {
 }
 
 .section-detail .detail_txt {
-    width: 760px;
-    padding: 40px 0 140px 0px;
+    width: 405px;
+    padding: 20px 0 70px 0px;
     text-align: left;
     margin: 0 auto;
 }
 
 .section-detail .detail_txt img {
-    padding-bottom: 16px;
+    padding-bottom: 12px;
     width: 100%;
 }
 
@@ -911,12 +908,14 @@ footer {
 }
 
 .section-detail .detail_txt > ul > li {
-    padding-bottom: 13px;
     line-height: 1.5;
+}
+.section-detail .detail_txt > ul > li:nth-last-child(2) {
+    padding-bottom: 0px;
 }
 
 .section-detail .date {
-    padding: 4px 8px;
+    padding: 4px 10px;
     margin: 4px;
     font-weight: 600px;
     text-align: center;
@@ -931,23 +930,23 @@ footer {
 /*========================== gallery 파일 시작 ==========================*/
 
 .section-gallery {
-    margin-top: 98px;
+    margin-top: 78px;
 }
 
 .section-gallery ul {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     list-style-type: none;
 }
 
 .section-gallery ul li {
-    min-width: 32.94%;
+    min-width: 32.88%;
     display: inline-block;
 }
 
 .section-gallery ul li a {
     display: inline-block;
-    width: 246px;
-    height: 246px;
+    width: 205px;
+    height: 205px;
     overflow: hidden;
 }
 
@@ -985,7 +984,7 @@ footer {
 }
 
 .section-gallery .page {
-    margin-top: 50px;
+    margin-top: 30px;
 }
 /*========================== gallery 파일 끝 ==========================*/
 
@@ -995,20 +994,16 @@ footer {
 /*========================== movie 파일 시작 ==========================*/
 
 .movie {
-    width: 800px;
-    margin: 147px auto 60px;
+    width: 426px;
+    margin: 78px auto 30px;
 }
 
 .section_list_movie {
-    margin: 0 auto 60px;
-    padding-bottom: 60px;
+    margin: 0 auto 30px;
+    padding-bottom: 30px;
     border-bottom: solid 2px #f2f2f2;
     list-style-type: none;
     color: #060606;
-}
-
-.movie > div:nth-last-child(1) {
-    padding-bottom: px;
 }
 
 .section_list_movie .section_date_movie {
@@ -1018,14 +1013,14 @@ footer {
 }
 
 .section_color_movie .date {
-    margin-top: 6px;
+    margin-top: 3px;
 }
 
 .section_list_movie p {
     color: #666666;
     line-height: 1.85;
-    padding-top: 22px;
-    margin: 2px 0 10px 0;
+    padding-top: 12px;
+    margin: 1px 0 5px 0;
 }
 /*========================== movie 파일 끝 ==========================*/
 
@@ -1034,21 +1029,21 @@ footer {
 
 /*========================== goal 협회목적 및 사업 시작 ==========================*/
 .section-goal {
-    width: 800px;
-    padding: 98px 0 83px 0;
+    width: 426px;
+    padding: 78px 0 66px 0;
     line-height: 1.85;
 }
 
 .section-goal > div {
-    padding: 20px;
-    margin-bottom: 33px;
+    padding: 22px;
+    margin-bottom: 26px;
     position: relative;
-    border: 3px solid #0097c3;
+    border: 2px solid #0097c3;
     border-radius: 30px;
 }
 
 .section-goal > div h2 {
-    padding-bottom: 10px;
+    padding-bottom: 6px;
 }
 
 /*========================== goal 협회목적 및 사업 끝 ==========================*/
@@ -1058,17 +1053,16 @@ footer {
 
 /*========================== error_page 시작 ==========================*/
 .section-error {
-    width: 100%;
     min-height: 100px;
     text-align: center;
-    padding-top: 98px;
+    padding-top: 78px;
     line-height: 1.8;
     margin: 0 auto;
 }
 
 .error_img {
     width: 100%;
-    min-height: 250px;
+    min-height: 200px;
     background-image: url('../images/error_bg.png');
     background-repeat: no-repeat;
     background-position: bottom;
@@ -1082,7 +1076,7 @@ footer {
 .section-error i,
 .section-error p {
     display: inline-block;
-    padding: 1px;
+    padding: 6px;
 }
 
 .section-error p span {
@@ -1090,7 +1084,7 @@ footer {
 }
 
 .line span {
-    padding: 0 66px;
+    padding: 0 100px;
 }
 
 .line {
@@ -1110,10 +1104,10 @@ footer {
 
 .error_img > a {
     position: relative;
-    top: 53px;
+    top: 42px;
     background-color: #333;
     color: #fff;
-    padding: 10px 15px;
+    padding: 9px 14px;
     font-weight: 600;
 }
 

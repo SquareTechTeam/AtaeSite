@@ -19,7 +19,7 @@
     font-weight: 400;
 }
 
-.title div {
+#container1 > .title {
     position: relative;
     color: #fff;
     word-spacing: 10px;
