@@ -115,7 +115,7 @@
 
 .section-detail .date {
     padding: 8px 15px;
-    margin: 7px; 
+    margin: 7px;
     letter-spacing: -0.2px;
     font-weight: 600px;
     text-align: center;
@@ -472,11 +472,11 @@
     width: 100%;
 }
 
-/*========================== history(연혁 및 본부) 시작 ==========================*/
-    
-    
- 
-/*========================== greeting(인사말) 시작 ==========================*/    
+/*========================== history(연혁 및 본부) 끝 ==========================*/
+
+
+
+/*========================== greeting(인사말) 시작 ==========================*/
 .section-greeting {
     margin: 0 auto;
     padding: 147px 0 125px 0;
@@ -512,3 +512,73 @@
 .greeting_txt {
     width: 60%;
 }
+/*========================== greeting(인사말) 끝 ==========================*/
+
+
+
+
+/*========================== give(후원하기) 시작 ==========================*/    
+.section-give {
+    margin-bottom: 80px;
+}
+.give-slider {
+    height: 800px;
+    font-size: 80px;
+    color: #fff;
+    background: #247835;
+}
+.give-wrap {
+    position: relative;
+    padding: 10px 0;
+}
+.give-wrap .filter{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height:100%;
+    background: #fff;
+    opacity: 0;
+}
+.give-wrap .give-step-bar {
+    width: 100%;
+    height: 10px;
+    margin: 80px 0;
+    text-align: center;
+    background: #55aaff;
+}
+.give-wrap .give-step-bar li {
+    display: inline-block;
+    width: 5%;
+}
+.give-wrap .give-step-bar li:nth-child(3n-1) {
+    margin: 0 40%;
+}
+.give-wrap .give-step-bar li:before {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-top: -14px;
+    content: " ";
+    border: solid 4px #55aaff;
+    border-radius: 30px;
+    background: #fff;
+}
+.give-wrap.step1 .give-step-bar li:nth-child(1):before {
+    background-color: #55aaff;
+}
+.give-wrap.step2,
+.give-wrap.step3 {
+    display: none;
+}
+.give-wrap.step2 .give-step-bar li:nth-child(1):before,
+.give-wrap.step2 .give-step-bar li:nth-child(2):before {
+    background-color: #55aaff;
+}
+.give-wrap.step3 .give-step-bar li:before {
+    background-color: #55aaff;
+}
+.give-wrap .give-step-content {
+    height: 800px;
+    background: #55aaff;
+}
+/*========================== give(후원하기) 끝 ==========================*/

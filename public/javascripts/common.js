@@ -98,4 +98,31 @@ $(document).ready(function () {
         $('.detail_photo').hide();
         return false;
     });
+
+    /* Give Step Animation */
+    $(".give-wrap .btn").click(function(){
+        var thisStep = $(this).parent().parent().attr("class").split(" ")[1];
+        var nextStep = "";
+        if(thisStep=="step1"){
+            nextStep = "step2";
+        }else if(thisStep=="step2"){
+            nextStep = "step3";
+        }else{
+            return false;
+        }
+        console.log(thisStep, nextStep)
+
+        $("." + nextStep).show();
+        var moveTop = $("." + nextStep).offset().top;
+        var minusTop = $(".give-step-bar ol").height();
+        $("html, body").animate({
+            "scrollTop" : moveTop
+        }, 500);
+        $("." + thisStep + " .filter").show();
+        $("." + thisStep + " .filter").animate({
+            "opacity" : 0.6
+        }, 500);
+
+        return false;
+    });
 });
