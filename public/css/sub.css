@@ -2,6 +2,7 @@
 /* Nav Layout */
 .main_img {
     width: 100%;
+    color: #fff;
     background: url('../images/background-sub2.png');
     background-position: center;
     background-size: cover;
@@ -244,7 +245,6 @@
 
 /*========================== goal 협회목적 및 사업 시작 ==========================*/
 .section-goal {
-    width: 800px;
     padding: 147px 0 125px 0;
     line-height: 1.85;
 }
@@ -255,6 +255,10 @@
     position: relative;
     border: 3px solid #0097c3;
     border-radius: 30px;
+}
+
+.section-goal > div:nth-child(2n) {
+    border-color: #f4847c;
 }
 
 .section-goal > div h2 {
@@ -479,11 +483,7 @@
     text-align: center;
 }
 
-.section-or {
-    width: 600px;
-}
-
-.section-or img {
+.section-history img, .section-or img {
     width: 100%;
     margin-bottom: 100px;
     border: 2px solid #b1b1b1;
@@ -609,7 +609,7 @@
 }
 
 #info_form table td {
-    
+
 }
 
 /*========================== give(후원하기) 끝 ==========================*/

@@ -38,6 +38,12 @@ body {
 	width: 1170px;
 	margin: 0 auto;
 }
+
+.block-medium {
+	width: 900px;
+	margin: 0 auto;
+}
+
 .f1-upper {
     font-size: 60px;
 }
