@@ -8,63 +8,126 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- include libraries(jQuery, bootstrap) -->
     <link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet">
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script> 
-    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.js"></script> 
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.js"></script>
 
     <!-- include summernote css/js-->
     <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.8/summernote.css" rel="stylesheet">
     <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.8/summernote.js"></script>
 
-    
 </head>
+
 <body>
-    <div>
-        <select name="category" class="category">
+    <div class="section_write">
+        <label for="category">카테고리 선택: </label>
+        <select class="category" name="category" id="category">
             <option value="ATActivity">협회활동</option>
             <option value="ATBizActivity">사업활동</option>
             <option value="ATBroadCastRefer">보도자료</option>
             <option value="ATRefer">관련자료</option>
         </select>
+        <label for="thumbnail">제목: </label>
+        <input type="text" class="title" name="title" id="title" placeholder="제목을 입력해 주세요.">
+        
+        <div class="file_upload"><input type="file" class="thumb_img" name="thumb_img" />
+            <a href="javascript:;" class="btn_upload">Upload</a></div>
     </div>
-    <div><input type="text" class="title" name="title"></input></div>
-    <div><p>썸네일 설정</p></div>
-    <div><input type="file" class="thumb_img" name="thumb_img"></input><a href="javascript:;" class="thumb_upload">Upload</a></div>
+
     <div id="summernote">Hello Summernote</div>
+    <div><label>이미지 삽입</label>
+        <div>
+            <input type="file" class="content_img" name="content_img" />
+        </div>
+        <div>
+            <input type="button" value="이미지 삽입" class="image_upload" />
+        </div>
+    </div>
+    <a href="javascript:;" class="submit">submit</a>
     <script type="text/javascript">
-        $(document).ready(function() {
-            $('#summernote').summernote();
-            /*
-            $('.submit').onclick(function(){
-                var category = $('.category').value();
-                var title = $('.title').value();
-                var markupStr = $('#summernote').summernote('code');
+        //$(document).ready(function() {
+            var thumb_path;
+            $('#summernote').summernote({
+                height: 400,
+                onImageUpload : function(files, editor, welEditable) {
+                    console.log(files[0]);
+                    sendFile(files[0], editor, welEditable);
+                }
+            });
+            
+            $('.submit').click(function(){
+                if(thumb_path == null || thumb_path.length <= 0){
+                    alert('썸네일을 골라 업로드 해 주세요. 안그럼 안됨');
+                    return false;
+                }
+                console.log($('#category').val()+', '+$('#title').val());
+                var data = new Object();
+                data.category = $('#category').val();
+                data.title = $('#title').val();
+                data.content =  $('#summernote').summernote('code');
+                data.thumbnail = thumb_path;
+
                 $.ajax({
-
-                });
-                return false;
-            });*/
-
-            $('.thumb_upload').click(function(){
-                var formData = new FormData();
-                formData.append("thumb_img", $(".thumb_img")[0].files[0]);
-
-                $.ajax({
-                    url : '/upload_thumb',
-                    processData: false,
-                    contentType: false,
-                    data: formData,
+                    url: '/regist_content',
                     type: 'POST',
+                    data: data,
                     success: function(result){
-                        console.log(result);
-                        alert("업로드 성공!!");
+                        alert('Success');
+                    },
+                    error: function(err){
+                        alert('Fail');
                     }
                 });
                 return false;
             });
-        });
+
+            $('.image_upload').click(function(){
+                var formData = new FormData();
+                formData.append("content_img", $(".content_img")[0].files[0]);
+
+                $.ajax({
+                    url: '/upload_board',
+                    processData: false,
+                    contentType: false,
+                    data: formData,
+                    type: 'POST',
+                    success: function(result) {
+                        console.log(result);
+                        if(result == "err"){
+                            alert("업로드 실패.. 이미지(jpg, png)만 업로드 가능합니다.");
+                        }else{
+                            $('#summernote').summernote('insertImage', result);
+                            alert('Image Uploaded & inserted Successful!!');
+                        }
+                    }
+                });
+            });
+
+            $('.btn_upload').click(function() {
+                var formData = new FormData();
+                formData.append("thumb_img", $(".thumb_img")[0].files[0]);
+
+                $.ajax({
+                    url: '/upload_thumb',
+                    processData: false,
+                    contentType: false,
+                    data: formData,
+                    type: 'POST',
+                    success: function(result) {
+                        console.log(result);
+                        if(result == "err"){
+                            alert("업로드 실패.. 이미지(jpg, png)만 업로드 가능합니다.");
+                        }else{
+                            thumb_path = result;
+                            alert("업로드 성공!!");
+                        }
+                    }
+                });
+                return false;
+            });
+        //});
     </script>
 
-    <a href="javascript:;" class="submit">submit</a>
+    
 </body>
 
 </html>

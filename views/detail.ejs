@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
-    <title>Page Not Found(404)</title>
+    <title>상세페이지 > (사)아태평화교류협회</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="msapplication-TileColor" content="#ffffff " />
@@ -99,23 +99,25 @@
         <div id="container">
             <div class="main_img">
                 <div class="title">
-                    <h2 class="f1-upper">404 Page Not Found</h2>
-                    <div class="f3"><a href="/">HOME</a></div>
+                    <h2 class="f1-upper"><%= subtitle %></h2>
+                    <div class="f3"><a href="#">HOME</a> / <a href="#"><%= subtitle %> </a></div>
                 </div>
                 <div class="background"></div>
             </div>
 
-
             <div id="section">
-                <div class="section-error block f6">
-                    <div class="f1">
-                    <i class="fa fa-ban" aria-hidden="true"></i><p>Error <span>404</span> Not Found.</p><br />
-                    <p class="line"><span>페이지를 표시할 수 없습니다.</span></p>
-                    </div><br />
-                    <div>요청하신 파일을 찾을 수 없거나, 서버에서 제거 되었습니다.<br />
-                    URL을 확인해 주시기 바랍니다.</div>
+                <div class="section-detail block">
+                    <div class="detail_title f1"><%= results[0].title %></div>
+                    <div class="date f6"><%
+                                            var originDate = results[0].createdAt.toString();
+                                            var dateArray = originDate.split(' ');
+                                            var resultDate = dateArray[1]+' '+parseInt(dateArray[2])+', '+dateArray[3];
+                                        %>
+                                        <%= resultDate %> </div>
+                    <div class="detail_txt">
+                        <%- results[0].content %>
+                    </div>
                 </div>
-                <div class="error_img f4"><a href="/">홈페이지 바로가기</a></div>
             </div>
 
             <footer>
