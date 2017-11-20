@@ -277,7 +277,7 @@ nav {
 }
 
 .board_wrap .board_data > a {
-	display: block;
+	display: inline-block;
 	width: 200px;
 	height: 200px;
 	overflow: hidden;
