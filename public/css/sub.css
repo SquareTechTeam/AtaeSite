@@ -2,8 +2,8 @@
 /* Nav Layout */
 .main_img {
     width: 100%;
+    background: ;
     color: #fff;
-    background: url('../images/background-sub2.png');
     background-position: center;
     background-size: cover;
 }
@@ -31,6 +31,22 @@
     height: 100%;
     background-position: center;
     background-size: cover;
+}
+
+.m1 {
+     background: url('../images/m1_banner.png');
+}
+.m2 {
+     background: url('../images/m2_banner.png');
+}
+.m3 {
+     background: url('../images/m3_banner.png');
+}
+.m4 {
+     background: url('../images/m4_banner.png');
+}
+.m5 {
+     background: url('../images/m5_banner.png');
 }
 
 

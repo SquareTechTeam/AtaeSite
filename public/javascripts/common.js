@@ -27,14 +27,14 @@ $(document).ready(function () {
     );
 
     /* Main Slider */
-    /* $('.slider').bxSlider({
+    $('.slider').bxSlider({
         mode: 'fade',
         captions: true,
         captions: true,
         auto: true,
         speed: 300,
         pause: 4000
-    }); */
+    });
 
     /* Scroll Button */
     $(window).scroll(function () {
@@ -147,9 +147,9 @@ $(document).ready(function () {
     $('.email_select').change(function () {
         var email = $(this).val();
         $(this).parent().find('.email_back').val(email);
-        
+
     });
-    
+
     /* 후원하기 구분 radio 클릭 */
     $('#group').click(function(){
         $('.sup_kind1').hide();
