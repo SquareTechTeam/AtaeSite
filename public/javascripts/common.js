@@ -84,11 +84,7 @@ $(document).ready(function () {
     });
 
     /* Background Wrap Show & Hide */
-<<<<<<< HEAD
-    $('.main-gallery a, .section-block_gallery ul li a').click(function () {
-=======
     $('.main-gallery a').click(function(){
->>>>>>> 43b5155267ef6fc553a8ddacf717f163428a1e7d
         var imgData = $(this).parent().css("background-image").split("\"")[1];
         $(".detail_photo img").attr("src", imgData);
 
@@ -101,9 +97,6 @@ $(document).ready(function () {
         }
         return false;
     });
-<<<<<<< HEAD
-    $('.detail_photo i, .detail_photo').click(function () {
-=======
     $('.section-gallery ul li a').click(function(){
         var imgSrc = $(this).find("img").attr("src");
         var imgAlt = $(this).find("img").attr("alt");
@@ -120,7 +113,6 @@ $(document).ready(function () {
         return false;
     });
     $('.detail_photo i, .detail_photo').click(function(){
->>>>>>> 43b5155267ef6fc553a8ddacf717f163428a1e7d
         $('.detail_photo').hide();
         return false;
     });
@@ -151,7 +143,7 @@ $(document).ready(function () {
         return false;
     });
 
-
+    /* 후원 email form */
     $('.email_select').change(function () {
         var email = $(this).val();
         $(this).parent().find('.email_back').val(email);

@@ -599,4 +599,17 @@
     height: 800px;
     background: #55aaff;
 }
+
+
+
+/* 후원하기 폼 */
+#info_form table tr {
+    text-align: left;
+    padding: 10px 0 10px 20px;
+}
+
+#info_form table td {
+    
+}
+
 /*========================== give(후원하기) 끝 ==========================*/

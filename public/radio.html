@@ -33,10 +33,15 @@
 </head>
 
 <body>
-    <form name="후원자 정보 입력" method="post">
-        <table>
+    <form id="info_form" name="후원 정보 입력" method="post">
+        <table class="f7">
             <tr height="2" bgcolor="#0097c3">
                 <td colspan="2"></td>
+            </tr>
+            <tr>
+                <th>후원인 구분</th>
+                <td><input type="radio" name="supporter" required checked value="man"/> 개인
+                <input type="radio" name="supporter" required checked value="group"/> 법인</td>
             </tr>
             <tr>
                 <th> 이름</th>
