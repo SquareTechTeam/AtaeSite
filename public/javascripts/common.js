@@ -27,14 +27,16 @@ $(document).ready(function () {
     );
 
     /* Main Slider */
-    $('.slider').bxSlider({
-        mode: 'fade',
-        captions: true,
-        captions: true,
-        auto: true,
-        speed: 300,
-        pause: 4000
-    });
+    if($(".slider").hasClass("slider") === true){
+        $('.slider').bxSlider({
+            mode: 'fade',
+            captions: true,
+            captions: true,
+            auto: true,
+            speed: 300,
+            pause: 4000
+        });
+    }
 
     /* Scroll Button */
     $(window).scroll(function () {
