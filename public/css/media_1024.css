@@ -38,6 +38,10 @@ body {
 	width: 624px;
 	margin: 0 auto;
 }
+.block-medium {
+  width: 426px;
+	margin: 0 auto;
+}
 .f1-upper {
     font-size: 30px;
 }
@@ -802,6 +806,7 @@ footer {
 /* Nav Layout */
 .main_img {
     width: 100%;
+		color: #fff;
     background: url('../images/background-sub2.png');
     background-position: center;
     background-size: cover;
@@ -1041,7 +1046,6 @@ footer {
 
 /*========================== goal 협회목적 및 사업 시작 ==========================*/
 .section-goal {
-    width: 426px;
     padding: 78px 0 66px 0;
     line-height: 1.85;
 }
@@ -1052,6 +1056,10 @@ footer {
     position: relative;
     border: 2px solid #0097c3;
     border-radius: 30px;
+}
+
+.section-goal > div:nth-child(2n) {
+    border-color: #f4847c;
 }
 
 .section-goal > div h2 {

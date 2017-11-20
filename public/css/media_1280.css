@@ -38,6 +38,12 @@ body {
 	width: 780px;
 	margin: 0 auto;
 }
+
+.block-medium {
+	width: 600px;
+	margin: 0 auto;
+}
+
 .f1-upper {
     font-size: 40px;
 }
@@ -801,6 +807,7 @@ footer {
 /* Nav Layout */
 .main_img {
     width: 100%;
+		color: #fff;
     background: url('../images/background-sub2.png');
     background-position: center;
     background-size: cover;
@@ -1057,6 +1064,10 @@ footer {
     position: relative;
     border: 3px solid #0097c3;
     border-radius: 30px;
+}
+
+.section-goal > div:nth-child(2n) {
+    border-color: #f4847c;
 }
 
 .section-goal > div h2 {
