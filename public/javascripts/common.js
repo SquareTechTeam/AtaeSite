@@ -118,8 +118,8 @@ $(document).ready(function () {
     });
 
     /* Give Step Animation */
-    $(".give-wrap .btn").click(function () {
-        var thisStep = $(this).parent().parent().attr("class").split(" ")[1];
+    $(".give-wrap .next_btn").click(function () {
+        var thisStep = $(this).parent().parent().parent().attr("class").split(" ")[1];
         var nextStep = "";
         if (thisStep == "step1") {
             nextStep = "step2";

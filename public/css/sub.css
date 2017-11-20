@@ -623,7 +623,7 @@
 .info_form {
     border-top: 2px solid #1c1c1c;
     border-bottom: 2px solid #1c1c1c;
-    margin: 30px 0;
+    margin: 60px 0;
 }
 
 .info_form span {
@@ -646,8 +646,9 @@
 }
 
 .btn_right {
+    width: 70%;
+    margin: 0 auto;
     text-align: right;
-    margin-bottom: 60px;
 }
 
 .btn_right .next_btn {

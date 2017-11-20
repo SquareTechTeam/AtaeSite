@@ -276,11 +276,11 @@
                                                 </table>
                                             </div>
                                         </form>
-                                        <div class="btn_right">
-                                            <a href="#" class="next_btn f6">다음단계</a>
-                                            <a href="#" class="cancel_btn f6">취소하기</a>
-                                        </div>
                                     </div>
+                                </div>
+                                <div class="btn_right">
+                                    <a href="#" class="next_btn f6">다음단계</a>
+                                    <a href="#" class="cancel_btn f6">취소하기</a>
                                 </div>
                             </div>
                         </div>
@@ -294,8 +294,23 @@
                                 </ol>
                             </div>
                             <div class="give-step-content block">
-                                STEP 2 내용
-                                <a href="#" class="btn">다음 단계</a>
+                                STEP 2
+                                <form method="post" class="check">
+                                    <input type="radio" name="pay" value="신용카드" id="pay_card" />
+                                    <label for="pay_card">신용카드</label>
+                                    <input type="radio" name="pay" value="계좌이체" id="pay_account" />
+                                    <label for="pay_account">계좌이체</label>
+                                    <input type="radio" name="pay" value="무통장입금" id="pay_without_bank" />
+                                    <label for="pay_without_bank">무통장입금</label>
+                                    <input type="radio" name="pay" value="휴대폰 결제" id="pay_tel" />
+                                    <label for="pay_tel">휴대폰 결제</label>
+                                    <input type="radio" name="pay" value="카카오페이" id="pay_cacao" />
+                                    <label for="pay_cacao">카카오페이</label>
+                                </form>
+                                <div class="btn_right">
+                                    <a href="#" class="next_btn f6">다음단계</a>
+                                    <a href="#" class="cancel_btn f6">취소하기</a>
+                                </div>
                             </div>
                         </div>
                         <div class="give-wrap step3">
@@ -308,7 +323,9 @@
                                 </ol>
                             </div>
                             <div class="give-step-content block">
-                                STEP 3 내용
+                                STEP 3<br />
+                                후원이 정상적으로 처리 되었습니다.<br />
+                                감사합니다.
                                 <span href="#" class="btn">완료</span>
                             </div>
                         </div>
