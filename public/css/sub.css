@@ -2,7 +2,6 @@
 /* Nav Layout */
 .main_img {
     width: 100%;
-    background: ;
     color: #fff;
     background-position: center;
     background-size: cover;
@@ -34,19 +33,19 @@
 }
 
 .m1 {
-     background: url('../images/m1_banner.png');
+     background-image: url('../images/m1_banner.png');
 }
 .m2 {
-     background: url('../images/m2_banner.png');
+     background-image: url('../images/m2_banner.png');
 }
 .m3 {
-     background: url('../images/m3_banner.png');
+     background-image: url('../images/m3_banner.png');
 }
 .m4 {
-     background: url('../images/m4_banner.png');
+     background-image: url('../images/m4_banner.png');
 }
 .m5 {
-     background: url('../images/m5_banner.png');
+     background-image: url('../images/m5_banner.png');
 }
 
 
@@ -523,10 +522,9 @@
 }
 
 .greeting_side {
-    width: 25%;
-    height: 665px;
-    padding-top: 50px;
-    background-color: antiquewhite;
+    width: 30%;
+    background-color: #0097c3;
+    color: #fff;
 }
 
 .greeting_side img {
@@ -544,7 +542,7 @@
 }
 
 .greeting_txt {
-    width: 60%;
+    width: 65%;
 }
 /*========================== greeting(인사말) 끝 ==========================*/
 
