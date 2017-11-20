@@ -27,14 +27,14 @@ $(document).ready(function () {
     );
 
     /* Main Slider */
-    $('.slider').bxSlider({
+    /* $('.slider').bxSlider({
         mode: 'fade',
         captions: true,
         captions: true,
         auto: true,
         speed: 300,
         pause: 4000
-    }); 
+    }); */
 
     /* Scroll Button */
     $(window).scroll(function () {
@@ -148,5 +148,21 @@ $(document).ready(function () {
         var email = $(this).val();
         $(this).parent().find('.email_back').val(email);
         
+    });
+    
+    /* 후원하기 구분 radio 클릭 */
+    $('#group').click(function(){
+        $('.sup_kind1').hide();
+        $('.sup_kind2').show();
+    });
+    $('#man').click(function(){
+        $('.sup_kind2').hide();
+        $('.sup_kind1').show();
+    });
+    $('#man_receipt_yes').click(function(){
+        $('.man_num').show();
+    });
+    $('#man_receipt_no').click(function(){
+        $('.man_num').hide();
     });
 });

@@ -33,39 +33,41 @@
 </head>
 
 <body>
-    <form id="info_form" name="후원 정보 입력" method="post">
-        <table class="f7">
-            <tr height="2" bgcolor="#0097c3">
-                <td colspan="2"></td>
-            </tr>
-            <tr>
-                <th>후원인 구분</th>
-                <td><input type="radio" name="supporter" required checked value="man"/> 개인
-                <input type="radio" name="supporter" required checked value="group"/> 법인</td>
-            </tr>
-            <tr>
-                <th> 이름</th>
-                <td><input type="text" name="name" required /></td>
-            </tr>
-            <tr>
-                <th>생년월일</th>
-                <td>
-                    <input type="date" />
-                    <input type="text" name="jumin_1" minlength="6" maxlength="6" required placeholder="예)901111" /></td>
-            </tr>
-            <tr>
-                <th>핸드폰 번호</th>
-                <td><input type="text" name="tel1" minlength="3" maxlength="3" required /> -
-                    <input type="text" name="tel2" minlength="3" maxlength="4" required /> -
-                    <input type="text" name="tel3" minlength="4" maxlength="4" required />
-                </td>
-            </tr>
-            <tr>
-                <th>이메일</th>
-                <td>
-                    <input type='text' name="email_front" />@
-                    <input type='text' name="email_back" class="email_back" />
-                    <select class="email_select" name="email_select">
+    <div class="form_block block">
+        <div class="all_form">
+            <form class="info_form" name="후원자 정보 입력" method="post">
+                <div class="check f7">
+                    <span>후원인 구분</span>
+                    <input type="radio" name="supporter" id="man" required checked /> <label for="man">개인</label>
+                    <input type="radio" name="supporter" id="group" required /> <label for="group">법인</label>
+                </div>
+                <div>
+                    <table class="sup_kind1 f7">
+                        <tr>
+                            <td colspan="2"></td>
+                        </tr>
+                        <tr>
+                            <th><label for="man_name">이름</label></th>
+                            <td><input type="text" name="name" id="man_name" required /></td>
+                        </tr>
+                        <tr>
+                            <th><label for="man_birth">생년월일</label></th>
+                            <td>
+                                <input type="text" name="jumin_1" minlength="6" maxlength="6" id="man_birth" required placeholder="예)901111" /></td>
+                        </tr>
+                        <tr>
+                            <th><label for="man_tel">핸드폰 번호</label></th>
+                            <td><input type="text" name="tel1" minlength="3" maxlength="3" id="man_tel" required /> -
+                                <input type="text" name="tel2" minlength="3" maxlength="4" required /> -
+                                <input type="text" name="tel3" minlength="4" maxlength="4" required />
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><label for="man_email">이메일</label></th>
+                            <td>
+                                <input type='text' name="email_front" id="man_email" />@
+                                <input type='text' name="email_back" class="email_back" />
+                                <select class="email_select" name="email_select">
                          <option value="1">직접입력</option>
                          <option value="daum.net">daum.net</option>
                          <option value="empal.com">empal.com</option>
@@ -75,103 +77,87 @@
                          <option value="naver.com">naver.com</option>
                          <option value="nate.com">nate.com</option>
                       </select>
-                </td>
-            </tr>
-            <tr>
-                <th>주소</th>
-                <td>
-                    <input type="text" name="address" />
-                </td>
-            </tr>
-            <tr>
-                <th>메일/sns 정보 수신</th>
-                <td><input type="checkbox" name="sms" value="email" /> Email
-                    <input type="checkbox" name="sms" value="sms" /> SMS
-                    <input type="checkbox" name="sms" value="post" /> 우편
-                </td>
-            </tr>
-            <tr>
-                <th>기부금 영수증</th>
-                <td>
-                    <input type="radio" name="receipt" value="yes" checked /> 예
-                    <input type="radio" name="receipt" value="no" /> 아니오
-                </td>
-            </tr>
-            <tr>
-                <th>주민등록번호</th>
-                <td><input type="text" name="jumin_1" minlength="6" maxlength="6" required /> -
-                    <input type="password" name="jumin_2" minlength="7" maxlength="7" required /></td>
-            </tr>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><label for="man_address">주소</label></th>
+                            <td>
+                                <input type="text" name="address" id="man_address" />
+                            </td>
+                        </tr>
+                        <tr class="check">
+                            <th>메일/sns 정보 수신</th>
+                            <td><input type="checkbox" name="sms" id="man_email1" checked /> 
+                               <label for="man_email1">Email</label>
+                                <input type="checkbox" name="sms" value="sms" id="man_email2" checked /> 
+                                <label for="man_email2">SMS</label>
+                                <input type="checkbox" name="sms" value="post" id="man_email3" checked /> 
+                                <label for="man_email3">우편</label>
+                            </td>
+                        </tr>
+                        <tr class="check">
+                            <th>기부금 영수증</th>
+                            <td>
+                                <input type="radio" name="receipt" value="yes" id="man_receipt_yes" /> 
+                                <label for="man_receipt_yes">예</label>
+                                <input type="radio" name="receipt" value="no" id="man_receipt_no" checked /> 
+                                <label for="man_receipt_no">아니오</label>
+                            </td>
+                        </tr>
+                        <tr class="man_num">
+                            <th><label for="man_num">주민등록번호</label></th>
+                            <td><input type="text" name="man_num1" minlength="6" maxlength="6" id="man_num" required /> -
+                                <input type="password" name="man_num2" minlength="7" maxlength="7" required /></td>
+                        </tr>
 
 
-            <tr height="2" bgcolor="#0097c3">
-                <td colspan="2"></td>
-            </tr>
-            <tr>
-                <td colspan="2" align="center">
-                    <input type="submit" value="다음단계" />
-                    <input type="reset" value="취소하기" />
-                </td>
-            </tr>
-        </table>
-        
-        
-        
-        
-        
-        
-        <br><br><br><br><br>
-        
-        <!-- 사업자 선택 시 -->
-        <table>
-           <tr height="2" bgcolor="#0097c3">
-                <td colspan="2"></td>
-            </tr>
-            <tr>
-                <th>기업명</th>
-                <td>
-                    <input type="text">
-                </td>
-            </tr>
-            <tr>
-                <th>
-                    사업자 등록번호
-                </th>
-                <td>
-                    <input type="text" name="corporate name" />
-                </td>
-            </tr>
-            <tr>
-                <th>
-                    담당자 이름
-                </th>
-                <td>
-                    <input type="text">
-                </td>
-            </tr>
-            <tr>
-                <th>
-                    담당자 휴대폰번호
-                </th>
-                <td>
-                    <select>
-                        <option>010</option>
-                        <option>011</option>
-                        <option>016</option>
-                        <option>017</option>
-                        <option>018</option>
-                        <option>019</option>
-                    </select> -
-                    <input type="text" name="tel2" minlength="3" maxlength="4" required /> -
-                    <input type="text" name="tel3" minlength="4" maxlength="4" required />
-                </td>
-            </tr>
-            <tr>
-                <th>담당자 이메일</th>
-                <td>
-                    <input type='text' name="email_front" />@
-                    <input type='text' name="email_back" class="email_back" />
-                    <select name="email_select" class="email_select">
+                        <tr>
+                            <td colspan="2"></td>
+                        </tr>
+                    </table>
+                    <table class="sup_kind2 f7">
+                        <tr>
+                            <td colspan="2"></td>
+                        </tr>
+                        <tr>
+                            <th><label for="group_name">기업명</label></th>
+                            <td>
+                                <input type="text" id="group_name" required />
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><label for="group_num">사업자 등록번호</label></th>
+                            <td>
+                                <input type="text" name="corporate name" id="group_num" required />
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><label for="group_person">담당자 이름</label></th>
+                            <td>
+                                <input type="text" id="group_person" required />
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><label for="group_tel">담당자 휴대폰번호</label></th>
+                            <td>
+                                <select id="group_tel">
+                                    <option>010</option>
+                                    <option>011</option>
+                                    <option>016</option>
+                                    <option>017</option>
+                                    <option>018</option>
+                                    <option>019</option>
+                                </select> -
+                                <input type="text" name="tel2" minlength="3" maxlength="4" required /> -
+                                <input type="text" name="tel3" minlength="4" maxlength="4" required />
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><label for="group_email">담당자 이메일</label></th>
+                            <td>
+                                <input type='text' name="email_front" id="group_email" />@
+                                <input type='text' name="email_back" class="email_back" />
+                                <select name="email_select" class="email_select">
                          <option value="1">직접입력</option>
                          <option value="daum.net">daum.net</option>
                          <option value="empal.com">empal.com</option>
@@ -181,35 +167,44 @@
                          <option value="naver.com">naver.com</option>
                          <option value="nate.com">nate.com</option>
                       </select>
-                </td>
-            </tr>
-            <tr>
-                <th>회사 주소</th>
-                <td>
-                    <input type="text" name="address" />
-                </td>
-            </tr>
-            <tr>
-                <th>메일/sns 정보 수신</th>
-                <td><input type="checkbox" name="sms" value="email" /> Email
-                    <input type="checkbox" name="sms" value="sms" /> SMS
-                    <input type="checkbox" name="sms" value="post" /> 우편
-                </td>
-            </tr>
-            <tr height="2" bgcolor="#0097c3">
-                <td colspan="2"></td>
-            </tr>
-            <tr>
-                <td colspan="2" align="center">
-                    <input type="submit" value="다음단계" />
-                    <input type="reset" value="취소하기" />
-                </td>
-            </tr>
-        </table>
-    </form>
-    
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><label for="group_address">회사 주소</label></th>
+                            <td>
+                                <input type="text" name="address" id="group_address" required />
+                            </td>
+                        </tr>
+                        <tr class="check">
+                            <th>메일/sns 정보 수신</th>
+                            <td><input type="checkbox" name="sms" value="email" id="group_email1" checked /> 
+                                <label for="group_email1">Email</label>
+                                <input type="checkbox" name="sms" value="sms" id="group_email2"  checked /> 
+                                <label for="group_email2">SMS</label>
+                                <input type="checkbox" name="sms" value="post" id="group_email3"  checked /> 
+                                <label for="group_email3">우편</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"></td>
+                        </tr>
+                    </table>
+                </div>
+            </form>
+            <div class="btn_right">
+                <a href="#" class="next_btn f6">다음단계</a>
+                <a href="#" class="cancel_btn f6">취소하기</a>
+            </div>
+
+
+
+            <!-- 사업자 선택 시 -->
+
+        </div>
+    </div>
+
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-	<script src="./javascripts/common.js"></script>
+    <script src="./javascripts/common.js"></script>
 </body>
 
 </html>
