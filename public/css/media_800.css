@@ -45,37 +45,36 @@ body {
 }
 
 .f1-upper {
-    font-size: 24px;
+    font-size: 40px;
 }
-
 .f1 {
-	font-size: 18px;
+	font-size: 28px;
 	line-height: 1.7;
 }
 .f1-under {
-	font-size: 14px;
+	font-size: 22px;
 }
 .f2 {
-	font-size: 11.5px;
+	font-size: 20px;
 }
 .f3 {
-	font-size: 11px;
+	font-size: 17px;
 	line-height: 1.5;
 }
 .f4 {
-	font-size: 10px;
+	font-size: 16px;
 	line-height: 1.5;
 }
 .f5 {
-	font-size: 10px;
+	font-size: 15px;
 	line-height: 1.5;
 }
 .f6 {
-	font-size: 9.5px;
+	font-size: 14px;
 	line-height: 1.5;
 }
 .f7 {
-    font-size: 9px;
+  font-size: 12px;
 	line-height: 1.6;
 }
 
@@ -90,6 +89,7 @@ body {
 
 /* Header Layout */
 #header {
+	display: none;
 	color: #fff;
 	background: #000;
   position: fixed;
@@ -136,6 +136,8 @@ body {
 	text-rendering:auto;
 	-webkit-font-smoothing:antialiased;
 	-moz-osx-font-smoothing:grayscale;
+	width: 100%;
+	vertical-align: middle;
 }
 #header .header-block .login a {
 	color: #000;
@@ -182,15 +184,6 @@ nav {
 }
 
 .nav-block > h1 a {
-		display: inline-block;
-}
-
-.nav-block > h1 a:before {
-		content: " ";
-		background-image: url('../images/logo_2.png');
-		background-size: cover;
-		width: 40px;
-		height: 40px;
 		display: inline-block;
 }
 
@@ -315,25 +308,28 @@ nav {
 
 /*============= board 부분 =============*/
 .board_wrap {
-		display: table;
+		display: initial;
     margin-bottom: 25px;
 		text-align: center;
 }
 
 .board_wrap .board_data {
-	display: table-cell;
-	width: 32%;
+	display: block;
+	width: 100%;
+	margin-bottom: 50px;
 	color: #060606;
 }
 
 .board_wrap .board_data img {
-	width: 100%;
+	width: 100% !important;
+	height: auto !important;
 }
 
 .board_wrap .board_data > a {
 	display: inline-block;
 	width: 100%;
-	height: 154px;
+	height: auto !important;
+	max-height: 200px;
 	overflow: hidden;
 }
 
@@ -362,6 +358,7 @@ nav {
 
 .board_wrap .board_data .title{
     margin: 11px 0 7px;
+		width: 90%;
 }
 
 .board_wrap .board_data .title a{
@@ -378,6 +375,13 @@ nav {
 .board_wrap .board_data .title h3 {
 	font-weight: 600;
 	margin-bottom: 1px;
+}
+.board_wrap .board_data p {
+	width: 90%;
+}
+
+.board_wrap .board_data .btn {
+	display: none;
 }
 
 .board_wrap .board_data .btn a {
@@ -408,7 +412,7 @@ nav {
 	float: left;
 	display: inline-block;
 	position: relative;
-	width: 12.5%;
+	width: 25%;
     height: 83px;
     overflow: hidden;
     background-image: url('http://placehold.it/200x200');
@@ -500,6 +504,7 @@ nav {
 
 /*============= footer 부분 =============*/
 footer {
+	display: none;
 	background-color: #060606;
 	color: #fff;
 }
@@ -873,7 +878,7 @@ footer {
     display: inline-block;
     width: 100%;
     text-align: center;
-    margin: 104px 0 37px;
+    margin: 64px 0 37px;
 }
 
 .title h2 {
@@ -1016,17 +1021,20 @@ footer {
 }
 
 .section-gallery ul li {
-    min-width: 32.8%;
+    width: 100%;
     display: inline-block;
+		margin: 11px 0;
 }
 
 .section-gallery ul li a {
     position: relative;
     display: inline-block;
     width: 100%;
-    height: 154px;
+		height: auto !important;
+		max-height: 200px;
     overflow: hidden;
 }
+
 
 .section-gallery ul li p {
     position: absolute;
@@ -1093,10 +1101,15 @@ footer {
     list-style-type: none;
     color: #060606;
 }
-
-.movie > div:nth-last-child(1) {
-    padding-bottom: px;
+.section_list_movie > p {
+    width: 90%;
+		margin: 0 auto;
 }
+.section_list_movie > div {
+    width: 90%;
+		margin: 0 auto;
+}
+
 
 .section_list_movie .section_date_movie {
     color: #0097c3;
@@ -1111,7 +1124,7 @@ footer {
     color: #666666;
     line-height: 1.85;
     padding-top: 9px;
-    margin: 1px 0 6px 0;
+    margin: 1px auto 6px;
 }
 /*========================== movie 파일 끝 ==========================*/
 
@@ -1121,6 +1134,7 @@ footer {
 /*========================== goal 협회목적 및 사업 시작 ==========================*/
 .section-goal {
     padding: 61px 0 52px 0;
+		width: 90%;
     line-height: 1.85;
 }
 
@@ -1178,7 +1192,10 @@ footer {
 }
 
 .line span {
-    padding: 0 50px;
+		display: block;
+		width: 90%;
+		margin: 0 auto;
+    padding: 0;
 }
 
 .line {
@@ -1354,15 +1371,21 @@ footer {
 
 /*========================== history(연혁 및 본부) / license(법인허가) 시작 ==========================*/
 .section-history, .section-or {
+    width: 90%;
     padding: 61px 0 52px 0;
     text-align: center;
 }
 
 .section-history img, .section-or img {
     width: 100%;
+}
+
+.section-or img {
+    width: 100%;
     border: 2px solid #b1b1b1;
     box-shadow: 2px 2px 4px #cecece;
 }
+
 .section-or img:nth-child(1) {
     margin-bottom: 41px;
 }
@@ -1373,6 +1396,7 @@ footer {
 
 /*========================== greeting(인사말) 시작 ==========================*/
 .section-greeting {
+		width: 100%;
     margin: 0 auto;
     padding: 61px 0 52px 0;
     text-align: center
@@ -1381,6 +1405,9 @@ footer {
     display: inline-block;
     vertical-align: top;
     text-align: center;
+}
+.section-greeting img {
+		width: 100%;
 }
 
 .greeting_side {

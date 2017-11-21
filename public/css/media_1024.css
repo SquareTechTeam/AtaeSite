@@ -1288,9 +1288,14 @@ footer {
 
 .section-history img, .section-or img {
     width: 100%;
+}
+
+.section-or img {
+    width: 100%;
     border: 2px solid #b1b1b1;
     box-shadow: 2px 2px 4px #cecece;
 }
+
 .section-or img:nth-child(1) {
     margin-bottom: 53px;
 }
