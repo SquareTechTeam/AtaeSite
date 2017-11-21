@@ -279,6 +279,31 @@
 .section-goal > div h2 {
     padding-bottom: 10px;
 }
+.main-gallery ul li:nth-child(1) {
+    background-image: url('../images/goal_01.jpg');
+}
+.main-gallery ul li:nth-child(2) {
+    background-image: url('../images/goal_02.jpg');
+}
+.main-gallery ul li:nth-child(3) {
+    background-image: url('../images/goal_03.jpg');
+}
+.main-gallery ul li:nth-child(4) {
+    background-image: url('../images/goal_04.jpg');
+}
+.main-gallery ul li:nth-child(5) {
+    background-image: url('../images/goal_05.jpg');
+}
+.main-gallery ul li:nth-child(6) {
+    background-image: url('../images/goal_06.jpg');
+}
+.main-gallery ul li:nth-child(7) {
+    background-image: url('../images/goal_07.jpg');
+}
+.main-gallery ul li:nth-child(8) {
+    background-image: url('../images/goal_08.jpg');
+}
+
 
 /*========================== goal 협회목적 및 사업 끝 ==========================*/
 
