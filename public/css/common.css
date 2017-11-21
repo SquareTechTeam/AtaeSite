@@ -455,10 +455,11 @@ footer {
 	margin: 0 auto;
 	overflow: hidden;
 	text-align: center;
+    position: relative;
 }
 .footer_in .addr {
 	display: inline-block;
-	margin-right: 200px;
+	margin-right: 20px;
 }
 .footer_in .addr .logo_bottom {
 	display: inline-block;
@@ -488,7 +489,8 @@ footer {
 .icon img {
 	display: inline-block;
 	width: 40px;
-	padding: 0 0 0 5px;
+    position: absolute;
+    top: 62px;
 }
 .icon a:hover img {
 	transform: scale(1.15);
