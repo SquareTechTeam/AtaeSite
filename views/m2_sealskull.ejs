@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
-    <title>동영상 > (사)아태평화교류협회</title>
+    <title>갤러리 > (사)아태평화교류협회</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="msapplication-TileColor" content="#ffffff " />
@@ -97,58 +97,24 @@
         </nav>
         <div id="container">
             <div id="container1">
-                <div class="main_img m3">
+                <div class="main_img m2">
                     <div class="title">
-                        <h2 class="f1-upper"><%= subtitle %></h2>
-                        <div class="f3"><a href="/">HOME</a> / <a href="#"><%= subtitle %></a></div>
+                        <h2 class="f1-upper">유골봉환과정</h2>
+                        <div class="f3"><a href="#">HOME</a> / <a href="#">유골봉환</a></div>
                     </div>
                     <div class="background"></div>
                 </div>
             </div>
             <div id="container2">
                 <div id="section">
-                    <div class="section-movie block f6">
-                      <div class="movie f6">
-                          <%
-                          for(var i=0; i<results.length; i++){
-                            var item = results[i];
-                          %>
-                          <div class="section_list_movie">
-                              <iframe width="800" height="450" src=<%= 'https://www.youtube-nocookie.com/embed/'+item.video_id %> frameborder="0" allowfullscreen></iframe>
-                              <div class="section_color_movie">
-                                  <a href="#">
-                                      <div class="section_date_movie"><%
-                                            var originDate = item.createdAt.toString();
-                                            var dateArray = originDate.split(' ');
-                                            var resultDate = dateArray[1]+' '+parseInt(dateArray[2])+', '+dateArray[3];
-                                        %>
-                                        <%= resultDate %></div>
-                                  </a>
-                              </div>
-                              <p><%= item.desc %></p>
-                            
-                          </div>
-                          <%
-                          }
-                          %>
-                      </div>
-                      <div class="page f6">
-                        <%
-                        for(var i=1; i<=page_count; i++){
-                            if(now_page == i){
-                                %><a href=<%= i %> class="choose"><%= i %></a><%
-                            }else{
-                               %><a href=<%= i %> ><%= i %></a><%
-                            }
-                        }
-                        %>
-                      </div>
+                    <div class="section-or block">
+                        <img src="/images/return_process.png" alt="유골봉환과정" />
                     </div>
                 </div>
             </div>
         </div>
 
-        <footer>
+       <footer>
             <div class="footer-block block">
                 <div class="footer_in">
                     <div class="addr">
@@ -178,4 +144,3 @@
 </body>
 
 </html>
-
