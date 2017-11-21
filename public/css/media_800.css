@@ -18,7 +18,7 @@ address {
 body {
 	font-family: "맑은 고딕", 'Malgun Gothic', dotum, sans-serif;
 	font-weight: 400;
-	font-size: 12px;
+	font-size: 10px;
 	color: #333;
 	line-height: 1.4;
 }
@@ -35,43 +35,47 @@ body {
 }
 
 .block {
-	width: 780px;
+	width: 487px;
 	margin: 0 auto;
 }
 
 .block-medium {
-	width: 700px;
+	width: 375px;
 	margin: 0 auto;
 }
 
 .f1-upper {
-    font-size: 40px;
+    font-size: 24px;
 }
 
 .f1 {
-	font-size: 26px;
-	line-height: 1.5;
+	font-size: 18px;
+	line-height: 1.7;
 }
 .f1-under {
-	font-size: 26px;
+	font-size: 14px;
 }
 .f2 {
-	font-size: 18px;
+	font-size: 11.5px;
 }
 .f3 {
-	font-size: 17px;
+	font-size: 11px;
 	line-height: 1.5;
 }
 .f4 {
-	font-size: 15px;
+	font-size: 10px;
 	line-height: 1.5;
 }
 .f5 {
-	font-size: 14px;
+	font-size: 10px;
 	line-height: 1.5;
 }
 .f6 {
-	font-size: 13px;
+	font-size: 9.5px;
+	line-height: 1.5;
+}
+.f7 {
+    font-size: 9px;
 	line-height: 1.6;
 }
 
@@ -80,8 +84,8 @@ body {
 }
 
 .wave_img {
-	height: 8px;
-	margin: 10px auto 16px;
+	height: 5px;
+	margin: 4px auto 8px;
 }
 
 /* Header Layout */
@@ -94,8 +98,9 @@ body {
 }
 
 #header .header-block {
-	min-height: 16px;
-	padding: 4px 0;
+    font-size: 9px;
+	min-height: 15px;
+	padding: 3px 0;
 }
 
 #header .header-block div {
@@ -117,24 +122,24 @@ body {
 nav {
     z-index: 99;
     position: absolute;
-    top: 53px;
+    top: 33px;
     width: 100%;
 }
 
 .nav-block {
     position: relative;
-    min-height: 33px;
-    margin-bottom: 13px;
+    min-height: 20px;
+    margin-bottom: 4px;
 }
 
 .nav-block > h1 {
     float: left;
 	margin: 0;
-    padding: 0 8px;
+    padding: 0 5px;
 }
 
 .nav-block > h1 img {
-    width: 200px;
+    width: 140px;
 }
 
 .nav-block > h1 span {
@@ -143,17 +148,15 @@ nav {
 
 .nav-block > ul {
     float: right;
-    margin-right: 66px;
-    position: relative;
-    top: 10px;
+    margin-right: 15px;
 }
 
 .nav-block > ul > li {
     float: left;
     position: relative;
     display: block;
-    margin-left: 22px;
-		padding: 0 3px 1px;
+    margin-left: 10px;
+		padding: 0 3px 2px;
     line-height: 2;
     text-align: center;
     font-weight: 700;
@@ -190,40 +193,39 @@ nav {
     right: auto;
     width: auto;
     min-width: 100%;
-    padding: 20px 50px;
+    padding: 8px 20px;
     text-align: center;
     font-weight: 400;
     background: rgba(6, 6, 6, 0.9);
 }
 
 .nav-block > ul > li:nth-child(1) > ul {
-    left: -107px;
+    left: -59px;
 }
 .nav-block > ul > li:nth-child(2) > ul {
-    left: -58px;
+    left: -27px;
 }
 .nav-block > ul > li:nth-child(3) > ul {
-    left: -55px;
+    left: -23px;
 }
 .nav-block > ul > li:nth-child(4) > ul {
-    left: -50px;
+    left: -20px;
 }
 .nav-block > ul > li:nth-child(5) {
 	color: #fff;
 	border: none !important;
-	margin-top: -3px;
 }
 .nav-block > ul > li:nth-child(5) > a {
-	font-size: 15px;
+	font-size: 11px;
 	color: #fff !important;
 	background-color: #0097c3;
-	padding: 6px 14px 4px;
+	padding: 2px 8px 3px;
 }
 
 .nav-block > ul > li:nth-child(5):hover a {
 	color: #0097c3 !important;
 	background-color: #fff;
-	padding: 6px 14px 4px;
+	padding: 2px 8px 3px;
 }
 
 .nav-block > ul > li:nth-child(5):after {
@@ -261,7 +263,7 @@ nav {
 /*============= board 부분 =============*/
 .board_wrap {
 		display: table;
-    margin-bottom: 40px;
+    margin-bottom: 25px;
 		text-align: center;
 }
 
@@ -277,14 +279,14 @@ nav {
 
 .board_wrap .board_data > a {
 	display: inline-block;
-	width: 240px;
-	height: 240px;
+	width: 154px;
+	height: 154px;
 	overflow: hidden;
 }
 
 .board_wrap .board_data > * {
 	display: inline-block;
-	width: 240px;
+	width: 154px;
 	text-align: left;
 }
 
@@ -306,7 +308,7 @@ nav {
 }
 
 .board_wrap .board_data .title{
-    margin: 20px 0 14px;
+    margin: 11px 0 7px;
 }
 
 .board_wrap .board_data .title a{
@@ -322,15 +324,15 @@ nav {
 
 .board_wrap .board_data .title h3 {
 	font-weight: 600;
-	margin-bottom: 8px;
+	margin-bottom: 1px;
 }
 
 .board_wrap .board_data .btn a {
 	display: inline-block;
 	background-color: #0097c3;
 	color: #fff;
-	padding: 10px 18px;
-	margin-top: 14px;
+	padding: 5px 12px;
+	margin-top: 13px;
 	text-align: center;
 	font-weight: 600;
 }
@@ -342,366 +344,7 @@ nav {
 	background-color: #060606;
 }
 
-/*============= footer 부분 =============*/
-footer {
-	background-color: #060606;
-	color: #fff;
-}
-.footer_in {
-	padding: 20px 0;
-	margin: 0 auto;
-	overflow: hidden;
-	text-align: center;
-}
-.footer_in .addr {
-	display: inline-block;
-	margin-right: 100px;
-}
-.footer_in .addr .logo_bottom {
-	display: inline-block;
-	margin-right: 10px;
-}
-
-.footer_in .addr .logo_bottom img {
-    width: 90%;
-}
-
-.footer_in .addr .footer_text {
-	display: inline-block;
-	line-height: 2;
-	text-align: left;
-	vertical-align: top;
-}
-.footer_in .addr .footer_text i {
-	display: inline-block;
-	width: 7px;
-	padding: 0 10px;
-}
-.footer_in .addr .footer_text .bank {
-	margin-left: 25px;
-}
-.footer_in .icon {
-	display: inline-block;
-	vertical-align: top;
-}
-.icon {
-	display: inline-block;
-}
-.icon img {
-	display: inline-block;
-	width: 30px;
-	padding: 0 0 0 5px;
-}
-.icon a:hover img {
-	transform: scale(1.15);
-	-webkit-transform: scale(1.15);
-	-moz-transform: scale(1.15);
-	-o-transform: scale(1.15);
-}
-.icon a img {
-	transform: scale(1);
-	-webkit-transform: scale(1);
-	-moz-transform: scale(1);
-	-o-transform: scale(1);
-	-webkit-transition: .3s;
-	-moz-transition: .3s;
-	-ms-transition: .3s;
-}
-.return-top {
-	position: fixed;
-	z-index: 9990;
-	right: 15px;
-	bottom: 15px;
-}
-.return-top img {
-	width: 45px;
-}
-
-/* ================================== main css 1280 ================================== */
-/* Container Layout */
-.slider {
-	width: 100%;
-}
-
-.slider > div {
-	position: relative;
-	width: 100%;
-	height: 533px;
-}
-
-.slider > div .background {
-	width: 100%;
-	height: 100%;
-	background-position: center;
-	background-size: cover;
-}
-
-.slider > div:nth-child(1){
-	background-color: #0097c3;
-}
-.slider > div:nth-child(1) .background{
-	background-image: url('../images/slider01.jpg');
-	opacity: 0.7;
-}
-.slider > div:nth-child(2) .background{
-	background-image: url('../images/slider03.png');
-}
-
-.slider .text-block{
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	width: 533px;
-	margin: -86px 0 0 -266px;
-	color: #fff;
-	text-align: center;
-}
-
-.slider .text-block.v2{
-	position: absolute;
-	top: 40%;
-	left: auto;
-	right: 22%;
-	text-align: right;
-}
-
-.slider .text-block strong{
-	display: block;
-	margin-bottom: 20px;
-}
-
-.slider .text-block .btn a {
-	display: inline-block;
-	border: solid 3px #fff;
-	margin-top: 40px;
-	padding: 10px 25px 10px;
-}
-
-.slider .text-block .btn a:hover {
-	background-color: #0097c3;
-	border-color: #0097c3;;
-}
-
-/*============= 협회 소개 =============*/
-#intro {
-	background-color: #fff;
-}
-
-.intro-block {
-	display: table;
-	margin: 90px auto 80px;
-	text-align: center;
-	background-color: #fff;
-	overflow: hidden;
-}
-
-.intro-block img {
-	width: 100%;
-}
-
-.intro_img,
-.intro_txt {
-	display: table-cell;
-	width: 50%;
-	vertical-align: middle;
-}
-
-.intro_img {
-	padding: 0 2% 0 1%;
-}
-
-.intro_txt {
-	text-align: left;
-	color: #666666;
-	padding: 0 1% 0 2%;
-}
-
-.intro_txt h2 {
-	color: #060606;
-}
-
-.intro_txt strong {
-	color: #666;
-}
-
-.intro_txt p {
-	margin-top: 15px;
-}
-
-.intro_txt a:hover {
-	transition-property: background-color;
-	transition-duration: 0.3s;
-	transition-timing-function: ease-out;
-	background-color: #060606;
-}
-
-.intro_txt .btn_intro {
-	padding: 12px 25px;
-	margin-top: 20px;
-	background-color: #0097c3;
-	display: inline-block;
-	color: #fff;
-	text-decoration: none;
-	font-weight: 600;
-}
-
-/*============= 3개의 아이콘그림 부분 =============*/
-#ico {
-	width: 100%;
-	padding: 88px 0 84px 0;
-	background-color: #f2f2f2;
-	text-align: center;
-}
-
-.ico_txt {
-	display: inline-block;
-	width: 13%;
-	margin: 0 9%;
-}
-
-.ico_txt a {
-	display: inline-block;
-	padding: 6px;
-}
-
-.ico_txt a:link,
-.ico_txt a:visited {
-	font-size: 20px;
-	line-height: 33px;
-	color: #060606;
-	font-weight: 700;
-}
-
-.ico_txt a:hover {
-	transition-property: color;
-	transition-duration: 0.3s;
-	transition-timing-function: ease-out;
-	color: #0097c3;
-}
-
-.ico_txt img {
-	width: 100%;
-	margin-bottom: 5px;
-}
-
-/*============= 협회 활동 =============*/
-#act {
-	background-color: #fff;
-	position: relative;
-}
-
-.act-block {
-	position: relative;
-	padding: 62px 0 38px;
-}
-.act-list:after {
-	clear: both;
-    content: "";
-}
-.act_title {
-	margin: 0 auto;
-	text-align: center;
-	color: #060606;
-	margin-bottom: 31px;
-}
-
-.act_title h2 {
-	margin-bottom: 0;
-}
-
-.act_title p {
-	display: inline-block;
-	min-height: 28px;
-	letter-spacing: 0.1px;
-}
-
-.board_data p {
-    height: 90px;
-}
-
-/*============= 후원하기 영역 =============*/
-.patronize {
-	position: relative;
-	background: #030303;
-	color: #fff;
-}
-.patronize:before,
-.patronize:after {
-	display: table;
-	line-height: 0;
-	content: "";
-}
-.patronize:after {
-	clear: both;
-	display: table;
-	line-height: 0;
-	content: "";
-}
-.patronize>div {
-	width: 50%;
-}
-.patronize .text-block {
-	float: left;
-}
-.patronize .text-block:after {
-	clear: both;
-	display: table;
-	line-height: 0;
-	content: "";
-}
-.patronize .text-block section {
-	float: right !important;
-	max-width: 100%;
-	width: 373px;
-	padding: 98px 0 104px;
-	font-size: 13px;
-}
-.patronize .text-block section:after {
-	clear: both;
-	display: table;
-	line-height: 0;
-	content: "";
-}
-.patronize .text-block section h2 {
-	max-width: 290px;
-	line-height: 1.35;
-}
-.patronize .text-block section p {
-	line-height: 1.9;
-	max-width: 310px;
-}
-.patronize .text-block section .button a {
-	display: inline-block;
-	margin-top: 15px;
-	padding: 20px 32px;
-	background: #0097c3;
-	text-align: center;
-	font-weight: 600;
-}
-.patronize .text-block section .button a:hover {
-	transition-property: background-color color;
-	transition-duration: 0.3s;
-	transition-timing-function: ease-out;
-	background-color: #fff;
-	color: #0097c3;
-}
-.patronize .img-block {
-	position: absolute;
-	top: 0;
-	right: 0;
-	height: 100%;
-	padding-left: 12px;
-}
-.patronize .img-block div {
-	height: 100%;
-	margin: 0 -8px;
-	background-image: url('../images/korea flags_01.png');
-	background-repeat: no-repeat;
-	background-position: 0 61%;
-	background-size: cover;
-}
-
-/*============= 하단 갤러리 =============*/
+/*============= 갤러리 =============*/
 .main-gallery:after {
 	clear: both;
 	display: table;
@@ -713,7 +356,7 @@ footer {
 	display: inline-block;
 	position: relative;
 	width: 12.5%;
-    height: 133.3px;
+    height: 83px;
     overflow: hidden;
     background-image: url('http://placehold.it/200x200');
     background-repeat: no-repeat;
@@ -778,22 +421,22 @@ footer {
 	position: relative;
 	display: inline-block;
 	max-width: 70%;
-	max-height: 700px;
+	max-height: 291px;
 }
 .detail_photo .photo_item.limit {
-	height: 700px;
+	height: 291px;
 }
 .detail_photo .photo_item i{
-    font-size: 70px;
+    font-size: 29px;
     position: absolute;
-	bottom: -56.6px;
-    right: -56.6px;
+	bottom: -35px;
+    right: -35px;
     color: #fff;
 }
 .detail_photo .photo {
 	width: 100%;
 	height: 100%;
-	padding: 10px;
+	padding: 6px;
 	overflow-y: scroll;
 	background: #fff;
 }
@@ -802,15 +445,373 @@ footer {
 }
 
 
+/*============= footer 부분 =============*/
+footer {
+	background-color: #060606;
+	color: #fff;
+}
+.footer_in {
+	padding: 12px 0;
+	margin: 0 auto;
+	overflow: hidden;
+	text-align: center;
+}
+.footer_in .addr {
+	display: inline-block;
+	margin-right: 83px;
+}
+.footer_in .addr .logo_bottom {
+	display: inline-block;
+    width: 15%;
+	margin-right: 5px;
+}
+.footer_in .addr .footer_text {
+	display: inline-block;
+	line-height: 2;
+	text-align: left;
+	vertical-align: top;
+}
+.footer_in .addr .footer_text i {
+	display: inline-block;
+	width: 4px;
+	padding: 0 8px;
+}
+.footer_in .addr .footer_text .bank {
+	margin-left: 19px;
+}
+.footer_in .icon {
+	display: inline-block;
+	vertical-align: top;
+}
+.icon {
+	display: inline-block;
+}
+.icon img {
+	display: inline-block;
+	width: 17.5px;
+	padding: 0 0 0 2px;
+}
+.icon a:hover img {
+	transform: scale(1.15);
+	-webkit-transform: scale(1.15);
+	-moz-transform: scale(1.15);
+	-o-transform: scale(1.15);
+	-webkit-transition: .3s;
+	-moz-transition: .3s;
+	-ms-transition: .3s;
+}
+.icon a img {
+	transform: scale(1);
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-o-transform: scale(1);
+	-webkit-transition: .3s;
+	-moz-transition: .3s;
+	-ms-transition: .3s;
+}
+.return-top {
+	position: fixed;
+    display: none;
+	z-index: 9990;
+	right: 15px;
+	bottom: 15px;
+}
+.return-top img {
+	width: 32px;
+}
 
-/* ================================== sub css 1280 ================================== */
+
+/* Container Layout */
+.slider {
+	width: 100%;
+}
+
+.slider > div {
+	position: relative;
+	width: 100%;
+	height: 340px;
+}
+
+.slider > div .background {
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	background-size: cover;
+}
+
+.bx-wrapper .bx-controls-auto, .bx-wrapper .bx-pager {
+    bottom: 13px;
+}
+
+.slider > div:nth-child(1){
+	background-color: #0097c3;
+}
+.slider > div:nth-child(1) .background{
+	background-image: url('../images/slider01.jpg');
+	opacity: 0.7;
+}
+.slider > div:nth-child(2) .background{
+	background-image: url('../images/slider03.png');
+}
+
+.slider .text-block{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 333px;
+	margin: -54px 0 0 -166px;
+	color: #fff;
+	text-align: center;
+}
+
+.slider .text-block.v2{
+	position: absolute;
+	top: 40%;
+	left: auto;
+	right: 22%;
+	text-align: right;
+}
+
+.slider .text-block strong{
+	display: block;
+	margin-bottom: 16px;
+}
+
+.slider .text-block .btn a {
+	display: inline-block;
+	border: solid 2px #fff;
+	margin-top: 24px;
+	padding: 8px 20px 7px;
+}
+
+.slider .text-block .btn a:hover {
+	background-color: #0097c3;
+	border-color: #0097c3;;
+}
+
+/*============= 협회 소개 =============*/
+#intro {
+	background-color: #fff;
+}
+
+.intro-block {
+	display: table;
+	margin: 56px auto 50px;
+	text-align: center;
+	background-color: #fff;
+	overflow: hidden;
+}
+
+.intro-block img {
+	width: 100%;
+}
+
+.intro_img,
+.intro_txt {
+	display: table-cell;
+	width: 50%;
+	vertical-align: middle;
+}
+
+.intro_img {
+	padding: 0 2% 0 1%;
+}
+
+.intro_txt {
+	text-align: left;
+	color: #666666;
+	padding: 0 1% 0 2%;
+}
+
+.intro_txt h2 {
+	color: #060606;
+}
+
+.intro_txt strong {
+	color: #666;
+}
+
+.intro_txt p {
+	margin-top: 8px;
+}
+
+.intro_txt a:hover {
+	transition-property: background-color;
+	transition-duration: 0.3s;
+	transition-timing-function: ease-out;
+	background-color: #060606;
+}
+
+.intro_txt .btn_intro {
+	padding: 8px 17px;
+	margin-top: 10px;
+	background-color: #0097c3;
+	display: inline-block;
+	color: #fff;
+	text-decoration: none;
+	font-weight: 600;
+}
+
+/*============= 3개의 아이콘그림 부분 =============*/
+#ico {
+	width: 100%;
+	padding: 55px 0 52px 0;
+	background-color: #f2f2f2;
+	text-align: center;
+}
+
+.ico_txt {
+	display: inline-block;
+	width: 13%;
+	margin: 0 9%;
+}
+
+.ico_txt a {
+	display: inline-block;
+	padding: 4px;
+}
+
+.ico_txt a:link,
+.ico_txt a:visited {
+	font-size: 11.5px;
+	line-height: 13px;
+	color: #060606;
+	font-weight: 700;
+}
+
+.ico_txt a:hover {
+	transition-property: color;
+	transition-duration: 0.3s;
+	transition-timing-function: ease-out;
+	color: #0097c3;
+}
+
+.ico_txt img {
+	width: 100%;
+	margin-bottom: 5px;
+}
+
+/*============= 협회 활동 =============*/
+#act {
+	background-color: #fff;
+	position: relative;
+}
+
+.act-block {
+	position: relative;
+	padding: 51px 0 31px;
+}
+.act-list:after {
+	clear: both;
+    content: "";
+}
+.act_title {
+	margin: 0 auto;
+	text-align: center;
+	color: #060606;
+	margin-bottom: 27px;
+	margin-bottom: 27px;
+	margin-bottom: 27px;
+}
+
+.act_title h2 {
+	margin-bottom: 0px;
+}
+
+.act_title p {
+	display: inline-block;
+	min-height: 22px;
+	letter-spacing: 0.1px;
+}
+
+/*============= 후원하기 영역 =============*/
+.patronize {
+	position: relative;
+	background: #030303;
+	color: #fff;
+}
+.patronize:before,
+.patronize:after {
+	display: table;
+	line-height: 0;
+	content: "";
+}
+.patronize:after {
+	clear: both;
+	display: table;
+	line-height: 0;
+	content: "";
+}
+.patronize>div {
+	width: 50%;
+}
+.patronize .text-block {
+	float: left;
+}
+.patronize .text-block:after {
+	clear: both;
+	display: table;
+	line-height: 0;
+	content: "";
+}
+.patronize .text-block section {
+	float: right !important;
+	max-width: 100%;
+	width: 233px;
+	padding: 61px 0 65px;
+}
+.patronize .text-block section:after {
+	clear: both;
+	display: table;
+	line-height: 0;
+	content: "";
+}
+.patronize .text-block section h2 {
+	max-width: 181px;
+	line-height: 1.35;
+}
+.patronize .text-block section p {
+	line-height: 1.9;
+	max-width: 200px;
+}
+.patronize .text-block section .button a {
+	display: inline-block;
+	margin-top: 9px;
+	padding: 12px 20px;
+	background: #0097c3;
+	text-align: center;
+	font-weight: 600;
+}
+.patronize .text-block section .button a:hover {
+	transition-property: background-color color;
+	transition-duration: 0.3s;
+	transition-timing-function: ease-out;
+	background-color: #fff;
+	color: #0097c3;
+}
+.patronize .img-block {
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 100%;
+	padding-left: 4px;
+}
+.patronize .img-block div {
+	height: 100%;
+	margin: 0 -4px;
+	background-image: url('../images/korea flags_01.png');
+	background-repeat: no-repeat;
+	background-position: 0 61%;
+	background-size: cover;
+}
+
+
 
 /*========================== sub common 파일 시작 ==========================*/
 /* Nav Layout */
 .main_img {
     width: 100%;
-		color: #fff;
-    background: url('../images/background-sub2.png');
+    color: #fff;
     background-position: center;
     background-size: cover;
 }
@@ -819,7 +820,7 @@ footer {
     display: inline-block;
     width: 100%;
     text-align: center;
-    margin: 250px 0 90px;
+    margin: 104px 0 37px;
 }
 
 .title h2 {
@@ -827,10 +828,10 @@ footer {
     font-weight: 400;
 }
 
-.main_img > .title > .f3 {
+#container1 > .title {
     position: relative;
     color: #fff;
-    word-spacing: 10px;
+    word-spacing: 6px;
 }
 
 .background {
@@ -838,6 +839,22 @@ footer {
     height: 100%;
     background-position: center;
     background-size: cover;
+}
+
+.m1 {
+     background-image: url('../images/m1_banner.png');
+}
+.m2 {
+     background-image: url('../images/m2_banner.png');
+}
+.m3 {
+     background-image: url('../images/m3_banner.png');
+}
+.m4 {
+     background-image: url('../images/m4_banner.png');
+}
+.m5 {
+     background-image: url('../images/m5_banner.png');
 }
 
 
@@ -855,17 +872,13 @@ footer {
 /*============= 협회 활동 =============*/
 
 .section_board {
-    margin: 82px auto 53px;
-}
-
-.section_board > .date {
-    color: #0097c3;
+    margin: 51px auto 33px;
 }
 
 /* 하단 페이지 숫자 */
 
 .page {
-    margin: 50px auto 66px;
+    margin: 0 auto 41px;
     text-align: center;
 }
 
@@ -876,7 +889,7 @@ footer {
 .page a {
     display: inline-block;
     color: #060606;
-    margin: 0 15px;
+    margin: 0 6px;
     font-weight: 600;
 }
 
@@ -895,7 +908,7 @@ footer {
 /*========================== detail_page 파일 시작 ==========================*/
 
 .section-detail {
-    margin: 94px auto 0;
+    margin: 59px auto 0;
 }
 
 .section-detail .detail_title {
@@ -904,14 +917,14 @@ footer {
 }
 
 .section-detail .detail_txt {
-    width: 760px;
-    padding: 40px 0 140px 0px;
+    width: 316px;
+    padding: 16px 0 58px 0px;
     text-align: left;
     margin: 0 auto;
 }
 
 .section-detail .detail_txt img {
-    padding-bottom: 16px;
+    padding-bottom: 10px;
     width: 100%;
 }
 
@@ -921,13 +934,13 @@ footer {
 }
 
 .section-detail .detail_txt > ul > li {
-    padding-bottom: 13px;
+    padding-bottom: 10px;
     line-height: 1.5;
 }
 
 .section-detail .date {
-    padding: 4px 8px;
-    margin: 4px;
+    padding: 3px 6px;
+    margin: 3px;
     font-weight: 600px;
     text-align: center;
     color: #0097c3;
@@ -941,24 +954,24 @@ footer {
 /*========================== gallery 파일 시작 ==========================*/
 
 .section-gallery {
-    margin-top: 98px;
+    margin-top: 61px;
 }
 
 .section-gallery ul {
-    margin-bottom: 20px;
+    margin-bottom: 12px;
     list-style-type: none;
 }
 
 .section-gallery ul li {
-    min-width: 32.94%;
+    min-width: 32.8%;
     display: inline-block;
 }
 
 .section-gallery ul li a {
     position: relative;
     display: inline-block;
-    width: 246px;
-    height: 246px;
+    width: 154px;
+    height: 154px;
     overflow: hidden;
 }
 
@@ -1006,7 +1019,7 @@ footer {
 }
 
 .section-gallery .page {
-    margin-top: 50px;
+    margin-top: 25px;
 }
 /*========================== gallery 파일 끝 ==========================*/
 
@@ -1016,13 +1029,13 @@ footer {
 /*========================== movie 파일 시작 ==========================*/
 
 .movie {
-    width: 800px;
-    margin: 147px auto 60px;
+    width: 333px;
+    margin: 61px auto 25px;
 }
 
 .section_list_movie {
-    margin: 0 auto 60px;
-    padding-bottom: 60px;
+    margin: 0 auto 25px;
+    padding-bottom: 25px;
     border-bottom: solid 2px #f2f2f2;
     list-style-type: none;
     color: #060606;
@@ -1034,19 +1047,18 @@ footer {
 
 .section_list_movie .section_date_movie {
     color: #0097c3;
-    letter-spacing: -0.2px;
     font-weight: 600px;
 }
 
 .section_color_movie .date {
-    margin-top: 6px;
+    margin-top: 4px;
 }
 
 .section_list_movie p {
     color: #666666;
     line-height: 1.85;
-    padding-top: 22px;
-    margin: 2px 0 10px 0;
+    padding-top: 9px;
+    margin: 1px 0 6px 0;
 }
 /*========================== movie 파일 끝 ==========================*/
 
@@ -1055,13 +1067,13 @@ footer {
 
 /*========================== goal 협회목적 및 사업 시작 ==========================*/
 .section-goal {
-    padding: 98px 0 83px 0;
+    padding: 61px 0 52px 0;
     line-height: 1.85;
 }
 
 .section-goal > div {
-    padding: 20px;
-    margin-bottom: 33px;
+    padding: 12px;
+    margin-bottom: 30px;
     position: relative;
     border: 3px solid #0097c3;
     border-radius: 30px;
@@ -1072,7 +1084,7 @@ footer {
 }
 
 .section-goal > div h2 {
-    padding-bottom: 10px;
+    padding-bottom: 4px;
 }
 
 /*========================== goal 협회목적 및 사업 끝 ==========================*/
@@ -1082,17 +1094,16 @@ footer {
 
 /*========================== error_page 시작 ==========================*/
 .section-error {
-    width: 100%;
-    min-height: 100px;
+    min-height: 41px;
     text-align: center;
-    padding-top: 98px;
+    padding-top: 61px;
     line-height: 1.8;
     margin: 0 auto;
 }
 
 .error_img {
     width: 100%;
-    min-height: 250px;
+    min-height: 125px;
     background-image: url('../images/error_bg.png');
     background-repeat: no-repeat;
     background-position: bottom;
@@ -1100,13 +1111,13 @@ footer {
 }
 
 .section-error i {
-    margin-right: 5px;
+    margin-right: 0px;
 }
 
 .section-error i,
 .section-error p {
     display: inline-block;
-    padding: 1px;
+    padding: 5px;
 }
 
 .section-error p span {
@@ -1114,7 +1125,7 @@ footer {
 }
 
 .line span {
-    padding: 0 66px;
+    padding: 0 50px;
 }
 
 .line {
@@ -1123,7 +1134,7 @@ footer {
 }
 
 .section-error > div {
-    margin: 10px;
+    margin: 2px;
     text-align: center;
 }
 
@@ -1134,10 +1145,10 @@ footer {
 
 .error_img > a {
     position: relative;
-    top: 53px;
+    top: 33px;
     background-color: #333;
     color: #fff;
-    padding: 10px 15px;
+    padding: 6px 12px;
     font-weight: 600;
 }
 
@@ -1285,3 +1296,198 @@ footer {
 }
 
 /*========================== write_content 끝 ==========================*/
+
+
+
+/*========================== history(연혁 및 본부) / license(법인허가) 시작 ==========================*/
+.section-history, .section-or {
+    padding: 61px 0 52px 0;
+    text-align: center;
+}
+
+.section-history img, .section-or img {
+    width: 100%;
+    border: 2px solid #b1b1b1;
+    box-shadow: 2px 2px 4px #cecece;
+}
+.section-or img:nth-child(1) {
+    margin-bottom: 41px;
+}
+
+/*========================== history(연혁 및 본부) 끝 ==========================*/
+
+
+
+/*========================== greeting(인사말) 시작 ==========================*/
+.section-greeting {
+    margin: 0 auto;
+    padding: 61px 0 52px 0;
+    text-align: center
+}
+.section-greeting div {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}
+
+.greeting_side {
+    width: 30%;
+    background-color: #0097c3;
+    color: #fff;
+}
+
+.greeting_side img {
+    width: 100%;
+    margin: 8px 0 4px;
+}
+
+.greeting_side > div {
+    display: block;
+}
+
+.section-greeting p {
+    margin: 8px;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.greeting_txt {
+    width: 65%;
+}
+/*========================== greeting(인사말) 끝 ==========================*/
+
+
+
+
+/*========================== give(후원하기) 시작 ==========================*/
+.section-give {
+    margin-bottom: 33px;
+}
+.give-slider {
+    height: 333px;
+    font-size: 33px;
+    color: #fff;
+    background: #247835;
+}
+.give-wrap {
+    position: relative;
+    padding: 4px 0;
+}
+.give-wrap .filter{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height:100%;
+    background: #fff;
+    opacity: 0;
+}
+.give-wrap .give-step-bar {
+    width: 100%;
+    height: 6px;
+    margin: 60px 0;
+    text-align: center;
+    background: #55aaff;
+}
+.give-wrap .give-step-bar li {
+    display: inline-block;
+    width: 10%;
+}
+.give-wrap .give-step-bar li:nth-child(3n-1) {
+    margin: 0 30%;
+}
+.give-wrap .give-step-bar li:before {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-top: -11px;
+    content: " ";
+    border: solid 4px #55aaff;
+    border-radius: 20px;
+    background: #fff;
+}
+.give-wrap.step1 .give-step-bar li:nth-child(1):before {
+    background-color: #55aaff;
+}
+.give-wrap.step2,
+.give-wrap.step3 {
+    display: none;
+}
+.give-wrap.step2 .give-step-bar li:nth-child(1):before,
+.give-wrap.step2 .give-step-bar li:nth-child(2):before {
+    background-color: #55aaff;
+}
+.give-wrap.step3 .give-step-bar li:before {
+    background-color: #55aaff;
+}
+.give-wrap .give-step-content {
+    height: 400px;
+    background: #55aaff;
+}
+
+
+
+/* 후원하기 폼 */
+.sup_kind2, .man_num {
+    display: none;
+}
+
+.form_block .all_form {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.all_form table {
+    width: 100%;
+}
+
+.check label {
+    padding-right: 6px;
+}
+
+.info_form {
+    border-top: 2px solid #1c1c1c;
+    border-bottom: 2px solid #1c1c1c;
+}
+
+.info_form span {
+    display: inline-block;
+    font-weight: 700;
+    width: 64px;
+    padding: 5px 12px 5px 8px;
+}
+
+.info_form table th {
+    text-align: left;
+    width: 64px;
+    padding: 5px 12px 5px 8px;
+}
+.info_form table input {
+    line-height: 8px;
+}
+
+
+.btn_right {
+    width: 70%;
+    margin: 0 auto;
+    text-align: right;
+    padding-top: 25px;
+}
+
+.btn_right .next_btn {
+    background-color: #0097c3;
+    border: 1px solid #c0c0c0;
+    font-weight: 600;
+    color: #fff;
+    display: inline-block;
+    padding: 3px 5px;
+}
+
+.btn_right .cancel_btn {
+    background-color: #fff;
+    border: 1px solid #c0c0c0;
+    font-weight: 600;
+    color: #333;
+    display: inline-block;
+    padding: 3px 5px;
+}
+/*========================== give(후원하기) 끝 ==========================*/
