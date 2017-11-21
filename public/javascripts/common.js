@@ -147,6 +147,15 @@ $(document).ready(function () {
     $('.email_select').change(function () {
         var email = $(this).val();
         $(this).parent().find('.email_back').val(email);
+        console.log("현재 선택된 값은 : " + email);
+        console.log("현재 선택된 값의 길이는 : " + email.length);
+        if(email.length !== 0){
+            $('.email_back').attr('readonly',true);
+            console.log('맞을경우');
+        }else{
+             $('.email_back').attr('readonly',false);
+            console.log('아닐경우');
+        }
 
     });
 
@@ -165,4 +174,5 @@ $(document).ready(function () {
     $('#man_receipt_no').click(function(){
         $('.man_num').hide();
     });
+    
 });
