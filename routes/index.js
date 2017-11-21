@@ -69,7 +69,7 @@ router.get('/introduce/donate-certification', function(req, res, next){
 
 /* Atae People Return */
 router.get('/people-return/process', function(req, res, next){
-	res.render('error');
+	res.render('m2_sealskull');
 });
 
 router.get('/people-return/first', function(req, res, next){
@@ -181,9 +181,11 @@ router.get('/promote-house/biz-activity/:page', function(req, res, next){
 							subtitle: subtitle, 
 							page_count: page_count, 
 							now_page: req.params.page,
-							detail_path: "/promote-house/biz-activity/detail/", 
+							detail_path: "/promote-house/biz-activity/detail/",
+							cover : "main_img m3",
 							results : results 
 						});
+
 					});
 				}else{
 					res.render('error');
@@ -200,7 +202,10 @@ router.get('/promote-house/biz-activity/detail/:num', function(req, res, next){
 		.then(function(results, err){
 			var subtitle = "사업활동";
 			console.log(results);
-			res.render('detail', { subtitle: subtitle, results: results });
+			res.render('detail', { 
+				subtitle: subtitle, 
+				cover : "main_img m3",
+				results: results });
 		});
 });
 
@@ -228,6 +233,7 @@ router.get('/promote-house/company-activity/:page', function(req, res, next){
 							subtitle: subtitle, 
 							page_count: page_count, 
 							now_page: req.params.page,
+							cover : "main_img m3", 
 							detail_path: "/promote-house/company-activity/detail/", 
 							results : results });
 					});
@@ -244,7 +250,10 @@ router.get('/promote-house/company-activity/detail/:num', function(req, res, nex
 		.then(function(results, err){
 			var subtitle = "협회활동";
 			console.log(results);
-			res.render('detail', { subtitle: subtitle, results: results });
+			res.render('detail', { 
+				subtitle: subtitle, 
+				cover : "main_img m3",
+				results: results });
 		});
 });
 
@@ -291,7 +300,12 @@ router.get('/promote-house/movie/:page', function(req, res, next){
 					.limit(3).offset(offset)
 					.then(function(results, err){
 						var subtitle = "동영상";
-						res.render('movie', { title : head_title, subtitle: subtitle, page_count: page_count, now_page: req.params.page, results: results });
+						res.render('movie', { 
+							title : head_title, 
+							subtitle: subtitle, 
+							page_count: page_count, 
+							now_page: req.params.page, 
+							results: results });
 					});
 			}else{
 				res.render('error');
@@ -323,7 +337,8 @@ router.get('/data/company-data/:page', function(req, res, next){
 							title : head_title, 
 							subtitle: subtitle, 
 							page_count: page_count, 
-							now_page: req.params.page, 
+							now_page: req.params.page,
+							cover : "main_img m4", 
 							detail_path: "/data/company-data/detail/",
 							results : results 
 						});
@@ -342,7 +357,10 @@ router.get('/data/company-data/detail/:num', function(req, res, next){
 		.then(function(results, err){
 			var subtitle = "관련자료";
 			console.log(results);
-			res.render('detail', { subtitle: subtitle, results: results });
+			res.render('detail', { 
+				subtitle: subtitle, 
+				cover : "main_img m4",
+				results: results });
 		});
 });
 
@@ -371,6 +389,7 @@ router.get('/data/broadcast-data/:page', function(req, res, next){
 							subtitle: subtitle, 
 							page_count: page_count, 
 							now_page: req.params.page,
+							cover : "main_img m4", 
 							detail_path: "/data/broadcast-data/detail/", 
 							results : results 
 						});
@@ -388,7 +407,10 @@ router.get('/data/broadcast-data/detail/:num', function(req, res, next){
 		.then(function(results, err){
 			var subtitle = "보도자료";
 			console.log(results);
-			res.render('detail', { subtitle: subtitle, results: results });
+			res.render('detail', { 
+				subtitle: subtitle,
+				cover : "main_img m4", 
+				results: results });
 		});
 });
 
