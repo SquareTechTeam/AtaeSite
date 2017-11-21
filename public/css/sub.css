@@ -500,9 +500,11 @@
 
 .section-history img, .section-or img {
     width: 100%;
-    margin-bottom: 100px;
     border: 2px solid #b1b1b1;
     box-shadow: 2px 2px 4px #cecece;
+}
+.section-or img:nth-child(1) {
+    margin-bottom: 100px;
 }
 
 /*========================== history(연혁 및 본부) 끝 ==========================*/
