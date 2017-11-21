@@ -35,12 +35,12 @@ body {
 }
 
 .block {
-	width: 487px;
+	width: 100%;
 	margin: 0 auto;
 }
 
 .block-medium {
-	width: 375px;
+	width: 100%;
 	margin: 0 auto;
 }
 
@@ -92,15 +92,22 @@ body {
 #header {
 	color: #fff;
 	background: #000;
-    position: fixed;
-    width: 100%;
-    z-index: 9991;
+  position: fixed;
+	bottom: 10%;
+	right: 15px;
+	width: 32px;
+	height: 32px;
+	border-radius: 32px;
+	overflow: hidden;
+  z-index: 9991;
 }
 
 #header .header-block {
-    font-size: 9px;
-	min-height: 15px;
-	padding: 3px 0;
+	  font-size: 9px;
+		min-height: 15px;
+		padding: 3px 0;
+		display: inline-block;
+		width: 100%;
 }
 
 #header .header-block div {
@@ -111,18 +118,34 @@ body {
 
 #header .header-block .contact {
 	width: 66.6%;
+	display: none;
 }
 
 #header .header-block .login {
-	width: 33.3%;
-	text-align: right;
+	width: auto;
+	text-align: center;
+	line-height: 32px;
+}
+#header .header-block .login:before {
+	text-align: center;
+	content:"\f004";
+	color: #ff0000;
+	display:inline-block;
+	font:normal normal normal 14px/1 FontAwesome;
+	font-size: 20px;
+	text-rendering:auto;
+	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing:grayscale;
+}
+#header .header-block .login a {
+	color: #000;
 }
 
 /* Nav Layout */
 nav {
     z-index: 99;
     position: absolute;
-    top: 33px;
+    top: 15px;
     width: 100%;
 }
 
@@ -130,16 +153,45 @@ nav {
     position: relative;
     min-height: 20px;
     margin-bottom: 4px;
+		display: inline-block;
+}
+
+.nav-block:after {
+	position: absolute;
+	right: 15px;
+	text-align: center;
+	content:"\f0c9";
+	color: #fff;
+	display:inline-block;
+	font:normal normal normal 14px/1 FontAwesome;
+	font-size: 40px;
+	text-rendering:auto;
+	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing:grayscale;
 }
 
 .nav-block > h1 {
     float: left;
-	margin: 0;
+		margin: 0;
     padding: 0 5px;
 }
 
 .nav-block > h1 img {
     width: 140px;
+		display: none;
+}
+
+.nav-block > h1 a {
+		display: inline-block;
+}
+
+.nav-block > h1 a:before {
+		content: " ";
+		background-image: url('../images/logo_2.png');
+		background-size: cover;
+		width: 40px;
+		height: 40px;
+		display: inline-block;
 }
 
 .nav-block > h1 span {
@@ -147,6 +199,7 @@ nav {
 }
 
 .nav-block > ul {
+	display: none;
     float: right;
     margin-right: 15px;
 }
@@ -279,14 +332,14 @@ nav {
 
 .board_wrap .board_data > a {
 	display: inline-block;
-	width: 154px;
+	width: 100%;
 	height: 154px;
 	overflow: hidden;
 }
 
 .board_wrap .board_data > * {
 	display: inline-block;
-	width: 154px;
+	width: 100%;
 	text-align: left;
 }
 
@@ -557,9 +610,9 @@ footer {
 .slider .text-block{
 	position: absolute;
 	top: 50%;
-	left: 50%;
-	width: 333px;
-	margin: -54px 0 0 -166px;
+	left: 0%;
+	width: 100%;
+	margin: -70px 0 0 0;
 	color: #fff;
 	text-align: center;
 }
@@ -586,7 +639,7 @@ footer {
 
 .slider .text-block .btn a:hover {
 	background-color: #0097c3;
-	border-color: #0097c3;;
+	border-color: #0097c3;
 }
 
 /*============= 협회 소개 =============*/
@@ -757,7 +810,7 @@ footer {
 .patronize .text-block section {
 	float: right !important;
 	max-width: 100%;
-	width: 233px;
+	width: 100%;
 	padding: 61px 0 65px;
 }
 .patronize .text-block section:after {
@@ -767,12 +820,12 @@ footer {
 	content: "";
 }
 .patronize .text-block section h2 {
-	max-width: 181px;
+	max-width: 100%;
 	line-height: 1.35;
 }
 .patronize .text-block section p {
 	line-height: 1.9;
-	max-width: 200px;
+	max-width: 100%;
 }
 .patronize .text-block section .button a {
 	display: inline-block;
@@ -917,7 +970,7 @@ footer {
 }
 
 .section-detail .detail_txt {
-    width: 316px;
+    width: 100%;
     padding: 16px 0 58px 0px;
     text-align: left;
     margin: 0 auto;
@@ -970,7 +1023,7 @@ footer {
 .section-gallery ul li a {
     position: relative;
     display: inline-block;
-    width: 154px;
+    width: 100%;
     height: 154px;
     overflow: hidden;
 }
@@ -1029,7 +1082,7 @@ footer {
 /*========================== movie 파일 시작 ==========================*/
 
 .movie {
-    width: 333px;
+    width: 100%;
     margin: 61px auto 25px;
 }
 
@@ -1166,7 +1219,7 @@ footer {
 
 /*========================== write_content 시작 ==========================*/
 .section_write {
-    width: 780px;
+    width: 100%;
     margin: 0 auto;
     padding: 20px 0;
     text-align: center;
@@ -1281,7 +1334,7 @@ footer {
 .btn-concrete {
     font-size: 18px;
     white-space: nowrap;
-    width: 250px;
+    width: 100%;
     padding: .8em 1.5em;
     font-family: Open Sans, Helvetica, Arial, sans-serif;
     line-height: 18px;
