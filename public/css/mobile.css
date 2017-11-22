@@ -138,10 +138,9 @@ nav {
 }
 
 .nav-block {
-    position: relative;
     min-height: 20px;
     margin-bottom: 4px;
-		display: inline-block;
+	display: inline-block;
 }
 
 .nav-block:after {
@@ -160,26 +159,17 @@ nav {
 
 .nav-block > h1 {
     float: left;
-		margin: 0;
+	margin: 0;
     padding: 0 5px;
 }
 
 .nav-block > h1 img {
     width: 140px;
-		display: none;
 }
 
 .nav-block > h1 a {
-		display: inline-block;
-}
-
-.nav-block > h1 a:before {
-		content: " ";
-		background-image: url('../images/logo_2.png');
-		background-size: cover;
-		width: 40px;
-		height: 40px;
-		display: inline-block;
+	display: inline-block;
+    
 }
 
 .nav-block > h1 span {

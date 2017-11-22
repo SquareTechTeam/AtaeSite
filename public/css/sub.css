@@ -585,11 +585,9 @@
 .section-give {
     margin-bottom: 150px;
 }
-.give-slider {
+.give-slider img {
+    margin: 0 auto;
     height: 800px;
-    font-size: 80px;
-    color: #fff;
-    background: #247835;
 }
 .give-wrap {
     position: relative;

@@ -179,3 +179,16 @@ $(document).ready(function () {
     
 });
 
+
+    /* 후원하기 페이지 Slider */
+    if($(".give-slider").hasClass("give-slider") === true){
+        $('.give-slider').bxSlider({
+            mode: 'fade',
+            captions: true,
+            captions: true,
+            auto: true,
+            speed: 300,
+            pause: 4000
+        });
+    }
+
