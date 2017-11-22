@@ -177,9 +177,6 @@ $(document).ready(function () {
         $('.man_num').hide();
     });
     
-});
-
-
     /* 후원하기 페이지 Slider */
     if($(".give-slider_main").hasClass("give-slider_main") === true){
         $('.give-slider_main').bxSlider({
@@ -191,4 +188,20 @@ $(document).ready(function () {
             pause: 4000,
             pagerCustom: '#bx-pager'
         });
+        $('.m_nav_menu > div').click(function(){
+            $('.m_nav_menu > ul').show();
+        });
     }
+
+    /* ================= 모바일 페이지 ================= */
+    /* $(window).scroll(function(){
+       if($(this).scroll() > 20) {
+           $('.m_nav_menu > div').fadeIn();
+       } else{
+           $('.m_nav_menu > div').fadeOut();
+       }
+    }); */
+});
+
+
+    

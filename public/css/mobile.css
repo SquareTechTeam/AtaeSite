@@ -78,8 +78,7 @@ body {
 
 /* Header Layout */
 #header {
-	color: #fff;
-	background: #000;
+	background: #fff;
   position: fixed;
 	bottom: 10%;
 	right: 15px;
@@ -117,7 +116,7 @@ body {
 #header .header-block .login:before {
 	text-align: center;
 	content:"\f004";
-	color: #ff0000;
+	color: #f4837c;
 	display:inline-block;
 	font:normal normal normal 14px/1 FontAwesome;
 	font-size: 20px;
@@ -137,55 +136,86 @@ nav {
     width: 100%;
 }
 
-.nav-block {
+.m_nav {
     min-height: 20px;
     margin-bottom: 4px;
 	display: inline-block;
+    width: 100%;
+    overflow: scroll;
 }
 
-.nav-block:after {
-	position: absolute;
+.m_nav_menu > div {
+	position: fixed;
+	z-index: 9989;
 	right: 15px;
 	text-align: center;
-	content:"\f0c9";
 	color: #fff;
-	display:inline-block;
 	font:normal normal normal 14px/1 FontAwesome;
 	font-size: 40px;
 	text-rendering:auto;
-	-webkit-font-smoothing:antialiased;
-	-moz-osx-font-smoothing:grayscale;
 }
 
-.nav-block > h1 {
+.m_nav > h1 {
     float: left;
 	margin: 0;
     padding: 0 5px;
 }
 
-.nav-block > h1 img {
+.m_nav > h1 img {
     width: 140px;
 }
 
-.nav-block > h1 a {
+.m_nav > h1 a {
 	display: inline-block;
-    position: absolute;
     top: -10px;
     left: 15px;
     
 }
 
-.nav-block > h1 span {
+.m_nav > h1 span {
     display: none;
 }
 
-.nav-block > ul {
+.m_nav_menu > ul {
+    position: fixed;
+    display: none;
+    background-color: #fff;
+    width: 100%;
+    min-height: 100%;
+    z-index: 9999;
+    text-align: center;
+}
+
+.m_nav_menu > ul a {
+    display: inline-block;
+    color: #666;
+}
+
+.m_nav_menu > ul > li > a {
+    display: block;
+    background-color: #0097c3;
+    color: #fff;
+    font-size: 18px;
+    line-height: 2;
+}
+
+.m_nav_menu > ul > li > .fa fa-times {
+    
+}
+
+.m_nav_menu > ul > li > ul > li > a {
+    display: block;
+    font-size: 14px;
+    line-height: 2;
+}
+
+/* .m_nav > div ul {
 	display: none;
     float: right;
     margin-right: 15px;
 }
 
-.nav-block > ul > li {
+.m_nav > div > ul > li {
     float: left;
     position: relative;
     display: block;
@@ -196,7 +226,7 @@ nav {
     font-weight: 700;
 }
 
-.nav-block > ul > li:after{
+.m_nav > div > ul > li:after{
     position: absolute;
     bottom: -6px;
     left: 50%;
@@ -212,14 +242,14 @@ nav {
     opacity: 0;
 }
 
-.nav-block > ul > li.over:after{
+.m_nav > div > ul > li.over:after{
     display: block;
     background-color: #0097c3;
     bottom: 2px;
     opacity: 1;
 }
 
-.nav-block > ul > li > ul {
+.m_nav >div > ul > li > ul {
     display: none;
     float: left;
     position: absolute;
@@ -233,40 +263,40 @@ nav {
     background: rgba(6, 6, 6, 0.9);
 }
 
-.nav-block > ul > li:nth-child(1) > ul {
+.m_nav > div > ul > li:nth-child(1) > ul {
     left: -59px;
 }
-.nav-block > ul > li:nth-child(2) > ul {
+.m_nav > div> ul > li:nth-child(2) > ul {
     left: -27px;
 }
-.nav-block > ul > li:nth-child(3) > ul {
+.m_nav > div > ul > li:nth-child(3) > ul {
     left: -23px;
 }
-.nav-block > ul > li:nth-child(4) > ul {
+.m_nav > div> ul > li:nth-child(4) > ul {
     left: -20px;
 }
-.nav-block > ul > li:nth-child(5) {
+.m_nav > ul > li:nth-child(5) {
 	color: #fff;
 	border: none !important;
 }
-.nav-block > ul > li:nth-child(5) > a {
+.m_nav > ul > li:nth-child(5) > a {
 	font-size: 11px;
 	color: #fff !important;
 	background-color: #0097c3;
 	padding: 2px 8px 3px;
 }
 
-.nav-block > ul > li:nth-child(5):hover a {
+.m_nav > ul > li:nth-child(5):hover a {
 	color: #0097c3 !important;
 	background-color: #fff;
 	padding: 2px 8px 3px;
 }
 
-.nav-block > ul > li:nth-child(5):after {
+.m_nav > ul > li:nth-child(5):after {
 	display: none;
 }
 
-.nav-block > ul > li > ul > li > a  {
+.m_nav > ul > li > ul > li > a  {
     color: #b9b9b9;
     background-color: transparent;
     display: block;
@@ -274,25 +304,25 @@ nav {
     clear: both;
 }
 
-.nav-block > ul > li:hover > a,
-.nav-block > ul > li > a.active,
-.nav-block > ul > li > ul > li > a.active{
+.m_nav > ul > li:hover > a,
+.m_nav > ul > li > a.active,
+.m_nav > ul > li > ul > li > a.active{
     color: #0097c3;
 }
-.nav-block > ul > li > ul > li.over > a {
+.m_nav > ul > li > ul > li.over > a {
     color: #0097c3;
 }
 
-.nav-block > ul > li.over > ul {
+.m_nav > ul > li.over > ul {
     display: block;
 }
 
-.nav-block > ul > li.over > ul > li {
+.m_nav > ul > li.over > ul > li {
     display: block;
     margin-bottom: 5px;
     line-height: 2;
     text-align: center;
-}
+} */
 
 /*============= board 부분 =============*/
 .board_wrap {
@@ -306,6 +336,7 @@ display: block;
 width: 100%;
 margin-bottom: 50px;
 color: #060606 ;
+overflow: hidden;
 }
 
 .board_wrap .board_data img {
@@ -443,7 +474,7 @@ background-color: #060606 ;
 
 .detail_photo {
     display: none;
-    z-index: 9999;
+    z-index: 9998;
     position: fixed;
     top: 0;
     left: 0;
@@ -670,7 +701,7 @@ footer {
 }
 
 #m_intro .intro_txt p {
-	margin-top: 8px;
+	margin-top: 10px;
 }
 
 /*============= 3개의 아이콘그림 부분 =============*/
@@ -715,7 +746,7 @@ footer {
 
 /*============= 협회 활동 =============*/
 .act-block {
-    margin-top: 50px;
+    margin-top: 60px;
 }
 
 #m_act {
