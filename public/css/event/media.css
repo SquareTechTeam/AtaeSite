@@ -114,7 +114,7 @@ body {
     text-align: center;
 }
 .main .btn a {
-    display: inline-block;
+    display: none;
     color: #fff;
 }
 .main .btn a:hover {
