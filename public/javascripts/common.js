@@ -201,6 +201,9 @@ $(document).ready(function () {
            $('.m_nav_menu > div').fadeOut();
        }
     }); */
+    $('.m_nav_menu > ul > li > a').click(function(){
+        $('.m_nav_menu > ul > li > ul > li > a').slideDown();
+    });
 });
 
 
