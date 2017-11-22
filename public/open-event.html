@@ -148,19 +148,7 @@
 	</div>
 
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function(){
-            if($(".main .btn").css("position") === "fixed"){
-                $("#container").scroll(function(){
-                    if($(this).scrollTop() > 0){
-                        $(".main .btn").show(300);
-                    }else{
-                        $(".main .btn").hide(300);
-                    }
-                });
-            }
-        });
-    </script>
+	<script src="./javascripts/event/common.js"></script>
 
 </body>
 </html>
