@@ -82,7 +82,8 @@ body {
 .main h1 img {
     width: 230px;
 }
-.main .btn {
+.main .btn a{
+    z-index: 9;
     position: absolute;
     top: 40px;
     right: 40px;
@@ -91,12 +92,18 @@ body {
     display: inline-block;
     padding: 6px 34px;
     border: solid 1px #fff;
-    background: #0097c3;
+    background-color: #0097c3;
     text-align: center;
 }
 .main .btn a {
     display: inline-block;
     color: #fff;
+}
+.main .btn a:hover {
+	transition-property: background-color;
+	transition-duration: 0.3s;
+	transition-timing-function: ease-out;
+	background-color: #060606;
 }
 .main .main-box {
     position: relative;
@@ -273,7 +280,13 @@ body {
     margin-top: 30px;
     padding: 15px 120px;
     color: #fff;
-    background: #0097c3;
+    background-color: #0097c3;
+}
+.give-red .give-red-box .box-text a:hover {
+	transition-property: background-color;
+	transition-duration: 0.3s;
+	transition-timing-function: ease-out;
+	background-color: #060606;
 }
 .give-red .give-red-box .box-1 {
     position: absolute;
@@ -361,7 +374,13 @@ body {
     font-size: 21px;
     font-weight: 700;
     color: #fff;
-    background: #0097c3;
+    background-color: #0097c3;
+}
+.finish .finish-box-1 a:hover {
+	transition-property: background-color;
+	transition-duration: 0.3s;
+	transition-timing-function: ease-out;
+	background-color: #060606;
 }
 .finish .finish-box-2 {
     display: inline-block;

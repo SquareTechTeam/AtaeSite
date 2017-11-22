@@ -94,7 +94,7 @@ body {
 .main h1 img {
     width: 230px;
 }
-.main .btn {
+.main .btn a {
     z-index: 999;
     position: fixed;
     top: auto;
@@ -116,6 +116,12 @@ body {
 .main .btn a {
     display: inline-block;
     color: #fff;
+}
+.main .btn a:hover {
+	transition-property: background-color;
+	transition-duration: 0.3s;
+	transition-timing-function: ease-out;
+	background-color: #060606;
 }
 .main .main-box {
     position: relative;
@@ -297,7 +303,13 @@ body {
     width: 100%;
     text-align: center;
     color: #fff;
-    background: #0097c3;
+    background-color: #0097c3;
+}
+.give-red .give-red-box .box-text a:hover {
+	transition-property: background-color;
+	transition-duration: 0.3s;
+	transition-timing-function: ease-out;
+	background-color: #060606;
 }
 .give-red .give-red-box .box-1 {
     position: relative;
@@ -390,7 +402,13 @@ body {
     font-size: 13px;
     font-weight: 700;
     color: #fff;
-    background: #0097c3;
+    background-color: #0097c3;
+}
+.finish .finish-box-1 a:hover {
+	transition-property: background-color;
+	transition-duration: 0.3s;
+	transition-timing-function: ease-out;
+	background-color: #060606;
 }
 .finish .finish-box-2 {
     display: inline-block;
