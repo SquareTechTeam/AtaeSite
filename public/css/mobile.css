@@ -169,6 +169,9 @@ nav {
 
 .nav-block > h1 a {
 	display: inline-block;
+    position: absolute;
+    top: -10px;
+    left: 15px;
     
 }
 
@@ -730,8 +733,8 @@ footer {
 }
 
 .act_title h2 {
-    background-color: #111;
-    color: #fff;
+    background-color: #fff;
+    color: #111;
     text-align: center;
     padding: 6px;
     margin-bottom: 15px;
