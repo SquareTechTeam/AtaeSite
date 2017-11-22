@@ -181,14 +181,14 @@ $(document).ready(function () {
 
 
     /* 후원하기 페이지 Slider */
-    if($(".give-slider").hasClass("give-slider") === true){
-        $('.give-slider').bxSlider({
+    if($(".give-slider_main").hasClass("give-slider_main") === true){
+        $('.give-slider_main').bxSlider({
             mode: 'fade',
             captions: true,
             captions: true,
             auto: true,
             speed: 300,
-            pause: 4000
+            pause: 4000,
+            pagerCustom: '#bx-pager'
         });
     }
-

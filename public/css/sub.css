@@ -585,13 +585,34 @@
 .section-give {
     margin-bottom: 150px;
 }
-.give-slider img {
+.give-slider_main {
     margin: 0 auto;
-    height: 800px;
 }
+
+#bx-pager {
+    text-align: center;
+    margin-top: 50px;
+    width: 100%;
+}
+#bx-pager a {
+    display: inline-block;
+    overflow: hidden;
+    width: 18%;
+    margin-right: 2.5%;
+    float: left;
+}
+#bx-pager a:nth-last-child(1) {
+    margin-right: 0;
+}
+#bx-pager a img {
+    display: block;
+    width: 100%;
+}
+
 .give-wrap {
     position: relative;
     padding-top: 100px;
+    clear: both;
 }
 .give-wrap .filter{
     display: none;
@@ -609,9 +630,6 @@
     text-align: center;
     background: #0097c3;
 }
-.give-wrap .give-step-bar .block {
-    
-} 
 
 /*.give-wrap .give-step-bar li {
     position: relative;
