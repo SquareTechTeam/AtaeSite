@@ -1,0 +1,388 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+}
+@font-face {
+ font-family: 'NanumBarunGothic';
+ font-style: normal;
+ font-weight: 400;
+ src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot');
+ src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf') format('truetype');
+}
+
+@font-face {
+ font-family: 'NanumBarunGothic';
+ font-style: normal;
+ font-weight: 700;
+ src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot');
+ src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.ttf') format('truetype')
+}
+
+@font-face {
+ font-family: 'NanumBarunGothic';
+ font-style: normal;
+ font-weight: 300;
+ src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot');
+ src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.ttf') format('truetype');
+}
+
+body {
+    font-family: "NanumBarunGothic", "맑은 고딕", 'Malgun Gothic', dotum, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #414042;
+    line-height: 1.4;
+}
+
+#wrap {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.block {
+    max-width: 1180px;
+    width: 100%;
+    margin: 0 auto;
+}
+.block-wrap {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#container {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* Block #1 */
+.main {
+    position: relative;
+    text-align: center;
+    background: #027ec2; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left,rgba(243,132,126,1) 0%,rgba(2,126,194,1)); /*Safari 5.1-6*/
+    background: -o-linear-gradient(right,rgba(243,132,126,1) 0%,rgba(2,126,194,1)); /*Opera 11.1-12*/
+    background: -moz-linear-gradient(right,rgba(243,132,126,1) 0%,rgba(2,126,194,1)); /*Fx 3.6-15*/
+    background: linear-gradient(to right, rgba(243,132,126,1) 0%, rgba(2,126,194,1)); /*Standard*/
+}
+.main h1 {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    margin: 0;
+}
+.main h1 img {
+    width: 230px;
+}
+.main .btn {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    font-size: 21px;
+    font-weight: 700;
+    display: inline-block;
+    padding: 6px 34px;
+    border: solid 1px #fff;
+    background: #0097c3;
+    text-align: center;
+}
+.main .btn a {
+    display: inline-block;
+    color: #fff;
+}
+.main .main-box {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 340px;
+}
+.main .main-box p {
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    text-align: right;
+    font-size: 83px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #fff;
+    opacity: 0.3;
+}
+.main .main-box .box-img img {
+    width: 72%;
+}
+
+/* Block #2 */
+.testament {
+    position: relative;
+    text-align: left;
+    background-color: #e8e8e9;
+}
+.testament > div {
+    padding: 120px 0;
+}
+.testament h2 {
+    font-size: 42px;
+    text-align: right;
+}
+.testament .testament-box {
+    position: relative;
+    margin-top: 30px;
+}
+.testament .testament-box .box-text {
+    font-size: 16px;
+}
+.testament .testament-box .box-text strong {
+    display: block;
+    font-size: 23px;
+    line-height: 1.5;
+}
+.testament .testament-box .box-1 {
+    display: inline-block;
+    width: 57%;
+    height: 300px;
+    margin-top: 30px;
+    background-color: #b5b5b7;
+}
+.testament .testament-box .box-2 {
+    position: absolute;
+    top: 2%;
+    right: 0;
+    width: 57%;
+    height: 300px;
+    background-color: #414042;
+}
+
+/* Block #3 */
+.historical {
+    position: relative;
+    text-align: right;
+    background-color: #dadbdd;
+}
+.historical > div {
+    padding: 120px 0;
+}
+.historical h2 {
+    font-size: 42px;
+    text-align: left;
+}
+.historical .historical-box {
+    position: relative;
+    margin-top: 30px;
+}
+.historical .historical-box .box-text {
+    font-size: 16px;
+}
+.historical .historical-box .box-text strong {
+    display: block;
+    font-size: 23px;
+    line-height: 1.5;
+}
+.historical .historical-box .box-1 {
+    display: inline-block;
+    width: 63%;
+    height: 325px;
+    margin-top: 30px;
+    background-color: #acacad;
+}
+.historical .historical-box .box-2 {
+    position: absolute;
+    top: 2%;
+    left: 0;
+    width: 44%;
+    height: 410px;
+    background-color: #414042;
+}
+
+/* Block #4 */
+.movie {
+    position: relative;
+    text-align: right;
+    background-color: #414042;
+}
+.movie > div {
+    padding: 120px 0;
+}
+.movie h2 {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: right;
+}
+.movie .movie-box {
+    position: relative;
+    margin-top: 30px;
+}
+.movie .movie-box .movie {
+    width: 50%;
+    height: 300px;
+    background-color: #fff;
+}
+.movie .movie-box .movie:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -30px;
+    content:"\f0da";
+    display:inline-block;
+    font:normal normal normal 14px/1 FontAwesome;
+    font-size:60px;
+    text-rendering:auto;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+}
+.movie .movie-box .box-text {
+    position: absolute;
+    bottom: 0;
+    right: -50px;
+    color: #fff;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+}
+
+/* Block #5 */
+.give-red {
+    position: relative;
+    color: #fff;
+    background-color: #f4847d;
+}
+.give-red > div {
+    position: relative;
+    padding: 120px 0;
+}
+.give-red h2 {
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+.give-red .give-red-box {
+    margin-top: 30px;
+}
+.give-red .give-red-box .box-text {
+    font-size: 16px;
+}
+.give-red .give-red-box .box-text a {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 15px 120px;
+    color: #fff;
+    background: #0097c3;
+}
+.give-red .give-red-box .box-1 {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    display: inline-block;
+    width: 44%;
+    height: 50%;
+    padding: 60px 0;
+    background-color: #414042;
+}
+
+/* Block #6 */
+.give-blue {
+    position: relative;
+    text-align: right;
+    color: #fff;
+    background-color: #0097c3;
+}
+.give-blue > div {
+    padding: 120px 0;
+}
+.give-blue h2 {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.5;
+    text-align: right;
+}
+.give-blue .give-blue-box-1  {
+    margin-top: 30px;
+}
+.give-blue .give-blue-box-2 {
+    margin-top: 60px;
+}
+.give-blue .give-blue-box-2 .box-text {
+    text-align: left;
+}
+.give-blue .block-wrap > div > div {
+    display: inline-block;
+    margin-left: 60px;
+    vertical-align: top;
+}
+.give-blue .block-wrap > div > div:first-child {
+    margin: 0;
+}
+.give-blue .block-wrap > div .box-text {
+    font-size: 16px;
+}
+.give-blue .block-wrap .box-1, .give-blue .block-wrap .box-2 {
+    display: inline-block;
+    width: 250px;
+    height: 250px;
+    background-color: #414042;
+}
+
+/* Block #7 */
+.finish {
+    position: relative;
+    text-align: center;
+    color: #fff;
+    background-color: #000;
+}
+.finish > div {
+    padding: 120px 0;
+}
+.finish h2 {
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+.finish .finish-box-1 {
+    display: inline-block;
+    width: 70%;
+    padding: 50px;
+    margin-top: -150px;
+    color: #000;
+    background-color: #fff;
+}
+.finish .finish-box-1 img {
+    width: 100%;
+}
+.finish .finish-box-1 a {
+    display: inline-block;
+    padding: 15px 120px;
+    font-size: 21px;
+    font-weight: 700;
+    color: #fff;
+    background: #0097c3;
+}
+.finish .finish-box-2 {
+    display: inline-block;
+    width: 50%;
+}
+.finish .finish-box-2 img {
+    width: 65%;
+    margin-top: 20px;
+}
+.finish .finish-box-2 img:last-child {
+    width: 50%;
+    margin-top: 80px;
+}
+.finish .finish-box-2 p {
+    font-size: 21px;
+    line-height: 2.2;
+}
+.finish .finish-box-2 strong {
+    display: block;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
