@@ -7,21 +7,13 @@ $(document).ready(function(){
                 $(".main .btn a").hide(300);
             }
         });
+    }else{
+        $(document).scroll(function(){
+            if ($(this).scrollTop() > $(".main-box").height()) {
+                $('.header').addClass('open');
+            } else {
+                $('.header').removeClass('open');
+            }
+        });
     }
-
-    /* Scroll Button */
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 100) {
-            $('.return-top').fadeIn();
-        } else {
-            $('.return-top').fadeOut();
-        }
-    });
-
-    $('.return-top').click(function () {
-        $('body,html').animate({
-            scrollTop: 0
-        }, 50);
-        return false;
-    });
 });
