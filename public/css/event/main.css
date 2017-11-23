@@ -83,12 +83,12 @@ body {
     width: 49%;
 }
 .header.open h1 {
-    position: initial;
+    position: static;
     top: auto;
     left: auto;
 }
 .header.open .btn a {
-    position: initial;
+    position: static;
     top: auto;
     right: auto;
 }
@@ -98,10 +98,13 @@ body {
     position: relative;
     text-align: center;
     background: #027ec2; /* For browsers that do not support gradients */
+    background: -webkit-gradient(linear, left, right, color-stop(0%, #f3847e), color-stop(100%, #027ec2)); /*Chrome,Safari4+*/
     background: -webkit-linear-gradient(left,rgba(243,132,126,1) 0%,rgba(2,126,194,1)); /*Safari 5.1-6*/
     background: -o-linear-gradient(right,rgba(243,132,126,1) 0%,rgba(2,126,194,1)); /*Opera 11.1-12*/
-    background: -moz-linear-gradient(right,rgba(243,132,126,1) 0%,rgba(2,126,194,1)); /*Fx 3.6-15*/
-    background: linear-gradient(to right, rgba(243,132,126,1) 0%, rgba(2,126,194,1)); /*Standard*/
+    background: -ms-linear-gradient(left,rgba(243,132,126,1) 0%,rgba(2,126,194,1)); /*IE10+*/
+    background: -moz-linear-gradient(left,rgba(243,132,126,1) 0%,rgba(2,126,194,1)); /*Fx 3.6-15*/
+    background: linear-gradient(to right, rgba(243z,132,126,1) 0%, rgba(2,126,194,1)); /*Standard*/
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3847e', endColorstr='#027ec2',GradientType=1 );
 }
 .main h1 {
     position: absolute;
@@ -292,6 +295,7 @@ body {
     color: #fff;
     -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
+    transform: rotate(90deg);
 }
 
 /* Block #5 */
@@ -376,6 +380,7 @@ body {
     display: inline-block;
     margin-left: 60px;
     vertical-align: top;
+    max-width: 25%;
 }
 .give-blue .block-wrap > div > div:first-child {
     margin: 0;
