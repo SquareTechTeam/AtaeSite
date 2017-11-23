@@ -77,19 +77,20 @@ body {
 }
 
 /* Header Layout */
-#header {
+#m_header {
 	background: #fff;
-  position: fixed;
-	bottom: 10%;
+    position: fixed;
+    display: none;
+	bottom: 60px;
 	right: 15px;
 	width: 32px;
 	height: 32px;
 	border-radius: 32px;
 	overflow: hidden;
-  z-index: 9991;
+  z-index: 9000;
 }
 
-#header .header-block {
+#m_header .header-block {
 	  font-size: 9px;
 		min-height: 15px;
 		padding: 3px 0;
@@ -97,34 +98,34 @@ body {
 		width: 100%;
 }
 
-#header .header-block div {
+#m_header .header-block div {
 	float: left;
 	min-height: 1px;
 	line-height: 1.5em;
 }
 
-#header .header-block .contact {
+#m_header .header-block .contact {
 	width: 66.6%;
 	display: none;
 }
 
-#header .header-block .login {
-	width: auto;
+#m_header .header-block .login {
+	width: 100%;
 	text-align: center;
-	line-height: 32px;
 }
-#header .header-block .login:before {
+#m_header .header-block .login:before {
 	text-align: center;
 	content:"\f004";
 	color: #f4837c;
 	display:inline-block;
 	font:normal normal normal 14px/1 FontAwesome;
 	font-size: 20px;
+    line-height: 29px;
 	text-rendering:auto;
 	-webkit-font-smoothing:antialiased;
 	-moz-osx-font-smoothing:grayscale;
 }
-#header .header-block .login a {
+#m_header .header-block .login a {
 	color: #000;
 }
 
@@ -174,9 +175,11 @@ nav {
 	right: 15px;
 	text-align: center;
 	color: #fff;
+    text-shadow: 1px 1px 2px #060606;
 	font:normal normal normal 14px/1 FontAwesome;
 	font-size: 40px;
 	text-rendering:auto;
+    
 }
 .m_mask {
     display: none;
@@ -188,6 +191,8 @@ nav {
     height: 100%;
 	text-align: center;
 	background-color: #060606;
+}
+.m_scroll {
     overflow-y: scroll;
 }
 
@@ -200,7 +205,7 @@ nav {
     position: absolute;
     text-align: center;
     width: 100%;
-    top: 10%;
+    top: 68px;
     z-index: 9990;
     list-style-type: none;
     text-align: center;
@@ -227,6 +232,7 @@ nav {
     position: relative;
     z-index: 9992;
     background-color: #0097c3;
+    border-bottom: 1px solid #060606;
     color: #fff;
     font-size: 16px;
     padding: 12px 0;
@@ -236,7 +242,7 @@ nav {
 .m_mask > ul > li > ul {
     height: 0;
     transition-property: height;
-    transition-duration: 1.5s;
+    transition-duration: 0.5s;
 
     background-color: #000;
 }
@@ -261,34 +267,41 @@ nav {
     z-index: 1;
     position: relative;
     display: block;
-    height: 240px;
+    height: 256px;
 }
 .m_mask > ul > li:nth-child(2) > ul.open{
     z-index: 2;
     position: relative;
     display: block;
-    height: 160px;
+    height: 176px;
 }
 .m_mask > ul > li:nth-child(3) > ul.open{
     z-index: 3;
     position: relative;
     display: block;
-    height: 160px;
+    height: 176px;
 }
 .m_mask > ul > li:nth-child(4) > ul.open{
     z-index: 4;
     position: relative;
     display: block;
-    height: 80px;
+    height: 96px;
 }
 .m_mask > ul > li > ul > li > a {
     display: block;
     font-size: 14px;
     padding: 8px 0;
 }
+.m_mask > ul > li > ul > li:first-child a {
+    padding-top: 16px;
+}
+.m_mask > ul > li > ul > li:last-child a {
+    padding-bottom: 16px;
+}
+
 .m_mask > ul > li > a:nth-last-child(1)  {
-    background-color: #060606;
-    color: #f4837c;
+    background-color: #fff;
+    color: #0097c3;
     font-size: 18px;
     font-weight: 600;
 }
@@ -556,7 +569,7 @@ footer {
 .return-top {
 	position: fixed;
     display: none;
-	z-index: 9990;
+	z-index: 9000;
 	right: 15px;
 	bottom: 15px;
 }

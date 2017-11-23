@@ -63,36 +63,6 @@ body {
     overflow: hidden;
 }
 
-.header {
-    display: block;
-    top: -100px;
-    transition: top;
-    transition-duration: 1s;
-}
-.header.open {
-    z-index: 9999;
-    position: fixed;
-    top: 0px;
-    width: 100%;
-    padding: 20px 0;
-    background-color: rgba(0, 0, 0, 0.4);
-}
-.header.open > * {
-    display: inline-block;
-    vertical-align: bottom;
-    width: 49%;
-}
-.header.open h1 {
-    position: initial;
-    top: auto;
-    left: auto;
-}
-.header.open .btn a {
-    position: initial;
-    top: auto;
-    right: auto;
-}
-
 /* Block #1 */
 .main {
     position: relative;

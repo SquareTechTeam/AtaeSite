@@ -41,9 +41,9 @@ $(document).ready(function () {
     /* Scroll Button */
     $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {
-            $('.return-top').fadeIn();
+            $('.return-top, #m_header').fadeIn();
         } else {
-            $('.return-top').fadeOut();
+            $('.return-top, #m_header').fadeOut();
         }
     });
 
@@ -224,9 +224,14 @@ $(document).ready(function () {
         $('.m_menu').hide();
         $('.m_mask, .m_close').show();
     });
+     $('.m_mask').on('scroll touchmove mousewheel',function(event){
+            event.preventDefault();
+            event.stopPropagation();
+            return false});
     $('.m_close').click(function(){
         $('.m_mask, .m_close').hide();
         $('.m_menu').show();
+        $('.m_mask > ul > li > ul').removeClass('open');
     });
     $('.m_mask > ul > li a').click(function(){
         $('.m_mask > ul > li > ul').removeClass('open');
