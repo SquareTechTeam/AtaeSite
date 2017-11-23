@@ -63,6 +63,18 @@ body {
     overflow: hidden;
 }
 
+.return-top {
+  display: none;s
+	position: fixed;
+	z-index: 9990;
+	right: 20px;
+	bottom: 20px;
+}
+
+.return-top img {
+	width: 55px;
+}
+
 /* Block #1 */
 .main {
     position: relative;
