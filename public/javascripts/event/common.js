@@ -7,5 +7,13 @@ $(document).ready(function(){
                 $(".main .btn a").hide(300);
             }
         });
+    }else{
+        $(document).scroll(function(){
+            if ($(this).scrollTop() > $(".main-box").height()) {
+                $('.header').addClass('open');
+            } else {
+                $('.header').removeClass('open');
+            }
+        });
     }
 });
