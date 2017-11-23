@@ -585,6 +585,13 @@
 
 
 /*========================== give(후원하기) 시작 ==========================*/
+input[type=text] {
+ padding: 3px 0;
+ text-align: center;
+ margin: 0px;
+    vertical-align: middle;
+}
+
 .section-give {
     margin-bottom: 150px;
 }

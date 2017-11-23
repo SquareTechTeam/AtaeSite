@@ -1441,17 +1441,41 @@ footer {
 
 /*========================== give(후원하기) 시작 ==========================*/
 .section-give {
-    margin-bottom: 33px;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 28px;
 }
-.give-slider {
-    height: 333px;
-    font-size: 33px;
-    color: #fff;
-    background: #247835;
+.give-slider_main {
+    margin: 0 auto;
 }
+
+#bx-pager {
+    text-align: center;
+    margin-top: 10px;
+    width: 100%;
+}
+#bx-pager a {
+    display: inline-block;
+    overflow: hidden;
+    width: 47%;
+}
+#bx-pager a:nth-last-child(1) {
+    margin-right: 0;
+}
+#bx-pager a img {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.bx-wrapper {
+    margin-bottom: 30px;
+}
+
 .give-wrap {
     position: relative;
-    padding: 4px 0;
+    padding-top: 19px;
+    clear: both;
 }
 .give-wrap .filter{
     display: none;
@@ -1460,48 +1484,152 @@ footer {
     height:100%;
     background: #fff;
     opacity: 0;
+    z-index: 100;
 }
 .give-wrap .give-step-bar {
     width: 100%;
-    height: 6px;
-    margin: 60px 0;
+    height: 10px;
+    margin: 80px 0;
     text-align: center;
-    background: #55aaff;
+    background: #0097c3;
 }
+
+
 .give-wrap .give-step-bar li {
     display: inline-block;
-    width: 10%;
+    width: 5%;
+    margin-top: -54px;
 }
 .give-wrap .give-step-bar li:nth-child(3n-1) {
-    margin: 0 30%;
+    margin: 0 25%;
 }
-.give-wrap .give-step-bar li:before {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    margin-top: -11px;
-    content: " ";
-    border: solid 4px #55aaff;
-    border-radius: 20px;
-    background: #fff;
+
+/* 후원하기 폼 step2 */
+.give-wrap.step1 .give-step-bar li:nth-child(1) {
+    text-align: center;
+    font-weight: 600;
+    width: 110px;
 }
 .give-wrap.step1 .give-step-bar li:nth-child(1):before {
-    background-color: #55aaff;
+    display: inline-block;
+    margin-top: 0px;
+    content: " ";
+    border: solid 10px #0097c3;
+    border-radius: 110px;
+    background: #fff;
+    display:inline-block;
+    font:normal normal normal 14px/1 FontAwesome;
+    text-rendering:auto;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    content:"\f00c";
+    padding: 20px;
+    font-size: 50px;
+    color: #f38379;
+}
+.give-wrap.step1 .give-step-bar li:nth-child(2),
+.give-wrap.step1 .give-step-bar li:nth-child(3) {
+    color: #959595;
+}
+.give-wrap.step1 .give-step-bar li:nth-child(2):before,
+.give-wrap.step1 .give-step-bar li:nth-child(3):before{
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    top: -23px;
+    content: " ";
+    background-color: #0097c3;
+    border: solid 6px #fff;
+    border-radius: 30px;
 }
 .give-wrap.step2,
 .give-wrap.step3 {
     display: none;
 }
-.give-wrap.step2 .give-step-bar li:nth-child(1):before,
+
+/* 후원하기 폼 step2 */
+
+.give-wrap.step2 .give-step-bar li:nth-child(2) {
+    text-align: center;
+    font-weight: 600;
+    width: 110px;
+}
 .give-wrap.step2 .give-step-bar li:nth-child(2):before {
-    background-color: #55aaff;
+    display: inline-block;
+    margin-top: -55px;
+    content: " ";
+    border: solid 10px #0097c3;
+    border-radius: 110px;
+    background: #fff;
+    display:inline-block;
+    font:normal normal normal 14px/1 FontAwesome;
+    text-rendering:auto;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    content:"\f00c";
+    padding: 20px;
+    font-size: 50px;
+    color: #f38379;
 }
-.give-wrap.step3 .give-step-bar li:before {
-    background-color: #55aaff;
+.give-wrap.step2 .give-step-bar li:nth-child(1),
+.give-wrap.step2 .give-step-bar li:nth-child(3) {
+    color: #959595;
 }
-.give-wrap .give-step-content {
-    height: 400px;
-    background: #55aaff;
+.give-wrap.step2 .give-step-bar li:nth-child(1):before,
+.give-wrap.step2 .give-step-bar li:nth-child(3):before{
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    top: -23px;
+    content: " ";
+    background-color: #0097c3;
+    border: solid 6px #fff;
+    border-radius: 30px;
+}
+
+/* 후원하기 폼 step3 */
+.give-wrap.step3 .give-step-bar li:nth-child(3) {
+    text-align: center;
+    font-weight: 600;
+    width: 110px;
+}
+.give-wrap.step3 .give-step-bar li:nth-child(3):before {
+    display: inline-block;
+    margin-top: -0px;
+    content: " ";
+    border: solid 10px #0097c3;
+    border-radius: 110px;
+    background: #fff;
+    display:inline-block;
+    font:normal normal normal 14px/1 FontAwesome;
+    text-rendering:auto;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    content:"\f00c";
+    padding: 20px;
+    font-size: 50px;
+    color: #f38379;
+}
+.give-wrap.step3 .give-step-bar li:nth-child(1),
+.give-wrap.step3 .give-step-bar li:nth-child(2) {
+    color: #959595;
+}
+.give-wrap.step3 .give-step-bar li:nth-child(1):before,
+.give-wrap.step3 .give-step-bar li:nth-child(2):before{
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    top: -23px;
+    content: " ";
+    background-color: #0097c3;
+    border: solid 6px #fff;
+    border-radius: 30px;
+}
+.give-wrap step3 all_form {
+    text-align: center;
 }
 
 
@@ -1511,9 +1639,10 @@ footer {
     display: none;
 }
 
-.form_block .all_form {
+.all_form {
     width: 70%;
-    margin: 0 auto;
+    margin: 180px auto 0;
+    color: #303030;
 }
 
 .all_form table {
@@ -1521,53 +1650,89 @@ footer {
 }
 
 .check label {
-    padding-right: 6px;
-}
-
-.info_form {
-    border-top: 2px solid #1c1c1c;
-    border-bottom: 2px solid #1c1c1c;
+    padding-right: 23px;
 }
 
 .info_form span {
     display: inline-block;
     font-weight: 700;
-    width: 64px;
-    padding: 5px 12px 5px 8px;
+    width: 155px;
+    padding: 20px 35px 20px 20px;
 }
 
 .info_form table th {
     text-align: left;
-    width: 64px;
-    padding: 5px 12px 5px 8px;
+    width: 155px;
+    padding: 20px 35px 20px 20px;
 }
-.info_form table input {
-    line-height: 8px;
+.info_form  input {
+    line-height: 28px;
+    border-color: #303030;
+    border-width: 1.5px;
+    text-align: center;
+    font-size: 14px;
+    margin: 0 5px;
+}
+.tel_width input {
+    width: 80px;
+}
+#man_tel, #group_tel, .email_select {
+    border-color: #303030;
+    height: 31px;
+    width: 80px;
+    border-width: 1.5px;
+    margin: 0 5px;
+}
+
+td > div:nth-child(1) {
+    padding: 20px 0 10px;
+}
+
+td > div:nth-child(2) {
+    padding-bottom: 20px;
 }
 
 
-.btn_right {
+.form_btn {
     width: 70%;
     margin: 0 auto;
-    text-align: right;
-    padding-top: 25px;
+    text-align: center;
+    padding-top: 60px;
 }
 
-.btn_right .next_btn {
+.next_btn {
     background-color: #0097c3;
     border: 1px solid #c0c0c0;
     font-weight: 600;
     color: #fff;
     display: inline-block;
-    padding: 3px 5px;
+    padding: 14px 29px;
+    margin: 0 10px;
 }
 
-.btn_right .cancel_btn {
+.next_btn:hover {
+    transition-property: background-color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+    background-color: #060606;
+}
+
+.cancel_btn {
     background-color: #fff;
     border: 1px solid #c0c0c0;
     font-weight: 600;
-    color: #333;
+    color: #060606;
     display: inline-block;
-    padding: 3px 5px;
+    padding: 14px 29px;
+    margin: 0 10px;
 }
+
+.cancel_btn:hover {
+    transition-property: background-color color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+    background-color: #060606;
+    color: #fff;
+}
+
 /*========================== give(후원하기) 끝 ==========================*/
