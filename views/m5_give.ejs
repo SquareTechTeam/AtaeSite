@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
     <link rel="stylesheet" href="/css/common.css" />
+    <link rel="stylesheet" href="/css/give_jquery.bxslider.min.css" />
     <link rel="stylesheet" href="/css/font-awesome.min.css" />
     <link rel="stylesheet" href="/css/sub.css" />
     <link rel="stylesheet" media="(max-width: 1280px)" href="/css/media_1280.css" />
@@ -41,7 +42,7 @@
                     진실과 미래를 위한 한 걸음, 당신의 작은 나눔으로 시작됩니다.
                 </div>
                 <div class="login">
-                    <i class="lock"></i><a href="#">후원하기</a>
+                    <i class="lock"></i><a href="/donation">후원하기</a>
                 </div>
             </div>
         </header>
@@ -91,7 +92,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="#">후원하기</a>
+                        <a href="/donation">후원하기</a>
                     </li>
                 </ul>
             </div>
@@ -100,17 +101,28 @@
             <div id="container1">
                 <div class="main_img m5">
                     <div class="title">
-                        <h2 class="f1-upper">협회활동</h2>
-                        <div class="f3"><a href="#">HOME</a> / <a href="#">홍보관</a></div>
+                        <h2 class="f1-upper">후원하기</h2>
+                        <div class="f3"><a href="#">HOME</a> / <a href="#">후원하기 </a></div>
                     </div>
                     <div class="background"></div>
                 </div>
             </div>
             <div id="container2">
                 <div id="section">
-                    <div class="section-give f6">
-                        <div class="give-slider block">
-                            슬라이더 영역
+                    <div class="section-give f6" style="padding-top:65px">
+                        <div class="give-slider block-medium">
+                           <div class="give-slider_main">
+                            <div><a href="javascripts:;"><img src="http://via.placeholder.com/1170x600"></a></div>
+                            <div><a href="javascripts:;"><img src="http://via.placeholder.com/1170x600"></a></div>
+                            <div><a href="javascripts:;"><img src="http://via.placeholder.com/1170x600"></a></div>
+                            </div>
+                            <div id="bx-pager">
+                                <a data-slide-index="0" href=""><img src="http://via.placeholder.com/200x200" /></a>
+                                <a data-slide-index="1" href=""><img src="http://via.placeholder.com/200x200" /></a>
+                                <a data-slide-index="2" href=""><img src="http://via.placeholder.com/200x200" /></a>
+                                <a data-slide-index="3" href=""><img src="http://via.placeholder.com/200x200" /></a>
+                                <a data-slide-index="4" href=""><img src="http://via.placeholder.com/200x200" /></a>
+                            </div>
                         </div>
                         <div class="give-wrap step1">
                             <div class="filter"></div>
@@ -122,20 +134,16 @@
                                 </ol>
                             </div>
                             <div class="give-step-content block">
-                                STEP 1
                                 <div class="form_block block">
                                     <div class="all_form">
                                         <form class="info_form" name="후원자 정보 입력" method="post">
-                                            <div class="check f7">
+                                            <div class="check f6">
                                                 <span>후원인 구분</span>
                                                 <input type="radio" name="supporter" id="man" required checked /> <label for="man">개인</label>
                                                 <input type="radio" name="supporter" id="group" required /> <label for="group">법인</label>
                                             </div>
                                             <div>
-                                                <table class="sup_kind1 f7">
-                                                    <tr>
-                                                        <td colspan="2"></td>
-                                                    </tr>
+                                                <table class="sup_kind1 f6">
                                                     <tr>
                                                         <th><label for="man_name">이름</label></th>
                                                         <td><input type="text" name="name" id="man_name" required /></td>
@@ -145,9 +153,17 @@
                                                         <td>
                                                             <input type="text" name="jumin_1" minlength="6" maxlength="6" id="man_birth" required placeholder="예)901111" /></td>
                                                     </tr>
-                                                    <tr>
+                                                    <tr class="tel_width">
                                                         <th><label for="man_tel">핸드폰 번호</label></th>
-                                                        <td><input type="text" name="tel1" minlength="3" maxlength="3" id="man_tel" required /> -
+                                                        <td>
+                                                            <select id="man_tel" required>
+                                                                 <option value="010">010</option>
+                                                                 <option value="011">011</option>
+                                                                 <option value="016">016</option>
+                                                                 <option value="017">017</option>
+                                                                 <option value="018">018</option>
+                                                                 <option value="019">019</option>
+                                                            </select> -
                                                             <input type="text" name="tel2" minlength="3" maxlength="4" required /> -
                                                             <input type="text" name="tel3" minlength="4" maxlength="4" required />
                                                         </td>
@@ -158,7 +174,7 @@
                                                             <input type='text' name="email_front" id="man_email" />@
                                                             <input type='text' name="email_back" class="email_back" />
                                                             <select class="email_select" name="email_select">
-                                                             <option value="1">직접입력</option>
+                                                             <option value="">직접입력</option>
                                                              <option value="daum.net">daum.net</option>
                                                              <option value="empal.com">empal.com</option>
                                                              <option value="gmail.com">gmail.com</option>
@@ -172,8 +188,10 @@
                                                     <tr>
                                                         <th><label for="man_address">주소</label></th>
                                                         <td>
-                                                            <input type="text" name="address" id="man_address" size="50" />
-                                                            <input type="button" value="주소찾기" />
+                                                            <div><input type="text" id="man_address1" size="13" placeholder="우편번호" />
+                                                                <input type="button" class="add_btn" value="우편번호 찾기" /></div>
+                                                            <div><input type="text" id="man_address2" size="37" placeholder="주소" />
+                                                                <input type="text" id="man_address3" size="37" placeholder="상세주소" /></div>
                                                         </td>
                                                     </tr>
                                                     <tr class="check">
@@ -200,14 +218,8 @@
                                                         <td><input type="text" name="man_num1" minlength="6" maxlength="6" id="man_num" required /> -
                                                             <input type="password" name="man_num2" minlength="7" maxlength="7" required /></td>
                                                     </tr>
-                                                    <tr>
-                                                        <td colspan="2"></td>
-                                                    </tr>
                                                 </table>
                                                 <table class="sup_kind2 f7">
-                                                    <tr>
-                                                        <td colspan="2"></td>
-                                                    </tr>
                                                     <tr>
                                                         <th><label for="group_name">기업명</label></th>
                                                         <td>
@@ -226,16 +238,16 @@
                                                             <input type="text" id="group_person" required />
                                                         </td>
                                                     </tr>
-                                                    <tr>
+                                                    <tr class="tel_width">
                                                         <th><label for="group_tel">담당자 휴대폰번호</label></th>
                                                         <td>
-                                                            <select id="group_tel">
-                                                                <option>010</option>
-                                                                <option>011</option>
-                                                                <option>016</option>
-                                                                <option>017</option>
-                                                                <option>018</option>
-                                                                <option>019</option>
+                                                            <select id="group_tel" required>
+                                                                 <option value="010">010</option>
+                                                                 <option value="011">011</option>
+                                                                 <option value="016">016</option>
+                                                                 <option value="017">017</option>
+                                                                 <option value="018">018</option>
+                                                                 <option value="019">019</option>
                                                             </select> -
                                                             <input type="text" name="tel2" minlength="3" maxlength="4" required /> -
                                                             <input type="text" name="tel3" minlength="4" maxlength="4" required />
@@ -247,7 +259,7 @@
                                                             <input type='text' name="email_front" id="group_email" />@
                                                             <input type='text' name="email_back" class="email_back" />
                                                             <select name="email_select" class="email_select">
-                                                             <option value="1">직접입력</option>
+                                                             <option value="">직접입력</option>
                                                              <option value="daum.net">daum.net</option>
                                                              <option value="empal.com">empal.com</option>
                                                              <option value="gmail.com">gmail.com</option>
@@ -259,10 +271,12 @@
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <th><label for="group_address">회사 주소</label></th>
+                                                        <th><label for="man_address">주소</label></th>
                                                         <td>
-                                                            <input type="text" name="address" id="group_address" size="50" />
-                                                            <input type="button" value="주소찾기" />
+                                                            <div><input type="text" id="man_address1" size="13" placeholder="우편번호" />
+                                                                <input type="button" value="우편번호 찾기" /></div>
+                                                            <div><input type="text" id="man_address2" size="37" placeholder="주소" />
+                                                                <input type="text" id="man_address3" size="37" placeholder="상세주소" /></div>
                                                         </td>
                                                     </tr>
                                                     <tr class="check">
@@ -275,15 +289,12 @@
                                                             <label for="group_email3">우편</label>
                                                         </td>
                                                     </tr>
-                                                    <tr>
-                                                        <td colspan="2"></td>
-                                                    </tr>
                                                 </table>
                                             </div>
                                         </form>
                                     </div>
                                 </div>
-                                <div class="btn_right">
+                                <div class="form_btn">
                                     <a href="#" class="next_btn f6">다음단계</a>
                                     <a href="#" class="cancel_btn f6">취소하기</a>
                                 </div>
@@ -299,20 +310,28 @@
                                 </ol>
                             </div>
                             <div class="give-step-content block">
-                                STEP 2
-                                <form method="post" class="check">
-                                    <input type="radio" name="pay" value="신용카드" id="pay_card" />
-                                    <label for="pay_card">신용카드</label>
-                                    <input type="radio" name="pay" value="계좌이체" id="pay_account" />
-                                    <label for="pay_account">계좌이체</label>
-                                    <input type="radio" name="pay" value="무통장입금" id="pay_without_bank" />
-                                    <label for="pay_without_bank">무통장입금</label>
-                                    <input type="radio" name="pay" value="휴대폰 결제" id="pay_tel" />
-                                    <label for="pay_tel">휴대폰 결제</label>
-                                    <input type="radio" name="pay" value="카카오페이" id="pay_cacao" />
-                                    <label for="pay_cacao">카카오페이</label>
-                                </form>
-                                <div class="btn_right">
+                                <div class="all_form">
+                                    <form method="post" class="info_form check">
+                                        <table class="f6">
+                                            <tr>
+                                                <th>결제 방법</th>
+                                                <td class="pay_check">
+                                                    <input type="radio" name="pay" value="신용카드" id="pay_card" />
+                                                    <label for="pay_card">신용카드</label>
+                                                    <input type="radio" name="pay" value="계좌이체" id="pay_account" />
+                                                    <label for="pay_account">계좌이체</label>
+                                                    <input type="radio" name="pay" value="무통장입금" id="pay_without_bank" />
+                                                    <label for="pay_without_bank">무통장입금</label>
+                                                    <input type="radio" name="pay" value="휴대폰 결제" id="pay_tel" />
+                                                    <label for="pay_tel">휴대폰 결제</label>
+                                                    <input type="radio" name="pay" value="카카오페이" id="pay_cacao" />
+                                                    <label for="pay_cacao">카카오페이</label>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </form>
+                                </div>
+                                <div class="form_btn">
                                     <a href="#" class="next_btn f6">다음단계</a>
                                     <a href="#" class="cancel_btn f6">취소하기</a>
                                 </div>
@@ -328,10 +347,10 @@
                                 </ol>
                             </div>
                             <div class="give-step-content block">
-                                STEP 3<br />
-                                후원이 정상적으로 처리 되었습니다.<br />
-                                감사합니다.
-                                <span href="#" class="btn">완료</span>
+                                <div class="all_form f6 form_btn">
+                                    <div><br /> 후원이 정상적으로 처리 되었습니다.<br /> 감사합니다.</div><br />
+                                    <a href="#" class="next_btn">완료</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -343,18 +362,15 @@
                 <div class="footer_in">
                     <div class="addr">
                         <div class="logo_bottom">
-                            <img src="/images/logo_2.png" alt="" />
                         </div>
-                        <div class="footer_text">
+                        <div class="footer_text f6">
                             <address><i class="fa fa-map-marker" aria-hidden="true"></i>138-809 서울특별시 강남구 선릉로 82길 46.103호</address>
                             <div><i class="fa fa-phone" aria-hidden="true"></i>Tel. 1899-2509 &nbsp; <i class="fa fa-envelope" aria-hidden="true"></i>Fax. 02-552-5894</div>
                             <div class="bank">후원계좌: 수협은행 1230-0047-8770</div>
                         </div>
                     </div>
                     <div class="icon">
-                        <a href="#"><img src="/images/btn_sns_twitter.png" alt="페이스북 바로가기" title="새창" /></a>
                         <a href="#"><img src="/images/btn_sns_facebook.png" alt="페이스북 바로가기" title="새창" /></a>
-                        <a href="#"><img src="/images/btn_sns_blog.png" alt="페이스북 바로가기" title="새창" /></a>
                     </div>
                 </div>
             </div>
@@ -362,9 +378,10 @@
     </div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="/javascripts/jquery.bxslider.min.js"></script>
     <script src="/javascripts/common.js"></script>
-    
-    <a class="return-top" href="#top"><img src="/images/top_btn.png" alt="탑 버튼" /></a>
-</body>
 
+    <a class="return-top" href="#top"><img src="images/top_btn.png" alt="탑 버튼" /></a>
+
+</body>
 </html>

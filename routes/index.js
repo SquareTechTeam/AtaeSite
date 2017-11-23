@@ -28,9 +28,6 @@ function isCallerMobile(req) {
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-	
-	
-
 	knex('ATActivity')
 		.select('num', 'thumb_img', 'title', 'content', 'createdAt')
 		.orderBy('num', 'desc')
@@ -58,6 +55,9 @@ router.get('/', function(req, res, next) {
 		});
 });
 
+router.get('/event/atae', function(req, res, next){
+	res.render('event');
+});
 
 /* Atae Introduction */
 router.get('/introduce/greeting', function(req, res, next){
