@@ -163,7 +163,7 @@ body {
     background-color: #e8e8e9;
 }
 .testament > div {
-    padding: 120px 0;
+    padding: 120px 46px;
 }
 .testament h2 {
     font-size: 42px;
@@ -175,6 +175,11 @@ body {
 }
 .testament .testament-box .box-text {
     font-size: 16px;
+}
+.testament .testament-box .box-text img {
+    position: absolute;
+    top: -41px;
+    left: -51px;
 }
 .testament .testament-box .box-text strong {
     display: block;
@@ -216,6 +221,11 @@ body {
 }
 .historical .historical-box .box-text {
     font-size: 16px;
+}
+.historical .historical-box .box-text img {
+    position: absolute;
+    top: -41px;
+    right: -51px;
 }
 .historical .historical-box .box-text strong {
     display: block;
@@ -294,6 +304,10 @@ body {
     position: relative;
     padding: 120px 0;
 }
+.give-red .block-wrap img {
+    position: relative;
+    left: -51px;
+}
 .give-red h2 {
     font-size: 23px;
     font-weight: 700;
@@ -338,6 +352,10 @@ body {
 }
 .give-blue > div {
     padding: 120px 0;
+}
+.give-blue .block-wrap img {
+    position: relative;
+    right: -51px;
 }
 .give-blue h2 {
     font-size: 42px;
@@ -395,7 +413,11 @@ body {
     color: #000;
     background-color: #fff;
 }
-.finish .finish-box-1 img {
+.finish .finish-box-1 div img {
+    position: relative;
+    right: 147px;
+}
+.finish .finish-box-1 > img {
     width: 100%;
 }
 .finish .finish-box-1 a {
