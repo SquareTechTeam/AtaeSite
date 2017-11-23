@@ -141,9 +141,34 @@ $(document).ready(function () {
         $("." + thisStep + " .filter").animate({
             "opacity": 0.6
         }, 500);
-
         return false;
     });
+    
+    
+    $(".give-wrap .cancel_btn").click(function () {
+        var thisStep = $(this).parent().parent().parent().attr("class").split(" ")[1];
+        var nextStep = "";
+        if (thisStep == "step3") {
+            nextStep = "step2";
+        } else if (thisStep == "step2") {
+            nextStep = "step1";
+        } else {
+            return false;
+        }
+
+        $("." + nextStep).show();
+        var moveTop = $("." + nextStep).offset().top;
+        var minusTop = $(".give-step-bar ol").height();
+        $("html, body").animate({
+            "scrollTop": moveTop
+        }, 500);
+        $("." + thisStep + " .filter").show();
+        $("." + thisStep + " .filter").animate({
+            "opacity": 0.6
+        }, 500);
+        return false;
+    });
+
 
     /* 후원 email form */
     $('.email_select').change(function () {
@@ -159,9 +184,6 @@ $(document).ready(function () {
             console.log('아닐경우');
         }
 
-    });
-    $('.cancel_btn').click(function(){
-        
     });
 
     /* 후원하기 구분 radio 클릭 */
@@ -198,6 +220,7 @@ $(document).ready(function () {
 
     /* ================= 모바일 페이지 ================= */
     $('.m_menu').click(function(){
+        $('.m_mask').slideDown();
         $('.m_menu').hide();
         $('.m_mask, .m_close').show();
     });
@@ -206,8 +229,11 @@ $(document).ready(function () {
         $('.m_menu').show();
     });
     $('.m_mask > ul > li a').click(function(){
-       $(this).parent().find('ul > li').fadeToggle();
+        $('.m_mask > ul > li > ul').removeClass('open');
+       $(this).parent().find('ul').addClass('open');
+        
     });
+    
 });
 
 
