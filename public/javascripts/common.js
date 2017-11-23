@@ -160,6 +160,9 @@ $(document).ready(function () {
         }
 
     });
+    $('.cancel_btn').click(function(){
+        
+    });
 
     /* 후원하기 구분 radio 클릭 */
     $('#group').click(function(){
@@ -194,15 +197,16 @@ $(document).ready(function () {
     }
 
     /* ================= 모바일 페이지 ================= */
-    /* $(window).scroll(function(){
-       if($(this).scroll() > 20) {
-           $('.m_nav_menu > div').fadeIn();
-       } else{
-           $('.m_nav_menu > div').fadeOut();
-       }
-    }); */
-    $('.m_nav_menu > ul > li > a').click(function(){
-        $('.m_nav_menu > ul > li > ul > li > a').slideDown();
+    $('.m_menu').click(function(){
+        $('.m_menu').hide();
+        $('.m_mask, .m_close').show();
+    });
+    $('.m_close').click(function(){
+        $('.m_mask, .m_close').hide();
+        $('.m_menu').show();
+    });
+    $('.m_mask > ul > li a').click(function(){
+       $(this).parent().find('ul > li').fadeToggle();
     });
 });
 
