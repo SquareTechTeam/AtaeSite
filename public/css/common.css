@@ -145,12 +145,12 @@ nav {
     display: none;
 }
 
-.nav-block > ul {
+.nav-block > .m_mask > ul {
     float: right;
     margin-right: 100px;
 }
 
-.nav-block > ul > li {
+.nav-block > .m_mask > ul > li {
     float: left;
     position: relative;
     display: block;
@@ -161,7 +161,7 @@ nav {
     font-weight: 700;
 }
 
-.nav-block > ul > li:after{
+.nav-block > .m_mask > ul > li:after{
     position: absolute;
     bottom: -6px;
     left: 50%;
@@ -177,14 +177,14 @@ nav {
     opacity: 0;
 }
 
-.nav-block > ul > li.over:after{
+.nav-block > .m_mask > ul > li.over:after{
     display: block;
     background-color: #0097c3;
     bottom: 2px;
     opacity: 1;
 }
 
-.nav-block > ul > li > ul {
+.nav-block > .m_mask > ul > li > ul {
     display: none;
     float: left;
     position: absolute;
@@ -198,41 +198,41 @@ nav {
     background: rgba(6, 6, 6, 0.9);
 }
 
-.nav-block > ul > li:nth-child(1) > ul {
+.nav-block > .m_mask > ul > li:nth-child(1) > ul {
     left: -107px;
 }
-.nav-block > ul > li:nth-child(2) > ul {
+.nav-block > .m_mask > ul > li:nth-child(2) > ul {
     left: -58px;
 }
-.nav-block > ul > li:nth-child(3) > ul {
+.nav-block > .m_mask > ul > li:nth-child(3) > ul {
     left: -55px;
 }
-.nav-block > ul > li:nth-child(4) > ul {
+.nav-block > .m_mask > ul > li:nth-child(4) > ul {
     left: -50px;
 }
-.nav-block > ul > li:nth-child(5) {
+.nav-block > .m_mask > ul > li:nth-child(5) {
 	color: #fff;
 	border: none !important;
 	margin-top: -3px;
 }
-.nav-block > ul > li:nth-child(5) > a {
+.nav-block > .m_mask > ul > li:nth-child(5) > a {
 	font-size: 18px;
 	color: #fff !important;
 	background-color: #0097c3;
 	padding: 6px 14px 4px;
 }
 
-.nav-block > ul > li:nth-child(5):hover a {
+.nav-block > .m_mask > ul > li:nth-child(5):hover a {
 	color: #0097c3 !important;
 	background-color: #fff;
 	padding: 6px 14px 4px;
 }
 
-.nav-block > ul > li:nth-child(5):after {
+.nav-block > .m_mask > ul > li:nth-child(5):after {
 	display: none;
 }
 
-.nav-block > ul > li > ul > li > a  {
+.nav-block > .m_mask > ul > li > ul > li > a  {
     color: #b9b9b9;
     background-color: transparent;
     display: block;
@@ -240,20 +240,20 @@ nav {
     clear: both;
 }
 
-.nav-block > ul > li:hover > a,
-.nav-block > ul > li > a.active,
-.nav-block > ul > li > ul > li > a.active{
+.nav-block > .m_mask > ul > li:hover > a,
+.nav-block > .m_mask > ul > li > a.active,
+.nav-block > .m_mask > ul > li > ul > li > a.active{
     color: #0097c3;
 }
-.nav-block > ul > li > ul > li.over > a {
+.nav-block > .m_mask > ul > li > ul > li.over > a {
     color: #0097c3;
 }
 
-.nav-block > ul > li.over > ul {
+.nav-block > .m_mask > ul > li.over > ul {
     display: block;
 }
 
-.nav-block > ul > li.over > ul > li {
+.nav-block > .m_mask > ul > li.over > ul > li {
     display: block;
     margin-bottom: 5px;
     line-height: 2;
