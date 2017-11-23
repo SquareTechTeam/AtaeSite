@@ -1209,7 +1209,7 @@ footer {
 }
 
 .error_img {
-    display: block;
+    display: none;
     text-align: center;
 }
 
