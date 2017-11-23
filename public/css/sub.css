@@ -46,7 +46,6 @@
 }
 .m5 {
      background-image: url('../images/m5_banner.png');
-     background-position-y: 70%;
 }
 
 
@@ -688,7 +687,7 @@
     content:"\f00c";
     padding: 20px;
     font-size: 50px;
-    color: #f38379;
+    color: #f38379; 
 }
 .give-wrap.step1 .give-step-bar li:nth-child(2),
 .give-wrap.step1 .give-step-bar li:nth-child(3) {
@@ -733,7 +732,7 @@
     content:"\f00c";
     padding: 20px;
     font-size: 50px;
-    color: #f38379;
+    color: #f38379; 
 }
 .give-wrap.step2 .give-step-bar li:nth-child(1),
 .give-wrap.step2 .give-step-bar li:nth-child(3) {
@@ -773,7 +772,7 @@
     content:"\f00c";
     padding: 20px;
     font-size: 50px;
-    color: #f38379;
+    color: #f38379; 
 }
 .give-wrap.step3 .give-step-bar li:nth-child(1),
 .give-wrap.step3 .give-step-bar li:nth-child(2) {
