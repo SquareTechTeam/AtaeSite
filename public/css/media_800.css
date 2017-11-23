@@ -1270,6 +1270,7 @@ footer {
 }
 
 .section-error > div {
+    padding: 0 5%;
     margin: 2px;
     text-align: center;
 }
