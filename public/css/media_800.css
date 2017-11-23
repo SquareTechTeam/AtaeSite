@@ -1229,7 +1229,7 @@ footer {
 .section-error {
     min-height: 41px;
     text-align: center;
-    padding-top: 61px;
+    padding: 61px 0 80px;
     line-height: 1.8;
     margin: 0 auto;
 }
