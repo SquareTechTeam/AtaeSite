@@ -185,6 +185,9 @@ $(document).ready(function () {
         }
 
     });
+    
+    /* 후원 우편번호 버튼 */
+    
 
     /* 후원하기 구분 radio 클릭 */
     $('#group').click(function(){
@@ -217,7 +220,7 @@ $(document).ready(function () {
             $('.m_nav_menu > ul').show();
         });
     }
-
+    
     /* ================= 모바일 페이지 ================= */
     $('.m_menu').click(function(){
         $('.m_mask').slideDown();

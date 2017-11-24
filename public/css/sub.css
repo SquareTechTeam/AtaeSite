@@ -841,23 +841,38 @@ input[type=text] {
     width: 155px;
     padding: 20px 35px 20px 20px;
 }
-.info_form  input {
+.info_form input {
     line-height: 28px;
     border-color: #303030;
     border-width: 1.5px;
-    text-align: center;
+    text-align: left;
     font-size: 14px;
     margin: 0 5px;
+    padding: 0 10px;
 }
+
+.info_form input[type=text]:focus,
+.info_form input[type=text]:visited,
+.info_form input[type=text]:active{
+    outline: none;
+    border-color: #f4847c;
+}
+
 .tel_width input {
     width: 80px;
 }
 #man_tel, #group_tel, .email_select {
     border-color: #303030;
     height: 31px;
-    width: 80px;
+    width: 100px;
     border-width: 1.5px;
     margin: 0 5px;
+    position: relative;
+    top: 2px;
+}
+.add_btn {
+    position: relative;
+    top: 1px;
 }
 
 td > div:nth-child(1) {
@@ -867,7 +882,6 @@ td > div:nth-child(1) {
 td > div:nth-child(2) {
     padding-bottom: 20px;
 }
-
 
 .form_btn {
     width: 70%;
@@ -910,8 +924,6 @@ td > div:nth-child(2) {
     background-color: #060606;
     color: #fff;
 }
-
-
 
 
 

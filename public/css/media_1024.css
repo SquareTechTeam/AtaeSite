@@ -1405,7 +1405,6 @@ footer {
 }
 .give-wrap .give-step-content {
     height: 426px;
-    background: #55aaff;
 }
 
 
@@ -1416,7 +1415,7 @@ footer {
 }
 
 .form_block .all_form {
-    width: 70%;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -1426,11 +1425,6 @@ footer {
 
 .check label {
     padding-right: 15px;
-}
-
-.info_form {
-    border-top: 2px solid #1c1c1c;
-    border-bottom: 2px solid #1c1c1c;
 }
 
 .info_form span {

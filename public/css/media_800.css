@@ -637,11 +637,11 @@ footer {
 	position: fixed;
     display: none;
 	z-index: 9990;
-	right: 15px;
-	bottom: 15px;
+	right: 10px;
+	bottom: 10px;
 }
 .return-top img {
-	width: 32px;
+	width: 40px;
 }
 
 
@@ -1556,26 +1556,29 @@ footer {
 .give-wrap .give-step-bar {
     width: 100%;
     height: 10px;
-    margin: 15px 0;
+    margin: 60px 0;
     text-align: center;
     background: #0097c3;
 }
 
-
 .give-wrap .give-step-bar li {
     display: inline-block;
+    text-align: center;
     width: 5%;
     margin-top: -21px;
 }
 .give-wrap .give-step-bar li:nth-child(3n-1) {
-    margin: 0 25%;
+    margin: 0 12%;
 }
 
 /* 후원하기 폼 step1 */
+.give-wrap.step1 {
+    height: 800px;
+}
 .give-wrap.step1 .give-step-bar li:nth-child(1) {
     text-align: center;
     font-weight: 600;
-    width: 20px;
+    width: 60px;
 }
 .give-wrap.step1 .give-step-bar li:nth-child(1):before {
     display: inline-block;
@@ -1594,11 +1597,11 @@ footer {
     font-size: 30px;
     color: #f38379;
     position: relative;
-    right: 15px;
 }
 .give-wrap.step1 .give-step-bar li:nth-child(2),
 .give-wrap.step1 .give-step-bar li:nth-child(3) {
     color: #959595;
+    width: 60px;
 }
 .give-wrap.step1 .give-step-bar li:nth-child(2):before,
 .give-wrap.step1 .give-step-bar li:nth-child(3):before{
@@ -1606,7 +1609,7 @@ footer {
     display: inline-block;
     width: 20px;
     height: 20px;
-    top: -13px;
+    top: -11px;
     content: " ";
     background-color: #0097c3;
     border: solid 5px #fff;
@@ -1618,15 +1621,16 @@ footer {
 }
 
 /* 후원하기 폼 step2 */
-
+.give-wrap.step2 {
+    height: 400px;
+}
 .give-wrap.step2 .give-step-bar li:nth-child(2) {
     text-align: center;
     font-weight: 600;
-    width: 20px;
+    width: 60px;
 }
 .give-wrap.step2 .give-step-bar li:nth-child(2):before {
     display: inline-block;
-    margin-top: 0px;
     content: " ";
     border: solid 7px #0097c3;
     border-radius: 30px;
@@ -1641,11 +1645,11 @@ footer {
     font-size: 30px;
     color: #f38379;
     position: relative;
-    right: 15px;
 }
 .give-wrap.step2 .give-step-bar li:nth-child(1),
 .give-wrap.step2 .give-step-bar li:nth-child(3) {
     color: #959595;
+    width: 60px;
 }
 .give-wrap.step2 .give-step-bar li:nth-child(1):before,
 .give-wrap.step2 .give-step-bar li:nth-child(3):before{
@@ -1653,21 +1657,24 @@ footer {
     display: inline-block;
     width: 20px;
     height: 20px;
-    top: -13px;
+    top: -5px;
     content: " ";
     background-color: #0097c3;
     border: solid 5px #fff;
     border-radius: 20px;
 }
-.give-wrap.step2,
 .give-wrap.step3 {
     display: none;
 }
+
 /* 후원하기 폼 step3 */
+.give-wrap.step3 {
+    height: 280px;
+}
 .give-wrap.step3 .give-step-bar li:nth-child(3) {
     text-align: center;
     font-weight: 600;
-    width: 20px;
+    width: 60px;
 }
 .give-wrap.step3 .give-step-bar li:nth-child(3):before {
     display: inline-block;
@@ -1686,11 +1693,11 @@ footer {
     font-size: 30px;
     color: #f38379;
     position: relative;
-    right: 15px;
 }
 .give-wrap.step3 .give-step-bar li:nth-child(1),
 .give-wrap.step3 .give-step-bar li:nth-child(2) {
     color: #959595;
+    width: 60px;
 }
 .give-wrap.step3 .give-step-bar li:nth-child(1):before,
 .give-wrap.step3 .give-step-bar li:nth-child(2):before{
@@ -1698,25 +1705,24 @@ footer {
     display: inline-block;
     width: 20px;
     height: 20px;
-    top: -13px;
+    top: -11px;
     content: " ";
     background-color: #0097c3;
     border: solid 5px #fff;
     border-radius: 20px;
 }
-.give-wrap.step3,
-.give-wrap.step2 {
-    display: none;
-}
 
 /* 후원하기 폼 */
+td {
+    padding: 5px;
+}
 .sup_kind2, .man_num {
     display: none;
 }
 
 .all_form {
-    width: 70%;
-    margin: 180px auto 0;
+    width: 100%;
+    margin: 100px auto 0;
     color: #303030;
 }
 
@@ -1724,55 +1730,98 @@ footer {
     width: 100%;
 }
 
+.info_form > .check {
+    margin-top: 100px;
+}
 .check label {
-    padding-right: 23px;
+    padding-right: 0px;
+}
+.pay_check {
+    text-align: left;
+}
+.pay_check label:after {
+    content: "";
+    display: block;
 }
 
 .info_form span {
+    text-align: center;
     display: inline-block;
     font-weight: 700;
-    width: 155px;
-    padding: 20px 35px 20px 20px;
+    width: 90px;
+    padding: 10px 0px;
 }
 
 .info_form table th {
-    text-align: left;
-    width: 155px;
-    padding: 20px 35px 20px 20px;
+    text-align: center;
+    width: 90px;
+    padding: 10px 3px;
+    background-color: #303030;
+    color: #fff;
 }
-.info_form  input {
+.info_form table tr {
+    padding: 25px 0;
+}
+
+.info_form input {
     line-height: 28px;
     border-color: #303030;
-    border-width: 1.5px;
-    text-align: center;
-    font-size: 14px;
-    margin: 0 5px;
+    border-width: 1px;
+    text-align: left;
+    font-size: 13px;
+    margin: 3px;
+    padding: 3px 5px;
+}
+.info_form input[type=text]:focus,
+.info_form input[type=text]:visited,
+.info_form input[type=text]:active{
+     outline: none;
+    border-color: #f4847c;
 }
 .tel_width input {
-    width: 80px;
+    width: 42px;
 }
+#man_name, #man_birth, #group_name, #group_person, #group_birth,
+#man_email, #group_num, #group_email, .email_back {
+    width: 45%;
+}
+#man_address1, #group_address1 {
+    width: 43%;
+    max-width: 95px;
+}
+.add_btn {
+    position: relative;
+    top: 0px;
+}
+.man_num > td > input {
+    width: 35%;
+}
+
 #man_tel, #group_tel, .email_select {
     border-color: #303030;
-    height: 31px;
+    position: relative;
+    top: 0px;
+    height: 28px;
+    width: 65px;
+    border-width: 1px;
+    margin: 0 3px;
+}
+.email_select {
     width: 80px;
-    border-width: 1.5px;
-    margin: 0 5px;
+    font-size: 12px;
 }
 
 td > div:nth-child(1) {
-    padding: 20px 0 10px;
+    padding: 5px 0 5px;
 }
 
-td > div:nth-child(2) {
-    padding-bottom: 20px;
-}
 
 
 .form_btn {
-    width: 70%;
+    width: 100%;
     margin: 0 auto;
     text-align: center;
-    padding-top: 60px;
+    padding-top: 30px;
 }
 
 .next_btn {
@@ -1781,8 +1830,8 @@ td > div:nth-child(2) {
     font-weight: 600;
     color: #fff;
     display: inline-block;
-    padding: 14px 29px;
-    margin: 0 10px;
+    padding: 10px 20px;
+    margin: 0 5px;
 }
 
 .next_btn:hover {
@@ -1798,8 +1847,8 @@ td > div:nth-child(2) {
     font-weight: 600;
     color: #060606;
     display: inline-block;
-    padding: 14px 29px;
-    margin: 0 10px;
+    padding: 10px 20px;
+    margin: 0 5px;
 }
 
 .cancel_btn:hover {

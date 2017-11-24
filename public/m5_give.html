@@ -190,8 +190,8 @@
                                                     <tr>
                                                         <th><label for="man_address">주소</label></th>
                                                         <td>
-                                                            <div><input type="text" id="man_address1" size="13" placeholder="우편번호" />
-                                                                <input type="button" class="add_btn" value="우편번호 찾기" /></div>
+                                                            <div><input type="text" id="man_address1" readonly=readonly size="13" placeholder="우편번호" />
+                                                                <input type="button" class="add_btn" value="찾기" /></div>
                                                             <div><input type="text" id="man_address2" size="30" placeholder="주소" />
                                                                 <input type="text" id="man_address3" size="30" placeholder="상세주소" /></div>
                                                         </td>
@@ -217,11 +217,12 @@
                                                     </tr>
                                                     <tr class="man_num">
                                                         <th><label for="man_num">주민등록번호</label></th>
-                                                        <td><input type="text" name="man_num1" minlength="6" maxlength="6" id="man_num" required /> -
+                                                        <td>
+                                                           <input type="text" name="man_num1" minlength="6" maxlength="6" id="man_num" required /> -
                                                             <input type="password" name="man_num2" minlength="7" maxlength="7" required /></td>
                                                     </tr>
                                                 </table>
-                                                <table class="sup_kind2 f7">
+                                                <table class="sup_kind2 f6">
                                                     <tr>
                                                         <th><label for="group_name">기업명</label></th>
                                                         <td>
@@ -273,12 +274,12 @@
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <th><label for="man_address">주소</label></th>
+                                                        <th><label for="group_address">주소</label></th>
                                                         <td>
-                                                            <div><input type="text" id="man_address1" size="13" placeholder="우편번호" />
-                                                                <input type="button" value="우편번호 찾기" /></div>
-                                                            <div><input type="text" id="man_address2" size="37" placeholder="주소" />
-                                                                <input type="text" id="man_address3" size="37" placeholder="상세주소" /></div>
+                                                            <div><input type="text" id="group_address1" size="13" placeholder="우편번호" />
+                                                                <input type="button" class="add_btn" value="찾기" /></div>
+                                                            <div><input type="text" id="group_address2" size="30" placeholder="주소" />
+                                                                <input type="text" id="group_address3" size="30" placeholder="상세주소" /></div>
                                                         </td>
                                                     </tr>
                                                     <tr class="check">
