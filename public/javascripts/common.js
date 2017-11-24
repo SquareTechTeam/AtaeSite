@@ -223,20 +223,27 @@ $(document).ready(function () {
         $('.m_mask').slideDown();
         $('.m_menu').hide();
         $('.m_mask, .m_close').show();
+
+        return false;
     });
-     $('.m_mask').on('scroll touchmove mousewheel',function(event){
-            event.preventDefault();
-            event.stopPropagation();
-            return false});
+    $('.m_mask').on('scroll touchmove mousewheel',function(event){
+        event.preventDefault();
+        event.stopPropagation();
+
+        return false;
+    });
     $('.m_close').click(function(){
         $('.m_mask, .m_close').hide();
         $('.m_menu').show();
         $('.m_mask > ul > li > ul').removeClass('open');
+
+        return false;
     });
     $('.m_mask > ul > li a').click(function(){
         $('.m_mask > ul > li > ul').removeClass('open');
-       $(this).parent().find('ul').addClass('open');
+        $(this).parent().find('ul').addClass('open');
 
+        return false;
     });
 
     /* 서브페이지 메뉴 */
@@ -249,5 +256,16 @@ $(document).ready(function () {
             $('.m_mask').hide();
             $(this).removeClass("close");
         }
+
+        return false;
+    });
+
+    /* a 태그 스크립트 문제 해결 */
+    $("a").click(function(){
+        var href = $(this).attr("href");
+        if(href == "#" || href == "javascript:;"){
+            return false;
+        }
+        console.log(123)
     });
 });

@@ -570,7 +570,6 @@ nav {
 
 /*============= footer 부분 =============*/
 footer {
-	display: none;
 	background-color: #060606;
 	color: #fff;
 }
@@ -582,7 +581,7 @@ footer {
 }
 .footer_in .addr {
 	display: inline-block;
-	margin-right: 83px;
+	margin-right: 0;
 }
 .footer_in .addr .logo_bottom {
 	display: inline-block;
@@ -592,28 +591,31 @@ footer {
 .footer_in .addr .footer_text {
 	display: inline-block;
 	line-height: 2;
-	text-align: left;
+	text-align: center;
 	vertical-align: top;
 }
 .footer_in .addr .footer_text i {
 	display: inline-block;
 	width: 4px;
 	padding: 0 8px;
+	margin-right: 6px;
 }
 .footer_in .addr .footer_text .bank {
 	margin-left: 19px;
 }
 .footer_in .icon {
-	display: inline-block;
+	display: block;
 	vertical-align: top;
+	padding: 20px 0 15px;
 }
 .icon {
 	display: inline-block;
 }
 .icon img {
 	display: inline-block;
-	width: 17.5px;
+	width: 7%;
 	padding: 0 0 0 2px;
+	position: static;
 }
 .icon a:hover img {
 	transform: scale(1.15);
@@ -938,6 +940,7 @@ footer {
     color: #fff;
     background-position: center;
     background-size: cover;
+    background-color: #333;
 }
 
 .main_img .title {
