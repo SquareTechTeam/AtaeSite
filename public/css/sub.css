@@ -447,7 +447,7 @@
     margin-left: 0px;
 }
 
-.section_write .radio span {
+.section_write .radio > span {
     font-weight: 700;
     padding-right: 15px;
 }
@@ -830,7 +830,7 @@ input[type=text] {
     padding-right: 23px;
 }
 
-.info_form span {
+.info_form > div >span {
     display: inline-block;
     font-weight: 700;
     width: 155px;

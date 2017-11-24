@@ -1518,11 +1518,15 @@ footer {
 .give-slider_main {
     margin: 0 auto;
 }
+.give-slider {
+    height: auto;
+}
 
 #bx-pager {
     text-align: center;
     margin-top: 10px;
     width: 100%;
+    display: none;
 }
 #bx-pager a {
     display: inline-block;
@@ -1576,7 +1580,7 @@ footer {
 
 /* 후원하기 폼 step1 */
 .give-wrap.step1 {
-    height: 800px;
+    height: 850px;
 }
 .give-wrap.step1 .give-step-bar li:nth-child(1) {
     text-align: center;
