@@ -156,15 +156,15 @@ $(document).ready(function () {
             return false;
         }
 
-        $("." + nextStep).show();
+        $("." + thisStep).hide();
         var moveTop = $("." + nextStep).offset().top;
         var minusTop = $(".give-step-bar ol").height();
         $("html, body").animate({
             "scrollTop": moveTop
         }, 500);
-        $("." + thisStep + " .filter").show();
+        $("." + nextStep + " .filter").hide();
         $("." + thisStep + " .filter").animate({
-            "opacity": 0.6
+            "opacity": 0
         }, 500);
         return false;
     });
