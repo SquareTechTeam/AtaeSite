@@ -227,10 +227,10 @@ $(document).ready(function () {
         $('.m_menu').hide();
         $('.m_mask, .m_close').show();
     });
-     $('.m_mask').on('scroll touchmove mousewheel',function(event){
-            event.preventDefault();
-            event.stopPropagation();
-            return false});
+    $('.m_mask').on('scroll touchmove mousewheel',function(event){
+        event.preventDefault();
+        event.stopPropagation();
+    });
     $('.m_close').click(function(){
         $('.m_mask, .m_close').hide();
         $('.m_menu').show();
@@ -238,8 +238,7 @@ $(document).ready(function () {
     });
     $('.m_mask > ul > li a').click(function(){
         $('.m_mask > ul > li > ul').removeClass('open');
-       $(this).parent().find('ul').addClass('open');
-
+        $(this).parent().find('ul').addClass('open');
     });
 
     /* 서브페이지 메뉴 */
@@ -252,5 +251,10 @@ $(document).ready(function () {
             $('.m_mask').hide();
             $(this).removeClass("close");
         }
+    });
+
+    /* a 태그 스크립트 문제 해결 */
+    $("a[href='#'], a[href='javascript:;']").click(function(){
+        return false;
     });
 });
