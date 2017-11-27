@@ -145,7 +145,7 @@ body {
 
 /* Nav Layout */
 nav {
-    z-index: 99;
+    z-index: 9999;
     position: absolute;
     top: 15px;
     width: 100%;
@@ -481,14 +481,9 @@ nav {
 	width: 25%;
     height: 83px;
     overflow: hidden;
-    background-image: url('http://placehold.it/200x200');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-}
-
-.main-gallery ul li:nth-child(2) {
-    background-image: url('../images/detail_txt.jpg');
 }
 
 .main-gallery ul li a {
@@ -518,6 +513,9 @@ nav {
 	-moz-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
+}
+.main-gallery ul li:hover i {
+	display: none;
 }
 
 .detail_photo {
@@ -1052,7 +1050,8 @@ footer {
 
 .section-detail .detail_txt img {
     padding-bottom: 10px;
-    width: 100%;
+    width: 90%;
+		margin: 0 5%;
 }
 
 .section-detail .detail_txt > ul {
