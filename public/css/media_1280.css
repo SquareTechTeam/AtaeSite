@@ -1285,3 +1285,343 @@ footer {
 }
 
 /*========================== write_content 끝 ==========================*/
+
+
+
+/*========================== give(후원하기) 시작 ==========================*/
+input[type=text] {
+ padding: 3px 0;
+ text-align: center;
+ margin: 0px;
+    vertical-align: middle;
+}
+
+.section-give {
+    margin-bottom: 150px;
+}
+.give-slider_main {
+    margin: 0 auto;
+}
+
+#bx-pager {
+    text-align: center;
+    margin-top: 50px;
+    width: 100%;
+}
+#bx-pager a {
+    display: inline-block;
+    overflow: hidden;
+    width: 18%;
+    margin-right: 2.5%;
+    float: left;
+}
+#bx-pager a:nth-last-child(1) {
+    margin-right: 0;
+}
+#bx-pager a img {
+    display: block;
+    width: 100%;
+}
+
+.give-wrap {
+    position: relative;
+    padding-top: 100px;
+    clear: both;
+}
+.give-wrap .filter{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height:100%;
+    background: #fff;
+    opacity: 0;
+    z-index: 100;
+}
+.give-wrap .give-step-bar {
+    width: 100%;
+    height: 10px;
+    margin: 80px 0;
+    text-align: center;
+    background: #0097c3;
+}
+
+/*.give-wrap .give-step-bar li {
+    position: relative;
+    display: inline-block;
+    top: 25px;
+    width: 110px;
+    padding: 50px 0;
+    margin: 0 10%;
+}
+.give-wrap .give-step-bar li:before {
+    position: absolute;
+    top: -90px;
+    left: 50%;
+    margin-left: -65px;
+    content: "";
+    width: 110px;
+    height: 110px;
+    border-radius: 110px;
+    background-color: #fff;
+    border: 10px solid #0097c3;
+} */
+
+
+
+.give-wrap .give-step-bar li {
+    display: inline-block;
+    width: 8%;
+    margin-top: -54px;
+}
+.give-wrap .give-step-bar li:nth-child(3n-1) {
+    margin: 0 25%;
+}
+
+/* 후원하기 폼 step2 */
+.give-wrap.step1 .give-step-bar li:nth-child(1) {
+    text-align: center;
+    font-weight: 600;
+    width: 110px;
+}
+.give-wrap.step1 .give-step-bar li:nth-child(1):before {
+    display: inline-block;
+    margin-top: 1px;
+    content: " ";
+    border: solid 10px #0097c3;
+    border-radius: 110px;
+    background: #fff;
+    display:inline-block;
+    font:normal normal normal 14px/1 FontAwesome;
+    text-rendering:auto;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    content:"\f00c";
+    padding: 20px;
+    font-size: 50px;
+    color: #f38379;
+}
+.give-wrap.step1 .give-step-bar li:nth-child(2),
+.give-wrap.step1 .give-step-bar li:nth-child(3) {
+    color: #959595;
+}
+.give-wrap.step1 .give-step-bar li:nth-child(2):before,
+.give-wrap.step1 .give-step-bar li:nth-child(3):before{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    top: -26px;
+    content: " ";
+    background-color: #0097c3;
+    border: solid 6px #fff;
+    border-radius: 30px;
+}
+.give-wrap.step2,
+.give-wrap.step3 {
+    display: none;
+}
+
+/* 후원하기 폼 step2 */
+
+.give-wrap.step2 .give-step-bar li:nth-child(2) {
+    text-align: center;
+    font-weight: 600;
+    width: 110px;
+}
+.give-wrap.step2 .give-step-bar li:nth-child(2):before {
+    display: inline-block;
+    margin-top: -54px;
+    content: " ";
+    border: solid 10px #0097c3;
+    border-radius: 110px;
+    background: #fff;
+    display:inline-block;
+    font:normal normal normal 14px/1 FontAwesome;
+    text-rendering:auto;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    content:"\f00c";
+    padding: 20px;
+    font-size: 50px;
+    color: #f38379;
+}
+.give-wrap.step2 .give-step-bar li:nth-child(1),
+.give-wrap.step2 .give-step-bar li:nth-child(3) {
+    color: #959595;
+}
+.give-wrap.step2 .give-step-bar li:nth-child(1):before,
+.give-wrap.step2 .give-step-bar li:nth-child(3):before{
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    top: -25px;
+    content: " ";
+    background-color: #0097c3;
+    border: solid 6px #fff;
+    border-radius: 30px;
+}
+
+/* 후원하기 폼 step3 */
+.give-wrap.step3 .give-step-bar li:nth-child(3) {
+    text-align: center;
+    font-weight: 600;
+    width: 110px;
+}
+.give-wrap.step3 .give-step-bar li:nth-child(3):before {
+    display: inline-block;
+    margin-top: 1px;
+    content: " ";
+    border: solid 10px #0097c3;
+    border-radius: 110px;
+    background: #fff;
+    display:inline-block;
+    font:normal normal normal 14px/1 FontAwesome;
+    text-rendering:auto;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    content:"\f00c";
+    padding: 20px;
+    font-size: 50px;
+    color: #f38379;
+}
+.give-wrap.step3 .give-step-bar li:nth-child(1),
+.give-wrap.step3 .give-step-bar li:nth-child(2) {
+    color: #959595;
+}
+.give-wrap.step3 .give-step-bar li:nth-child(1):before,
+.give-wrap.step3 .give-step-bar li:nth-child(2):before{
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    top: -26px;
+    content: " ";
+    background-color: #0097c3;
+    border: solid 6px #fff;
+    border-radius: 30px;
+}
+.give-wrap step3 all_form {
+    text-align: center;
+}
+
+
+
+/* 후원하기 폼 */
+.sup_kind2, .man_num {
+    display: none;
+}
+
+.all_form {
+    width: 80%;
+    margin: 120px auto 0;
+    color: #303030;
+}
+
+.all_form table {
+    width: 100%;
+}
+
+.info_form > div >span {
+    display: inline-block;
+    font-weight: 700;
+    width: 115px;
+    padding: 13px 23px 13px 13px;
+}
+
+.info_form table th {
+    text-align: left;
+    width: 115px;
+    padding: 13px 23px 13px 13px;
+}
+.info_form input {
+    line-height: 28px;
+    border-color: #303030;
+    border-width: 1.5px;
+    text-align: left;
+    font-size: 13px;
+    margin: 0 4px;
+    padding: 0 6px;
+}
+
+.info_form input[type=text]:focus,
+.info_form input[type=text]:visited,
+.info_form input[type=text]:active{
+    outline: none;
+    border-color: #f4847c;
+}
+
+.tel_width input {
+    width: 60px;
+}
+#man_tel, #group_tel, .email_select {
+    border-color: #303030;
+    height: 31px;
+    width: 80px;
+    border-width: 1.5px;
+    margin: 0 5px;
+    position: relative;
+    top: 2px;
+}
+.add_btn {
+    position: relative;
+    top: 1px;
+}
+
+td > div:nth-child(1) {
+    padding: 10px 0 10px;
+}
+
+td > div:nth-child(2) {
+    padding-bottom: 00px;
+}
+#man_address2, #man_num, #group_address2 {
+    margin-bottom: 2px;
+}
+
+
+.form_btn {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.next_btn {
+    background-color: #0097c3;
+    border: 1px solid #c0c0c0;
+    font-weight: 600;
+    color: #fff;
+    display: inline-block;
+    padding: 10px 19px;
+    margin: 0 7px;
+}
+
+.next_btn:hover {
+    transition-property: background-color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+    background-color: #060606;
+}
+
+.cancel_btn {
+    background-color: #fff;
+    border: 1px solid #c0c0c0;
+    font-weight: 600;
+    color: #060606;
+    display: inline-block;
+    padding: 10px 19px;
+    margin: 0 7px;
+}
+
+.cancel_btn:hover {
+    transition-property: background-color color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+    background-color: #060606;
+    color: #fff;
+}
+
+
+
+/*========================== give(후원하기) 끝 ==========================*/
+

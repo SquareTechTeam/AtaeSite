@@ -1345,17 +1345,44 @@ footer {
 
 
 /*========================== give(후원하기) 시작 ==========================*/
+input[type=text] {
+ padding: 3px 0;
+ text-align: center;
+ margin: 0px;
+    vertical-align: middle;
+}
+
 .section-give {
-    margin-bottom: 42px;
+    margin-bottom: 150px;
 }
-.give-slider {
-    height: 426px;
-    font-size: 42px;
-    color: #fff;
+.give-slider_main {
+    margin: 0 auto;
 }
+
+#bx-pager {
+    text-align: center;
+    margin-top: 50px;
+    width: 100%;
+}
+#bx-pager a {
+    display: inline-block;
+    overflow: hidden;
+    width: 18%;
+    margin-right: 2.5%;
+    float: left;
+}
+#bx-pager a:nth-last-child(1) {
+    margin-right: 0;
+}
+#bx-pager a img {
+    display: block;
+    width: 100%;
+}
+
 .give-wrap {
     position: relative;
-    padding: 5px 0;
+    padding-top: 53px;
+    clear: both;
 }
 .give-wrap .filter{
     display: none;
@@ -1364,59 +1391,185 @@ footer {
     height:100%;
     background: #fff;
     opacity: 0;
+    z-index: 100;
 }
 .give-wrap .give-step-bar {
     width: 100%;
-    height: 7px;
-    margin: 42px 0;
+    height: 9px;
+    margin: 80px 0;
     text-align: center;
-    background: #55aaff;
+    background: #0097c3;
 }
-.give-wrap .give-step-bar li {
+
+/*.give-wrap .give-step-bar li {
+    position: relative;
     display: inline-block;
-    width: 5%;
-}
-.give-wrap .give-step-bar li:nth-child(3n-1) {
-    margin: 0 40%;
+    top: 25px;
+    width: 110px;
+    padding: 50px 0;
+    margin: 0 10%;
 }
 .give-wrap .give-step-bar li:before {
+    position: absolute;
+    top: -90px;
+    left: 50%;
+    margin-left: -65px;
+    content: "";
+    width: 110px;
+    height: 110px;
+    border-radius: 110px;
+    background-color: #fff;
+    border: 10px solid #0097c3;
+} */
+
+
+
+.give-wrap .give-step-bar li {
+    display: inline-block;
+    width: 8%;
+    margin-top: -44px;
+}
+.give-wrap .give-step-bar li:nth-child(3n-1) {
+    margin: 0 25%;
+}
+
+/* 후원하기 폼 step2 */
+.give-wrap.step1 .give-step-bar li:nth-child(1) {
+    text-align: center;
+    font-weight: 600;
+    width: 110px;
+}
+.give-wrap.step1 .give-step-bar li:nth-child(1):before {
+    display: inline-block;
+    position: relative;
+    top: 0px;
+    content: " ";
+    border: solid 9px #0097c3;
+    border-radius: 110px;
+    background: #fff;
+    display:inline-block;
+    font:normal normal normal 14px/1 FontAwesome;
+    text-rendering:auto;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    content:"\f00c";
+    padding: 15px;
+    font-size: 40px;
+    color: #f38379;
+}
+.give-wrap.step1 .give-step-bar li:nth-child(2),
+.give-wrap.step1 .give-step-bar li:nth-child(3) {
+    color: #959595;
+}
+.give-wrap.step1 .give-step-bar li:nth-child(2):before,
+.give-wrap.step1 .give-step-bar li:nth-child(3):before{
     display: inline-block;
     width: 25px;
     height: 25px;
-    margin-top: -13px;
+    top: -18px;
     content: " ";
-    border: solid 4px #55aaff;
+    background-color: #0097c3;
+    border: solid 6px #fff;
     border-radius: 25px;
-    background: #fff;
-}
-.give-wrap.step1 .give-step-bar li:nth-child(1):before {
-    background-color: #55aaff;
 }
 .give-wrap.step2,
 .give-wrap.step3 {
     display: none;
 }
-.give-wrap.step2 .give-step-bar li:nth-child(1):before,
+
+/* 후원하기 폼 step2 */
+
+.give-wrap.step2 .give-step-bar li:nth-child(2) {
+    text-align: center;
+    font-weight: 600;
+    width: 110px;
+}
 .give-wrap.step2 .give-step-bar li:nth-child(2):before {
-    background-color: #55aaff;
+    display: inline-block;
+    position: relative;
+    top: 0px;
+    content: " ";
+    border: solid 9px #0097c3;
+    border-radius: 110px;
+    background: #fff;
+    display:inline-block;
+    font:normal normal normal 14px/1 FontAwesome;
+    text-rendering:auto;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    content:"\f00c";
+    padding: 15px;
+    font-size: 40px;
+    color: #f38379;
 }
-.give-wrap.step3 .give-step-bar li:before {
-    background-color: #55aaff;
+.give-wrap.step2 .give-step-bar li:nth-child(1),
+.give-wrap.step2 .give-step-bar li:nth-child(3) {
+    color: #959595;
 }
-.give-wrap .give-step-content {
-    height: 426px;
+.give-wrap.step2 .give-step-bar li:nth-child(1):before,
+.give-wrap.step2 .give-step-bar li:nth-child(3):before{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    top: -18px;
+    content: " ";
+    background-color: #0097c3;
+    border: solid 6px #fff;
+    border-radius: 25px;
+}
+.give-wrap.step3 {
+    display: none;
 }
 
-
+/* 후원하기 폼 step3 */
+.give-wrap.step3 .give-step-bar li:nth-child(3) {
+    text-align: center;
+    font-weight: 600;
+    width: 110px;
+}
+.give-wrap.step3 .give-step-bar li:nth-child(3):before {
+    display: inline-block;
+    position: relative;
+    top: 0px;
+    content: " ";
+    border: solid 9px #0097c3;
+    border-radius: 110px;
+    background: #fff;
+    display:inline-block;
+    font:normal normal normal 14px/1 FontAwesome;
+    text-rendering:auto;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    content:"\f00c";
+    padding: 15px;
+    font-size: 40px;
+    color: #f38379;
+}
+.give-wrap.step3 .give-step-bar li:nth-child(2),
+.give-wrap.step3 .give-step-bar li:nth-child(1) {
+    color: #959595;
+}
+.give-wrap.step3 .give-step-bar li:nth-child(2):before,
+.give-wrap.step3 .give-step-bar li:nth-child(1):before{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    top: -18px;
+    content: " ";
+    background-color: #0097c3;
+    border: solid 6px #fff;
+    border-radius: 25px;
+}
 
 /* 후원하기 폼 */
 .sup_kind2, .man_num {
     display: none;
 }
 
-.form_block .all_form {
-    width: 100%;
-    margin: 0 auto;
+.all_form {
+    width: 80%;
+    margin: 96px auto 0;
+    color: #303030;
 }
 
 .all_form table {
@@ -1424,48 +1577,120 @@ footer {
 }
 
 .check label {
-    padding-right: 15px;
+    padding-right: 12px;
+}
+.check label {
+    padding-right: 0px;
 }
 
-.info_form span {
+.pay_check {
+    text-align: left;
+}
+.pay_check label:after {
+    content: "";
+    display: block;
+}
+
+.info_form > div >span {
     display: inline-block;
     font-weight: 700;
-    width: 155px;
-    padding: 12px 30px 12px 20px;
+    width: 99px;
+    padding: 10px 17px 10px 8px;
 }
 
 .info_form table th {
     text-align: left;
-    width: 155px;
-    padding: 12px 30px 12px 20px;
+    width: 99px;
+    padding: 10px 17px 10px 8px;
+    font-size: 11px;
 }
-.info_form table input {
-    line-height: 20px;
+.info_form input {
+    line-height: 22px;
+    border-color: #303030;
+    border-width: 1.3px;
+    text-align: left;
+    font-size: 10px;
+    margin: 0 3px;
+    padding: 0 5px;
+}
+
+.info_form input[type=text]:focus,
+.info_form input[type=text]:visited,
+.info_form input[type=text]:active{
+    outline: none;
+    border-color: #f4847c;
+}
+
+.tel_width input {
+    width: 45px;
+}
+#man_tel, #group_tel, .email_select {
+    border-color: #303030;
+    height: 24px;
+    width: 63px;
+    border-width: 1.3px;
+    margin: 0 3px;
+    position: relative;
+    top: 1px;
+}
+
+td > div:nth-child(1) {
+    padding: 10px 0 10px;
+}
+
+td > div:nth-child(2) {
+    padding-bottom: 10px;
+}
+#man_address2, #man_num, #group_address2 {
+    margin-bottom: 2px;
 }
 
 
-.btn_right {
+.form_btn {
     width: 70%;
     margin: 0 auto;
-    text-align: right;
-    padding-top: 60px;
+    text-align: center;
+    padding-top: 32px;
 }
 
-.btn_right .next_btn {
+.next_btn {
     background-color: #0097c3;
     border: 1px solid #c0c0c0;
     font-weight: 600;
     color: #fff;
     display: inline-block;
-    padding: 4px 7px;
+    padding: 8px 15px;
+    margin: 0 6px;
+    font-size: 11px;
 }
 
-.btn_right .cancel_btn {
+.next_btn:hover {
+    transition-property: background-color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+    background-color: #060606;
+}
+
+.cancel_btn {
     background-color: #fff;
     border: 1px solid #c0c0c0;
     font-weight: 600;
-    color: #333;
+    color: #060606;
     display: inline-block;
-    padding: 4px 7px;
+    padding: 8px 15px;
+    margin: 0 6px;
+    font-size: 11px;
 }
+
+.cancel_btn:hover {
+    transition-property: background-color color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+    background-color: #060606;
+    color: #fff;
+}
+
+
+
 /*========================== give(후원하기) 끝 ==========================*/
+
