@@ -1729,6 +1729,7 @@ footer {
 td {
     padding-left: 20px;
     display: block;
+    vertical-align: top;
 }
 .sup_kind2, .man_num {
     display: none;
@@ -1825,7 +1826,7 @@ td {
 }
 .add_btn {
     position: relative;
-    top: -2px;
+    top: 0px;
 }
 .man_num > td > input {
     width: 35%;
@@ -1834,7 +1835,7 @@ td {
 #man_tel, #group_tel, .email_select {
     border-color: #303030;
     position: relative;
-    top: -2px;
+    top: 0px;
     height: 36px;
     width: 65px;
     border-width: 1px;
