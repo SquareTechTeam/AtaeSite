@@ -827,7 +827,15 @@ input[type=text] {
 }
 
 .check label {
-    padding-right: 23px;
+    padding-right: 0px;
+}
+
+.pay_check {
+    text-align: left;
+}
+.pay_check label:after {
+    content: "";
+    display: block;
 }
 
 .info_form > div >span {
@@ -926,6 +934,8 @@ td > div:nth-child(2) {
     color: #fff;
 }
 
-
+.all_form > .next_btn {
+    margin-top: 60px;
+}
 
 /*========================== give(후원하기) 끝 ==========================*/

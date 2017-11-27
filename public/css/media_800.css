@@ -1575,7 +1575,7 @@ footer {
     margin-top: -21px;
 }
 .give-wrap .give-step-bar li:nth-child(3n-1) {
-    margin: 0 12%;
+    margin: 0 15%;
 }
 
 /* 후원하기 폼 step1 */
@@ -1589,10 +1589,10 @@ footer {
 }
 .give-wrap.step1 .give-step-bar li:nth-child(1):before {
     display: inline-block;
-    margin-top: 0px;
+    margin-top: -7px;
     content: " ";
     border: solid 7px #0097c3;
-    border-radius: 30px;
+    border-radius: 60px;
     background: #fff;
     display:inline-block;
     font:normal normal normal 14px/1 FontAwesome;
@@ -1634,13 +1634,15 @@ footer {
 .give-wrap.step2 .give-step-bar li:nth-child(2) {
     text-align: center;
     font-weight: 600;
-    width: 60px;
+    width: 64px;
 }
 .give-wrap.step2 .give-step-bar li:nth-child(2):before {
     display: inline-block;
+    position: relative;
+    top: -1px;
     content: " ";
     border: solid 7px #0097c3;
-    border-radius: 30px;
+    border-radius: 60px;
     background: #fff;
     display:inline-block;
     font:normal normal normal 14px/1 FontAwesome;
@@ -1664,7 +1666,7 @@ footer {
     display: inline-block;
     width: 20px;
     height: 20px;
-    top: -5px;
+    top: -12px;
     content: " ";
     background-color: #0097c3;
     border: solid 5px #fff;
@@ -1674,9 +1676,10 @@ footer {
     display: none;
 }
 
+
 /* 후원하기 폼 step3 */
 .give-wrap.step3 {
-    height: 280px;
+    height: 400px;
 }
 .give-wrap.step3 .give-step-bar li:nth-child(3) {
     text-align: center;
@@ -1685,10 +1688,10 @@ footer {
 }
 .give-wrap.step3 .give-step-bar li:nth-child(3):before {
     display: inline-block;
-    margin-top: 0px;
+    margin-top: -7px;
     content: " ";
     border: solid 7px #0097c3;
-    border-radius: 30px;
+    border-radius: 60px;
     background: #fff;
     display:inline-block;
     font:normal normal normal 14px/1 FontAwesome;
@@ -1737,6 +1740,13 @@ td {
     width: 100%;
 }
 
+.info_form > div >span {
+    display: inline-block;
+    font-weight: 700;
+    width: 100px;
+    padding: 10px 5px;
+}
+
 .info_form > .check {
     margin-top: 100px;
 }
@@ -1753,16 +1763,14 @@ td {
 
 .info_form span {
     text-align: center;
-    display: inline-block;
     font-weight: 700;
-    width: 90px;
-    padding: 10px 0px;
+    width: 100px;
 }
 
 .info_form table th {
     text-align: center;
-    width: 90px;
-    padding: 10px 3px;
+    width: 100px;
+    padding: 10px 5px;
     background-color: #303030;
     color: #fff;
 }
@@ -1775,9 +1783,10 @@ td {
     border-color: #303030;
     border-width: 1px;
     text-align: left;
-    font-size: 13px;
+    font-size: 12px;
     margin: 3px;
     padding: 3px 5px;
+    margin-top: 0px;
 }
 .info_form input[type=text]:focus,
 .info_form input[type=text]:visited,
@@ -1786,11 +1795,11 @@ td {
     border-color: #f4847c;
 }
 .tel_width input {
-    width: 42px;
+    width: 50px;
 }
 #man_name, #man_birth, #group_name, #group_person, #group_birth,
 #man_email, #group_num, #group_email, .email_back {
-    width: 45%;
+    width: 30%;
 }
 #man_address1, #group_address1 {
     width: 43%;
@@ -1798,7 +1807,7 @@ td {
 }
 .add_btn {
     position: relative;
-    top: 0px;
+    top: 1px;
 }
 .man_num > td > input {
     width: 35%;
@@ -1807,8 +1816,7 @@ td {
 #man_tel, #group_tel, .email_select {
     border-color: #303030;
     position: relative;
-    top: 0px;
-    height: 28px;
+    height: 36px;
     width: 65px;
     border-width: 1px;
     margin: 0 3px;
@@ -1816,12 +1824,13 @@ td {
 .email_select {
     width: 80px;
     font-size: 12px;
+    position: relative;
+    top: -0px;
 }
 
 td > div:nth-child(1) {
     padding: 5px 0 5px;
 }
-
 
 
 .form_btn {
@@ -1839,6 +1848,7 @@ td > div:nth-child(1) {
     display: inline-block;
     padding: 10px 20px;
     margin: 0 5px;
+    font-size: 14px;
 }
 
 .next_btn:hover {
@@ -1865,5 +1875,9 @@ td > div:nth-child(1) {
     background-color: #060606;
     color: #fff;
 }
+.all_form > .next_btn {
+    margin-top: 30px;
+}
+
 
 /*========================== give(후원하기) 끝 ==========================*/

@@ -1620,7 +1620,9 @@ td > div:nth-child(2) {
     background-color: #060606;
     color: #fff;
 }
-
+.all_form > .next_btn {
+    margin-top: 40px;
+}
 
 
 /*========================== give(후원하기) 끝 ==========================*/
