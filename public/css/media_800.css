@@ -1511,7 +1511,7 @@ footer {
 
 /*========================== give(후원하기) 시작 ==========================*/
 .section-give {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     margin-bottom: 28px;
 }
@@ -1768,11 +1768,9 @@ td {
 }
 
 .info_form table th {
-    text-align: center;
     width: 100px;
     padding: 10px 5px;
-    background-color: #303030;
-    color: #fff;
+    color: #303030;
 }
 .info_form table tr {
     padding: 25px 0;
