@@ -141,8 +141,8 @@
                                         <form class="info_form" name="후원자 정보 입력" method="post">
                                             <div class="check f6">
                                                 <span>후원인 구분</span>
-                                                <input type="radio" name="supporter" id="man" required checked /> <label for="man">개인</label>
-                                                <input type="radio" name="supporter" id="group" required /> <label for="group">법인</label>
+                                                <input type="radio" name="supporter" id="man" value="man" required checked /> <label for="man">개인</label>
+                                                <input type="radio" name="supporter" id="group" value="group" required /> <label for="group">법인</label>
                                             </div>
                                             <div>
                                                 <table class="sup_kind1 f6">
@@ -166,15 +166,15 @@
                                                                  <option value="018">018</option>
                                                                  <option value="019">019</option>
                                                             </select> -
-                                                            <input type="text" name="tel2" minlength="3" maxlength="4" required /> -
-                                                            <input type="text" name="tel3" minlength="4" maxlength="4" required />
+                                                            <input type="text" name="tel2" id="man_tel2" minlength="3" maxlength="4" required /> -
+                                                            <input type="text" name="tel3" id="man_tel3" minlength="4" maxlength="4" required />
                                                         </td>
                                                     </tr>
                                                     <tr>
                                                         <th><label for="man_email">이메일</label></th>
                                                         <td>
                                                             <input type='text' name="email_front" id="man_email" />@
-                                                            <input type='text' name="email_back" class="email_back" />
+                                                            <input type='text' name="email_back" id="man_email2" class="email_back" />
                                                             <select class="email_select" name="email_select">
                                                              <option value="">직접입력</option>
                                                              <option value="daum.net">daum.net</option>
@@ -224,7 +224,7 @@
                                                         <td>
                                                             <input type="text" name="man_num1" minlength="6" maxlength="6" id="man_num" required />
                                                             <span>-
-                                                            <input type="password" name="man_num2" minlength="7" maxlength="7" required /></span></td>
+                                                            <input type="password" name="man_num2" minlength="7" maxlength="7" id="man_num2" required /></span></td>
                                                     </tr>
                                                 </table>
                                                 <table class="sup_kind2 f6">
@@ -237,7 +237,7 @@
                                                     <tr>
                                                         <th><label for="group_num">사업자 등록번호</label></th>
                                                         <td>
-                                                            <input type="text" name="corporate name" id="group_num" required />
+                                                            <input type="text" name="group_corporate" id="group_num" required />
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -257,15 +257,15 @@
                                                                  <option value="018">018</option>
                                                                  <option value="019">019</option>
                                                             </select> -
-                                                            <input type="text" name="tel2" minlength="3" maxlength="4" required /> -
-                                                            <input type="text" name="tel3" minlength="4" maxlength="4" required />
+                                                            <input type="text" name="tel2" id="group_tel2" minlength="3" maxlength="4" required /> -
+                                                            <input type="text" name="tel3" id="group_tel3" minlength="4" maxlength="4" required />
                                                         </td>
                                                     </tr>
                                                     <tr>
                                                         <th><label for="group_email">담당자 이메일</label></th>
                                                         <td>
                                                             <input type='text' name="email_front" id="group_email" />@
-                                                            <input type='text' name="email_back" class="email_back" />
+                                                            <input type='text' name="email_back" id="group_email2" class="email_back" />
                                                             <select name="email_select" class="email_select">
                                                              <option value="">직접입력</option>
                                                              <option value="daum.net">daum.net</option>
@@ -327,7 +327,7 @@
                                             <tr>
                                                 <th>결제 방법</th>
                                                 <td class="pay_check">
-                                                    <input type="radio" name="pay" value="신용카드" id="pay_card" />
+                                                    <input type="radio" name="pay" value="신용카드" id="pay_card" checked />
                                                     <label for="pay_card">신용카드</label>
                                                     <input type="radio" name="pay" value="계좌이체" id="pay_account" />
                                                     <label for="pay_account">계좌이체</label>
@@ -385,11 +385,14 @@
                     </div>
                 </div>
             </div>
+            <img src="./img1.jpg" />
+
         </footer>
     </div>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="./javascripts/jquery.bxslider.min.js"></script>
     <script src="./javascripts/common.js"></script>
+    <script src="http://dmaps.daum.net/map_js_init/postcode.v2.js?autoload=false"></script>
     <a class="return-top" href="#top"><img src="images/top_btn.png" alt="탑 버튼" /></a>
 </body>
 

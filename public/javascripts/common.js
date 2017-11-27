@@ -121,26 +121,86 @@ $(document).ready(function () {
 
     /* Give Step Animation */
     $(".give-wrap .next_btn").click(function () {
-        var thisStep = $(this).parent().parent().parent().attr("class").split(" ")[1];
-        var nextStep = "";
-        if (thisStep == "step1") {
-            nextStep = "step2";
-        } else if (thisStep == "step2") {
-            nextStep = "step3";
-        } else {
-            return false;
+
+        var step1 = $(this).parent().parent().parent().hasClass("step1");
+        var pass_check = true;
+        if(step1){
+            pass_check = false;
+
+            //정규식
+            var checked_name = /^[A-Za-z가-힣]{2,}$/;
+            var checked_birth = /^[0-9]{6}$/;
+            var checked_phone1 = /^\d{3,4}$/;
+            var checked_phone2 = /^\d{4}$/;
+            var checked_email1 = /^[A-Za-z0-9_\.\-]+/;
+            var checked_email2 = /^[A-Za-z0-9\-]+\.[A-Za-z0-9\-]+/;
+            var checked_addr = /^[\w\Wㄱ-ㅎㅏ-ㅣ가-힣]{1,20}$/;
+            var checked_jumin = /^[0-9]{7}$/;
+            var checked_coperator = /^[0-9]{1,}$/;
+
+            var checked = $("input[name='supporter']:checked").val();
+            if(checked=="man"){
+                var arr = new Array("man_name", "man_birth", "man_tel2", "man_tel3", "man_email", "man_email2", "man_address1", "man_address2");
+                var arr_checked = new Array(checked_name, checked_birth, checked_phone1, checked_phone2, checked_email1, checked_email2, checked_addr, checked_addr);
+                var arr_text = new Array("이름을", "생년월일을", "핸드폰 번호를", "핸드폰 번호를", "이메일을", "이메일을", "우편번호를", "주소를");
+
+                if($("input[name='receipt']:checked").val() == "yes"){
+                    arr.push("man_num", "man_num2");
+                    arr_checked.push(checked_birth, checked_jumin);
+                    arr_text.push("주민등록번호 앞자리를", "주민등록번호 뒷자리를");
+                }
+
+                for(i=0; i<arr.length; i++){
+                    var arg = $("#" + arr[i]);
+                    if(arr_checked[i].test(arg.val()) != true){
+                        alert(arr_text[i] + " 다시 입력해주세요.");
+                        arg.focus();
+                        return false;
+                    }
+                }
+
+                pass_check = true;
+            }else{
+                var arr = new Array("group_name", "group_num", "group_person", "group_tel2", "group_tel3", "group_email", "group_email2", "group_address1", "group_address2");
+                var arr_checked = new Array(checked_name, checked_coperator, checked_name, checked_phone1, checked_phone2, checked_email1, checked_email2, checked_addr, checked_addr);
+                var arr_text = new Array("기업명을", "사업자등록번호를", "이름을", "핸드폰 번호를", "핸드폰 번호를", "이메일을", "이메일을", "우편번호를", "주소를");
+
+                for(i=0; i<arr.length; i++){
+                    var arg = $("#" + arr[i]);
+                    if(arr_checked[i].test(arg.val()) != true){
+                        alert(arr_text[i] + " 다시 입력해주세요.");
+                        arg.focus();
+                        return false;
+                    }
+                }
+
+                pass_check = true;
+            }
         }
 
-        $("." + nextStep).show();
-        var moveTop = $("." + nextStep).offset().top;
-        var minusTop = $(".give-step-bar ol").height();
-        $("html, body").animate({
-            "scrollTop": moveTop
-        }, 500);
-        $("." + thisStep + " .filter").show();
-        $("." + thisStep + " .filter").animate({
-            "opacity": 0.6
-        }, 500);
+        if(pass_check){
+            var thisStep = $(this).parent().parent().parent().attr("class").split(" ")[1];
+            var nextStep = "";
+            if (thisStep == "step1") {
+                nextStep = "step2";
+            } else if (thisStep == "step2") {
+                nextStep = "step3";
+            } else {
+                return false;
+            }
+
+            $("." + nextStep).show();
+            var moveTop = $("." + nextStep).offset().top;
+            var minusTop = $(".give-step-bar ol").height();
+            $("html, body").animate({
+                "scrollTop": moveTop
+            }, 500);
+            $("." + thisStep + " .filter").show();
+            $("." + thisStep + " .filter").animate({
+                "opacity": 0.6
+            }, 500);
+        }
+
         return false;
     });
 
@@ -174,20 +234,12 @@ $(document).ready(function () {
     $('.email_select').change(function () {
         var email = $(this).val();
         $(this).parent().find('.email_back').val(email);
-        console.log("현재 선택된 값은 : " + email);
-        console.log("현재 선택된 값의 길이는 : " + email.length);
         if(email.length !== 0){
             $('.email_back').attr('readonly',true);
-            console.log('맞을경우');
         }else{
              $('.email_back').attr('readonly',false);
-            console.log('아닐경우');
         }
-
     });
-    
-    /* 후원 우편번호 버튼 */
-    
 
     /* 후원하기 구분 radio 클릭 */
     $('#group').click(function(){
@@ -220,7 +272,7 @@ $(document).ready(function () {
             $('.m_nav_menu > ul').show();
         });
     }
-    
+
     /* ================= 모바일 페이지 ================= */
     $('.m_menu').click(function(){
         $('.m_mask').slideDown();
@@ -256,5 +308,18 @@ $(document).ready(function () {
     /* a 태그 스크립트 문제 해결 */
     $("a[href='#'], a[href='javascript:;']").click(function(){
         return false;
+    });
+
+    /* 주소 검색 API */
+    $(".add_btn").click(function(){
+        daum.postcode.load(function(){
+            new daum.Postcode({
+                oncomplete: function(data) {
+                    var checked = $("input[name='supporter']:checked").val();
+                    $("#"+ checked +"_address1").val(data.zonecode);
+                    $("#"+ checked +"_address2").val(data.roadAddress);
+                }
+            }).open();
+        });
     });
 });
