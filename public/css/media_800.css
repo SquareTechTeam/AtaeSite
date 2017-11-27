@@ -1549,6 +1549,7 @@ footer {
     position: relative;
     clear: both;
     width: 100%;
+    padding-top: 10px;
 }
 .give-wrap .filter{
     display: none;
@@ -1743,7 +1744,8 @@ td {
     display: inline-block;
     font-weight: 700;
     width: 100px;
-    padding: 10px 5px;
+    padding: 10px 8px;
+    text-align: left;
 }
 
 .info_form > .check {
@@ -1751,6 +1753,7 @@ td {
 }
 .check label {
     padding-right: 0px;
+    font-size: 12px;
 }
 .pay_check {
     text-align: left;
@@ -1768,8 +1771,9 @@ td {
 
 .info_form table th {
     width: 100px;
-    padding: 10px 5px;
+    padding: 10px 8px;
     color: #303030;
+    font-size: 14px;
 }
 .info_form table tr {
     padding: 25px 0;
