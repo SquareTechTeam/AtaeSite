@@ -726,7 +726,11 @@ input[type=text] {
 }
 
 /* 후원하기 폼 step2 */
-
+.give-wrap.step2 th,
+.give-wrap.step2 .pay_check {
+    display: block;
+    width: 100%;
+}
 .give-wrap.step2 .give-step-bar li:nth-child(2) {
     text-align: center;
     font-weight: 600;
@@ -827,15 +831,15 @@ input[type=text] {
 }
 
 .check label {
-    padding-right: 0px;
+    padding-right: 15px;
 }
 
 .pay_check {
     text-align: left;
+    padding: 0px 35px 20px 20px;
 }
-.pay_check label:after {
-    content: "";
-    display: block;
+.pay_check > * {
+    display: inline-block;
 }
 
 .info_form > div >span {
@@ -858,6 +862,7 @@ input[type=text] {
     font-size: 14px;
     margin: 0 5px;
     padding: 0 10px;
+    vertical-align: middle;
 }
 
 .info_form input[type=text]:focus,
@@ -885,7 +890,7 @@ input[type=text] {
 }
 
 td > div:nth-child(1) {
-    padding: 20px 0 10px;
+    padding: 20px 0 5px;
 }
 
 td > div:nth-child(2) {

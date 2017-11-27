@@ -1580,7 +1580,8 @@ footer {
 
 /* 후원하기 폼 step1 */
 .give-wrap.step1 {
-    height: 850px;
+    height: auto;
+    margin-bottom: 50px;
 }
 .give-wrap.step1 .give-step-bar li:nth-child(1) {
     text-align: center;
@@ -1616,7 +1617,7 @@ footer {
     display: inline-block;
     width: 20px;
     height: 20px;
-    top: -11px;
+    top: -10px;
     content: " ";
     background-color: #0097c3;
     border: solid 5px #fff;
@@ -1629,7 +1630,8 @@ footer {
 
 /* 후원하기 폼 step2 */
 .give-wrap.step2 {
-    height: 400px;
+    height: auto;
+    margin-bottom: 50px;
 }
 .give-wrap.step2 .give-step-bar li:nth-child(2) {
     text-align: center;
@@ -1666,7 +1668,7 @@ footer {
     display: inline-block;
     width: 20px;
     height: 20px;
-    top: -12px;
+    top: -11px;
     content: " ";
     background-color: #0097c3;
     border: solid 5px #fff;
@@ -1679,7 +1681,8 @@ footer {
 
 /* 후원하기 폼 step3 */
 .give-wrap.step3 {
-    height: 400px;
+    height: auto;
+    margin-bottom: 50px;
 }
 .give-wrap.step3 .give-step-bar li:nth-child(3) {
     text-align: center;
@@ -1715,7 +1718,7 @@ footer {
     display: inline-block;
     width: 20px;
     height: 20px;
-    top: -11px;
+    top: -10px;
     content: " ";
     background-color: #0097c3;
     border: solid 5px #fff;
@@ -1724,7 +1727,8 @@ footer {
 
 /* 후원하기 폼 */
 td {
-    padding: 5px;
+    padding-left: 20px;
+    display: block;
 }
 .sup_kind2, .man_num {
     display: none;
@@ -1741,26 +1745,35 @@ td {
 }
 
 .info_form > div >span {
-    display: inline-block;
+    display: block;
     font-weight: 700;
     width: 100px;
-    padding: 10px 8px;
+    width: 100px;
     text-align: left;
+    padding: 0px 0px 5px;
 }
 
 .info_form > .check {
     margin-top: 100px;
+    padding: 0 10px;
 }
 .check label {
-    padding-right: 0px;
+    padding-right: 20px;
     font-size: 12px;
+}
+#man, #group {
+    margin-left: 10px;
 }
 .pay_check {
     text-align: left;
+    padding-left: 20px;
 }
-.pay_check label:after {
-    content: "";
-    display: block;
+.pay_check > * {
+    display: inline-block;
+}
+
+.pay_check > label {
+    padding-right: 0px;
 }
 
 .info_form span {
@@ -1770,8 +1783,9 @@ td {
 }
 
 .info_form table th {
-    width: 100px;
-    padding: 10px 8px;
+    display: block;
+    width: 100%;
+    padding: 20px 10px 5px;
     color: #303030;
     font-size: 14px;
 }
@@ -1796,19 +1810,22 @@ td {
     border-color: #f4847c;
 }
 .tel_width input {
-    width: 50px;
+    width: 53px;
 }
-#man_name, #man_birth, #group_name, #group_person, #group_birth,
-#man_email, #group_num, #group_email, .email_back {
-    width: 30%;
+
+#man_name, #man_birth, #group_name, #group_num, #group_person {
+    width: 225px;
+}
+
+#man_email, #group_email, .email_back {
+    width: 28%;
 }
 #man_address1, #group_address1 {
-    width: 43%;
-    max-width: 95px;
+    max-width: 90px;
 }
 .add_btn {
     position: relative;
-    top: 1px;
+    top: -2px;
 }
 .man_num > td > input {
     width: 35%;
@@ -1817,6 +1834,7 @@ td {
 #man_tel, #group_tel, .email_select {
     border-color: #303030;
     position: relative;
+    top: -2px;
     height: 36px;
     width: 65px;
     border-width: 1px;
@@ -1826,11 +1844,14 @@ td {
     width: 80px;
     font-size: 12px;
     position: relative;
-    top: -0px;
+}
+
+#man_address2, #man_address3, #group_address2, #group_address3 {
+    width: 80%;
 }
 
 td > div:nth-child(1) {
-    padding: 5px 0 5px;
+    padding: 0px;
 }
 
 
