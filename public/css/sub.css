@@ -823,7 +823,7 @@ input[type=text] {
 .all_form {
     width: 70%;
     margin: 180px auto 0;
-    color: #303030;
+    color: #444;
 }
 
 .all_form table {
@@ -856,7 +856,7 @@ input[type=text] {
 }
 .info_form input {
     line-height: 28px;
-    border-color: #303030;
+    border-color: #555;
     border-width: 1.5px;
     text-align: left;
     font-size: 14px;
@@ -876,7 +876,7 @@ input[type=text] {
     width: 80px;
 }
 #man_tel, #group_tel, .email_select {
-    border-color: #303030;
+    border-color: #444;
     height: 31px;
     width: 100px;
     border-width: 1.5px;

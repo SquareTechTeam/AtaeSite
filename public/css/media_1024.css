@@ -1569,7 +1569,7 @@ input[type=text] {
 .all_form {
     width: 80%;
     margin: 96px auto 0;
-    color: #303030;
+    color: #444;
 }
 
 .all_form table {
@@ -1607,7 +1607,7 @@ input[type=text] {
 }
 .info_form input {
     line-height: 22px;
-    border-color: #303030;
+    border-color: #444;
     border-width: 1.3px;
     text-align: left;
     font-size: 10px;
@@ -1626,7 +1626,7 @@ input[type=text] {
     width: 45px;
 }
 #man_tel, #group_tel, .email_select {
-    border-color: #303030;
+    border-color: #444;
     height: 24px;
     width: 63px;
     border-width: 1.3px;
