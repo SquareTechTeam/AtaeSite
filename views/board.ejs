@@ -142,11 +142,13 @@
                         <p class="f6"><%
                             var tagedText = item.content;
                             var nonTagedText = tagedText.replace(/(<([^>]+)>)/ig,"");
+                            var nbspNonText = nonTagedText.replace(/&nbsp;/g, "");
+                           
                             var descText;
-                            if(nonTagedText.length > 53){
-                                descText = nonTagedText.substr(0, 52)+'...';
+                            if(nbspNonText.length > 53){
+                                descText = nbspNonText.substr(0, 52)+'...';
                             }else{
-                                descText = nonTagedText;
+                                descText = nbspNonText;
                             }
                          %><%= descText %></p>
                         <div class="btn f4"><a href=<%= detail_path+item.num %>>Read More</a></div>

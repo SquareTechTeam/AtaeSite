@@ -445,7 +445,7 @@ router.post('/upload_thumb', multer({ dest: '/home/ubuntu/www/public/images/boar
 		console.log(req.body);
 		console.log(req.file);
 		
-		if(req.file.mimetype == "image/jpeg" || req.file.mimetype == "image/png"){
+		if(req.file.mimetype == "image/jpeg" || req.file.mimetype == "image/png" || req.file.mimetype == "image/gif"){
 			var filename = req.file.filename;
 			var fullpath = "/home/ubuntu/www/public/images/board/thumb_img/" + filename;
 			var thumb_path = "/images/board/thumb_img/";
@@ -454,6 +454,8 @@ router.post('/upload_thumb', multer({ dest: '/home/ubuntu/www/public/images/boar
 				endname = ".jpg";
 			}else if(req.file.mimetype == "image/png"){
 				endname = ".png";
+			}else if(req.file.mimetype == "image/gif"){
+				endname = ".gif";
 			}
 
 			fs.rename(fullpath, fullpath+endname, function(err){
@@ -473,7 +475,7 @@ router.post('/upload_board', multer({ dest: '/home/ubuntu/www/public/images/boar
 		console.log(req.body);
 		console.log(req.file);
 		
-		if(req.file.mimetype == "image/jpeg" || req.file.mimetype == "image/png"){
+		if(req.file.mimetype == "image/jpeg" || req.file.mimetype == "image/png" || req.file.mimetype == "image/gif"){
 			var filename = req.file.filename;
 			var fullpath = "/home/ubuntu/www/public/images/board/content_img/" + filename;
 			var thumb_path = "/images/board/content_img/";
@@ -482,6 +484,8 @@ router.post('/upload_board', multer({ dest: '/home/ubuntu/www/public/images/boar
 				endname = ".jpg";
 			}else if(req.file.mimetype == "image/png"){
 				endname = ".png";
+			}else if(req.file.mimetype == "image/gif"){
+				endname = ".gif";
 			}
 
 			fs.rename(fullpath, fullpath+endname, function(err){
@@ -507,6 +511,7 @@ router.post('/regist_content', function(req, res, next){
 			updatedAt: knex.fn.now()
 		}).then(function(results, err){
 			console.log(results);
+			res.send("Submit ok!");
 		});
 });
 
