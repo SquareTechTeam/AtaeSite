@@ -280,6 +280,7 @@ nav {
 .board_wrap .board_data > a {
 	display: inline-block;
 	width: 370px;
+	height: 370px;
 	overflow: hidden;
 }
 
