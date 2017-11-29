@@ -938,10 +938,6 @@ footer {
     text-align: center;
 }
 
-.page > a:nth-child(1) {
-    color: #0097c3;
-}
-
 .page a {
     display: inline-block;
     color: #060606;
