@@ -66,16 +66,14 @@
 .section_board {
     margin: 124px auto 80px;
 }
-
+.board_data p {
+    min-height: 80px;
+}
 /* 하단 페이지 숫자 */
 
 .page {
     margin: 0 auto 100px;
     text-align: center;
-}
-
-.page > a:nth-child(1) {
-    color: #0097c3;
 }
 
 .page a {
@@ -139,6 +137,9 @@
     color: #0097c3;
 }
 
+.choose {
+    color: #0097c3;
+}
 /*========================== detail_page 파일 끝 ==========================*/
 
 
