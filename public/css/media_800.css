@@ -467,6 +467,7 @@ nav {
 	background-color: #060606;
 }
 
+
 /*============= 갤러리 =============*/
 .main-gallery:after {
 	clear: both;
@@ -1005,10 +1006,6 @@ footer {
 .page {
     margin: 0 auto 41px;
     text-align: center;
-}
-
-.page > a:nth-child(1) {
-    color: #0097c3;
 }
 
 .page a {
