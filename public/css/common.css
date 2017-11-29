@@ -343,6 +343,10 @@ nav {
 	background-color: #060606;
 }
 
+.page .choose {
+    color: #0097c3;
+}
+
 /*============= 갤러리 =============*/
 .main-gallery:after {
 	clear: both;

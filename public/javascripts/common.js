@@ -85,11 +85,6 @@ $(document).ready(function () {
         $("section-block_gallery ul li img:eq(" + i + ")").attr("style", style);
     });
 
-    $('.page a').click(function () {
-        $('.page a').removeClass("choose");
-        $(this).addClass("choose");
-    });
-
     /* Background Wrap Show & Hide */
     $('.main-gallery a').click(function () {
         var imgData = $(this).parent().css("background-image").split("\"")[1];
