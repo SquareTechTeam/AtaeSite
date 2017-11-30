@@ -55,14 +55,14 @@ $(document).ready(function () {
     });
 
     /* Gallery Img Crop */
-    $(".section-block_gallery ul li img").each(function (i) {
-        var img = $(".section-block_gallery ul li img:eq(" + i + ")"),
+    $(".section-gallery ul li img").each(function (i) {
+        var img = $(".section-gallery ul li img:eq(" + i + ")"),
             imgW = img.prop('naturalWidth'),
             imgH = img.prop('naturalHeight');
 
         var style = (imgW > imgH) ? 'height: 100%; width: auto;' : 'width: 100%; height: auto;';
 
-        $(".section-block_gallery ul li img:eq(" + i + ")").attr("style", style);
+        $(".section-block ul li img:eq(" + i + ")").attr("style", style);
     });
 
     $(".board_wrap .board_data img").each(function (i) {
@@ -84,7 +84,7 @@ $(document).ready(function () {
     });
 
 
-    $('.board_wrap .board_data img').each(function(i) {
+    $('.section-gallery ul li img, .board_wrap .board_data img').each(function(i) {
         var is_width = $(this).width();
         var is_height = $(this).height();
         var parent_width = $(this).parent().width();
