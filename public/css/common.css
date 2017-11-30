@@ -269,7 +269,7 @@ nav {
 
 .board_wrap .board_data {
 	display: table-cell;
-	width: 32%;
+	width: 390px;
 	color: #060606;
 }
 
@@ -278,6 +278,7 @@ nav {
 }
 
 .board_wrap .board_data > a {
+    position: relative;
 	display: inline-block;
 	width: 370px;
 	height: 370px;
