@@ -74,7 +74,7 @@ $(document).ready(function () {
 
         $(".board_wrap .board_data img:eq(" + i + ")").attr("style", style);
     });
-    
+
     $('.section-detail .detail_txt img').each(function(i) {
         var area_width = $('.section-detail .detail_txt').width();
         var img = $(this).width();
@@ -82,11 +82,22 @@ $(document).ready(function () {
             $(this).css("width",'100%');
         }
     });
-    
-    if( $('.block').width() != 100 ){
-         $('.board_wrap .board_data img').centerImage();
-    }
-    
+
+
+    $('.board_wrap .board_data img').each(function(i) {
+        var is_width = $(this).width();
+        var is_height = $(this).height();
+        var parent_width = $(this).parent().width();
+        var parent_height = $(this).parent().height();
+
+        if(is_width < is_height || $('.block').width() == 100){
+            var move_px = (parent_height - is_height) / 2;
+            $(this).css("marginTop", move_px);
+        }else{
+            var move_px = (parent_width - is_width) / 2;
+            $(this).css("marginLeft", move_px);
+        }
+    });
 
     $(".section-block_gallery ul li img").each(function (i) {
         var img = $("section-block_gallery ul li img:eq(" + i + ")"),
