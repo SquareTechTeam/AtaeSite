@@ -391,11 +391,22 @@ nav {
 	height: auto !important;
 }
 
+.board_wrap .board_data:after {
+    content: "";
+    display: block; overflow: hidden; height: 200px; width: 200px;
+    text-align: center;
+}
+
+.board_wrap .board_data:after img {
+    content: "";
+    vertical-align: middle;
+}
+
 .board_wrap .board_data > a {
 	display: inline-block;
 	width: 100%;
 	height: auto !important;
-	max-height: 200px;
+	max-height: 220px;
 	overflow: hidden;
 }
 
@@ -1048,7 +1059,7 @@ footer {
 .section-detail .detail_txt img {
     padding-bottom: 10px;
     width: 90%;
-		margin: 0 5%;
+	margin: 0 5%;
 }
 
 .section-detail .detail_txt > ul {
