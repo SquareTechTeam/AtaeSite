@@ -70,6 +70,7 @@ $(document).ready(function () {
             imgW = img.prop('naturalWidth'),
             imgH = img.prop('naturalHeight');
 
+        
         var style = (imgW > imgH) ? 'height: 100%; width: auto;' : 'width: 100%; height: auto;';
 
         $(".board_wrap .board_data img:eq(" + i + ")").attr("style", style);
