@@ -438,7 +438,11 @@ router.get('/donation', function(req, res, next){
 /* admin */
 router.get('/admin/write', function(req, res, next){
 	res.render('write_content');
-})
+});
+
+router.get('/admin/gallery', function(req, res, next){
+	res.render('write_gallery');
+});
 
 router.post('/upload_thumb', multer({ dest: '/home/ubuntu/www/public/images/board/thumb_img' }).single("thumb_img"), 
 	function(req, res){
@@ -498,7 +502,53 @@ router.post('/upload_board', multer({ dest: '/home/ubuntu/www/public/images/boar
 		}else{
 			res.send("err");
 		}
-	});
+});
+
+router.post('/upload_gallery', multer({ dest : '/home/ubuntu/www/public/images/board/gallery_img' }).single("g_img"),
+	function(req, res){
+		
+		if(req.file.mimetype == "image/jpeg" || req.file.mimetype == "image/png" || req.file.mimetype == "image/gif"){
+			var filename = req.file.filename;
+			var fullpath = "/home/ubuntu/www/public/images/board/gallery_img/" + filename;
+			var gallery_path = "/images/board/gallery_img/";
+			var endname;
+			if(req.file.mimetype == "image/jpeg"){
+				endname = ".jpg";
+			}else if(req.file.mimetype == "image/png"){
+				endname = ".png";
+			}else if(req.file.mimetype == "image/gif"){
+				endname = ".gif";
+			}
+
+			fs.rename(fullpath, fullpath+endname, function(err){
+				if(err){
+					console.log('err1');
+					res.send("err");
+				}else{
+					res.send(gallery_path+filename+endname);
+				}
+			});
+		}else{
+			console.log('err2');
+			res.send("err");
+		}
+
+});
+
+
+router.post('/regist_gallery', function(req, res, next){
+	knex('ATGallery')
+		.insert({
+			img : req.body.img,
+			desc : req.body.desc,
+			createdAt: knex.fn.now(),
+			updatedAt: knex.fn.now()
+		}).then(function(results, err){
+			res.send("Submit ok!");
+		});
+
+});
+
 
 router.post('/regist_content', function(req, res, next){
 	

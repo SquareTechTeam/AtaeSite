@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>어드민</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- include libraries(jQuery, bootstrap) -->
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.js"></script>
+
+</head>
+
+<body>
+    <div class="section_write">
+        <input type="text" class="title" name="title" id="title" placeholder="이미지를 설명해 주세요.">
+        
+        <div class="file_upload"><input type="file" class="thumb_img" name="thumb_img" />
+            <a href="javascript:;" class="btn_upload">Upload</a></div>
+    </div>
+    <script type="text/javascript">
+        //$(document).ready(function() {
+            
+            $('.btn_upload').click(function() {
+                var formData = new FormData();
+                formData.append("g_img", $(".thumb_img")[0].files[0]);
+
+                $.ajax({
+                    url: '/upload_gallery',
+                    processData: false,
+                    contentType: false,
+                    data: formData,
+                    type: 'POST',
+                    success: function(result) {
+                        console.log(result);
+                        if(result == "err"){
+                            alert("업로드 실패.. 이미지(jpg, png)만 업로드 가능합니다.");
+                        }else{
+                            var thumb_path = result;
+                            var data = new Object();
+                            data.img = thumb_path;
+                            data.desc = $('#title').val();
+
+                            $.ajax({
+                                url: '/regist_gallery',
+                                type: 'POST',
+                                data: data,
+                                success: function(results){
+                                    alert('Success');
+                                },
+                                error: function(err){
+                                    alert('Fail');
+                                }
+                            });
+                        }
+                    },
+                    error: function(err){
+                        alert('Fail');
+                    }
+                });
+                return false;
+            });
+        //});
+    </script>
+
+    
+</body>
+
+</html>
